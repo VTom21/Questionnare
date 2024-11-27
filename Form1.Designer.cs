@@ -33,6 +33,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Question
@@ -75,11 +76,21 @@
             this.textBox5.Size = new System.Drawing.Size(309, 55);
             this.textBox5.TabIndex = 4;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "kerdes";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -99,6 +110,7 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label1;
     }
 }
 
