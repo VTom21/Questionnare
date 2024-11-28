@@ -10,6 +10,9 @@ namespace Questionnare
     public partial class Form1 : Form
     {
         public string[] line_parts;
+        public int highest_score;
+        public int CurrentScore = 0;
+        public string File_HighScore = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\forras\highscore.txt";
         public class Question
         {
             public string Questions { get; set; }
@@ -42,10 +45,23 @@ namespace Questionnare
             GuessBtn.Click += GuessBtn_Click;
         }
 
+
         private void GuessBtn_Click(object sender, EventArgs e)
         {
-            Question currentQuery = null;
+            int highest_score = 0;
 
+            if (File.Exists(File_HighScore))
+            {
+                using (StreamReader r = new StreamReader(File_HighScore))
+                {
+                    string line = r.ReadLine();
+                    string scorePart = line.Split(':')[1].Trim();
+                    highest_score = Convert.ToInt32(scorePart);
+                    highscore_label.Text = $"High Score: {highest_score}";
+                }
+            }
+
+            Question currentQuery = null;
             foreach (var item in questions)
             {
                 if (item.Questions == questionbar.Text)
@@ -55,13 +71,32 @@ namespace Questionnare
                 }
             }
 
-            if (currentQuery.Correct_answer == Guess.Text)
+            if (currentQuery.Correct_answer == Guess.Text.ToUpper())
             {
+                CurrentScore++;
                 MessageBox.Show("Correct!");
+                Guess.Text = "";
             }
             else
             {
                 MessageBox.Show("Incorrect!");
+                Guess.Text = "";
+            }
+
+
+            if (CurrentScore > highest_score)
+            {
+                highest_score = CurrentScore;
+                if (File.Exists(File_HighScore))
+                {
+                    using (StreamWriter w = new StreamWriter(File_HighScore))
+                    {
+                        w.WriteLine($"High Score: {highest_score}");
+                    }
+                }
+
+                highscore_label.Text = $"High Score: {highest_score}";
+                MessageBox.Show("New High Score!");
             }
         }
 
@@ -122,7 +157,9 @@ namespace Questionnare
             }
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }

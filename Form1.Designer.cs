@@ -36,6 +36,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.GuessBtn = new System.Windows.Forms.Button();
             this.Guess = new System.Windows.Forms.TextBox();
+            this.label_highscore = new System.Windows.Forms.Label();
+            this.HighScore = new System.Windows.Forms.Label();
+            this.highscore_label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // option1
@@ -104,11 +107,39 @@
             this.Guess.Size = new System.Drawing.Size(52, 34);
             this.Guess.TabIndex = 9;
             // 
+            // label_highscore
+            // 
+            this.label_highscore.AutoSize = true;
+            this.label_highscore.Location = new System.Drawing.Point(12, 9);
+            this.label_highscore.Name = "label_highscore";
+            this.label_highscore.Size = new System.Drawing.Size(0, 13);
+            this.label_highscore.TabIndex = 10;
+            // 
+            // HighScore
+            // 
+            this.HighScore.AutoSize = true;
+            this.HighScore.Location = new System.Drawing.Point(81, 9);
+            this.HighScore.Name = "HighScore";
+            this.HighScore.Size = new System.Drawing.Size(0, 13);
+            this.HighScore.TabIndex = 11;
+            // 
+            // highscore_label
+            // 
+            this.highscore_label.AutoSize = true;
+            this.highscore_label.Location = new System.Drawing.Point(12, 13);
+            this.highscore_label.Name = "highscore_label";
+            this.highscore_label.Size = new System.Drawing.Size(35, 13);
+            this.highscore_label.TabIndex = 12;
+            this.highscore_label.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.highscore_label);
+            this.Controls.Add(this.HighScore);
+            this.Controls.Add(this.label_highscore);
             this.Controls.Add(this.Guess);
             this.Controls.Add(this.GuessBtn);
             this.Controls.Add(this.button1);
@@ -119,6 +150,7 @@
             this.Controls.Add(this.option1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,6 +166,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button GuessBtn;
         private System.Windows.Forms.TextBox Guess;
+        private System.Windows.Forms.Label label_highscore;
+        private System.Windows.Forms.Label HighScore;
+        private System.Windows.Forms.Label highscore_label;
     }
 }
 
