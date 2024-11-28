@@ -9,7 +9,6 @@ namespace Questionnare
 {
     public partial class Form1 : Form
     {
-
         public string[] line_parts;
         public int highest_score;
         public int CurrentScore = 0;
@@ -44,23 +43,35 @@ namespace Questionnare
             Load_File_Content();
             button1.Click += Button1_Click;
             GuessBtn.Click += GuessBtn_Click;
+            this.Load += Form1_Load1;
         }
-
-
-        private void GuessBtn_Click(object sender, EventArgs e)
+        private void highscore_load()
         {
-            int highest_score = 0;
-
             if (File.Exists(File_HighScore))
             {
                 using (StreamReader r = new StreamReader(File_HighScore))
                 {
                     string line = r.ReadLine();
                     string scorePart = line.Split(':')[1].Trim();
-                    highest_score = Convert.ToInt32(scorePart);
+                    highest_score = Convert.ToInt32(scorePart);  
                     highscore_label.Text = $"High Score: {highest_score}";
                 }
             }
+            else
+            {
+                highest_score = 0;
+                highscore_label.Text = $"High Score: {highest_score}";
+            }
+        }
+        private void Form1_Load1(object sender, EventArgs e)
+        {
+            highscore_load();
+            CurrentText.Text = $"Current Score: {CurrentScore}";
+        }
+
+        private void GuessBtn_Click(object sender, EventArgs e)
+        {
+            highscore_load();
 
             Question currentQuery = null;
             foreach (var item in questions)
@@ -76,6 +87,7 @@ namespace Questionnare
             {
                 CurrentScore++;
                 MessageBox.Show("Correct!");
+                CurrentText.Text = $"Current Score: {CurrentScore}";
                 Guess.Text = "";
             }
             else
