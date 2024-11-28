@@ -9,6 +9,7 @@ namespace Questionnare
 {
     public partial class Form1 : Form
     {
+
         public string[] line_parts;
         public int highest_score;
         public int CurrentScore = 0;
