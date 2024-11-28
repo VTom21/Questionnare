@@ -39,6 +39,8 @@ namespace Questionnare
                 {
                     string line = r.ReadLine();
 
+                    string[]
+
                 }
                 while (!r.EndOfStream);
             };
