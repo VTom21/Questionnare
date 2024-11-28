@@ -28,21 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Question = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.questionbar = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // Question
-            // 
-            this.Question.Location = new System.Drawing.Point(12, 67);
-            this.Question.Multiline = true;
-            this.Question.Name = "Question";
-            this.Question.Size = new System.Drawing.Size(643, 31);
-            this.Question.TabIndex = 0;
             // 
             // textBox2
             // 
@@ -85,17 +77,25 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "kerdes";
             // 
+            // questionbar
+            // 
+            this.questionbar.Location = new System.Drawing.Point(15, 106);
+            this.questionbar.Multiline = true;
+            this.questionbar.Name = "questionbar";
+            this.questionbar.Size = new System.Drawing.Size(640, 34);
+            this.questionbar.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.questionbar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.Question);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -105,12 +105,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox Question;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox questionbar;
     }
 }
 
