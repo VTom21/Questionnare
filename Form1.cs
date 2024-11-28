@@ -1,4 +1,6 @@
 ﻿using System.Windows.Forms;
+using System.IO;
+using System.Linq;
 
 namespace Questionnare
 {
@@ -30,6 +32,16 @@ namespace Questionnare
 
 
             Question question = new Question("Mikor ért véget az első világháború?", "1914", "1918", "1923", "1905", "1918");
+
+            using (StreamReader r = new StreamReader("C:\\Users\\Ny20Kelemeng\\Source\\Repos\\Questionnare\\forras\\torifizika.txt"))
+            {
+                do
+                {
+                    string line = r.ReadLine();
+
+                }
+                while (!r.EndOfStream);
+            };
 
             questionbar.Text = question.questions;
         }
