@@ -90,6 +90,10 @@ namespace Questionnare
                 var random_query = questions[indexR];
 
                 questionbar.Text = $"{random_query.Questions}";
+                option1.Text = $"{random_query.Option1}";
+                option2.Text = $"{random_query.Option2}";
+                option3.Text = $"{random_query.Option3}";
+                option4.Text = $"{random_query.Option4}";
             }
         }
 

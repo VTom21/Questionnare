@@ -28,45 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.option1 = new System.Windows.Forms.TextBox();
+            this.option2 = new System.Windows.Forms.TextBox();
+            this.option4 = new System.Windows.Forms.TextBox();
+            this.option3 = new System.Windows.Forms.TextBox();
             this.questionbar = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox2
+            // option1
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 187);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(309, 55);
-            this.textBox2.TabIndex = 1;
+            this.option1.Location = new System.Drawing.Point(12, 187);
+            this.option1.Multiline = true;
+            this.option1.Name = "option1";
+            this.option1.Size = new System.Drawing.Size(309, 55);
+            this.option1.TabIndex = 1;
             // 
-            // textBox3
+            // option2
             // 
-            this.textBox3.Location = new System.Drawing.Point(346, 187);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(309, 55);
-            this.textBox3.TabIndex = 2;
+            this.option2.Location = new System.Drawing.Point(346, 187);
+            this.option2.Multiline = true;
+            this.option2.Name = "option2";
+            this.option2.Size = new System.Drawing.Size(309, 55);
+            this.option2.TabIndex = 2;
             // 
-            // textBox4
+            // option4
             // 
-            this.textBox4.Location = new System.Drawing.Point(346, 281);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(309, 55);
-            this.textBox4.TabIndex = 3;
+            this.option4.Location = new System.Drawing.Point(346, 281);
+            this.option4.Multiline = true;
+            this.option4.Name = "option4";
+            this.option4.Size = new System.Drawing.Size(309, 55);
+            this.option4.TabIndex = 3;
             // 
-            // textBox5
+            // option3
             // 
-            this.textBox5.Location = new System.Drawing.Point(12, 281);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(309, 55);
-            this.textBox5.TabIndex = 4;
+            this.option3.Location = new System.Drawing.Point(12, 281);
+            this.option3.Multiline = true;
+            this.option3.Name = "option3";
+            this.option3.Size = new System.Drawing.Size(309, 55);
+            this.option3.TabIndex = 4;
             // 
             // questionbar
             // 
@@ -92,10 +92,10 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.questionbar);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.option3);
+            this.Controls.Add(this.option4);
+            this.Controls.Add(this.option2);
+            this.Controls.Add(this.option1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -105,10 +105,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox option1;
+        private System.Windows.Forms.TextBox option2;
+        private System.Windows.Forms.TextBox option4;
+        private System.Windows.Forms.TextBox option3;
         private System.Windows.Forms.TextBox questionbar;
         private System.Windows.Forms.Button button1;
     }
