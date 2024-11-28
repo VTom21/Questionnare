@@ -12,7 +12,6 @@ namespace Questionnare
         public string[] line_parts;
         public int highest_score;
         public int CurrentScore = 0;
-        public string File_HighScore = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\forras\highscore.txt";
         public class Question
         {
             public string Questions { get; set; }
@@ -43,10 +42,26 @@ namespace Questionnare
             Load_File_Content();
             button1.Click += Button1_Click;
             GuessBtn.Click += GuessBtn_Click;
+            Guess.KeyPress += Guess_KeyPress;
             this.Load += Form1_Load1;
         }
+
+        private void Guess_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Guess.Text.Length > 0 && e.KeyChar != (char)Keys.Back)
+            {
+                Guess.Clear();
+            }
+        }
+
+
         private void highscore_load()
         {
+            string File_HighScore = @"highscore.txt";
+
+            string directory = Application.StartupPath;
+            string fullFilePath = Path.Combine(directory, File_HighScore);
+
             if (File.Exists(File_HighScore))
             {
                 using (StreamReader r = new StreamReader(File_HighScore))
@@ -99,6 +114,8 @@ namespace Questionnare
 
             if (CurrentScore > highest_score)
             {
+                string File_HighScore = @"highscore.txt";
+
                 highest_score = CurrentScore;
                 if (File.Exists(File_HighScore))
                 {
@@ -120,15 +137,20 @@ namespace Questionnare
 
         private void Load_File_Content()
         {
-            string filePath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\forras\torifizika.txt";
-            if (File.Exists(filePath))
+
+         string filePath = @"torifizika.txt";
+         string directory = Application.StartupPath;
+         string fullFilePath = Path.Combine(directory, filePath);
+
+
+            if (File.Exists(fullFilePath))
             {
-                using (StreamReader r = new StreamReader(filePath))
+                using (StreamReader r = new StreamReader(fullFilePath))
                 {
                     while (!r.EndOfStream)
                     {
                         string line = r.ReadLine();
-                        line_parts = line.Split('|');
+                        string[] line_parts = line.Split('|');
 
                         if (line_parts.Length == 6)
                         {
@@ -147,8 +169,9 @@ namespace Questionnare
             }
             else
             {
-                MessageBox.Show("File not found.");
+                MessageBox.Show("File not found at: " + fullFilePath);
             }
+
         }
 
 

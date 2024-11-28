@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BFD95281-E0AA-414C-A451-765341E189D5}</ProjectGuid>
+    <ProjectGuid>{68BD2787-1E5C-487B-AF72-208AC6720A30}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Questionnare</RootNamespace>
-    <AssemblyName>Questionnare</AssemblyName>
+    <RootNamespace>Loading_Menu</RootNamespace>
+    <AssemblyName>Loading_Menu</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -78,13 +78,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="bin\Debug\highscore.txt" />
-    <Content Include="bin\Debug\torifizika.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\Debug\forras\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
