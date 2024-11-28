@@ -9,6 +9,7 @@ namespace Questionnare
 {
     public partial class Form1 : Form
     {
+        public string[] line_parts;
         public class Question
         {
             public string Questions { get; set; }
@@ -38,6 +39,30 @@ namespace Questionnare
             InitializeComponent();
             Load_File_Content();
             button1.Click += Button1_Click;
+            GuessBtn.Click += GuessBtn_Click;
+        }
+
+        private void GuessBtn_Click(object sender, EventArgs e)
+        {
+            Question currentQuery = null;
+
+            foreach (var item in questions)
+            {
+                if (item.Questions == questionbar.Text)
+                {
+                    currentQuery = item;
+                    break;
+                }
+            }
+
+            if (currentQuery.Correct_answer == Guess.Text)
+            {
+                MessageBox.Show("Correct!");
+            }
+            else
+            {
+                MessageBox.Show("Incorrect!");
+            }
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -47,7 +72,7 @@ namespace Questionnare
 
         private void Load_File_Content()
         {
-            string filePath = "C:\\Users\\Ny20VisegrádiT\\Desktop\\Questionnare\\forras\\torifizika.txt";
+            string filePath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\forras\torifizika.txt";
             if (File.Exists(filePath))
             {
                 using (StreamReader r = new StreamReader(filePath))
@@ -55,7 +80,7 @@ namespace Questionnare
                     while (!r.EndOfStream)
                     {
                         string line = r.ReadLine();
-                        string[] line_parts = line.Split('|');
+                        line_parts = line.Split('|');
 
                         if (line_parts.Length == 6)
                         {

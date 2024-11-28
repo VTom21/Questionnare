@@ -34,6 +34,8 @@
             this.option3 = new System.Windows.Forms.TextBox();
             this.questionbar = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.GuessBtn = new System.Windows.Forms.Button();
+            this.Guess = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // option1
@@ -70,7 +72,7 @@
             // 
             // questionbar
             // 
-            this.questionbar.Location = new System.Drawing.Point(15, 106);
+            this.questionbar.Location = new System.Drawing.Point(12, 49);
             this.questionbar.Multiline = true;
             this.questionbar.Name = "questionbar";
             this.questionbar.Size = new System.Drawing.Size(640, 34);
@@ -78,18 +80,37 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(688, 106);
+            this.button1.Location = new System.Drawing.Point(686, 49);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 34);
             this.button1.TabIndex = 7;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // GuessBtn
+            // 
+            this.GuessBtn.Location = new System.Drawing.Point(102, 113);
+            this.GuessBtn.Name = "GuessBtn";
+            this.GuessBtn.Size = new System.Drawing.Size(75, 34);
+            this.GuessBtn.TabIndex = 8;
+            this.GuessBtn.Text = "Guess";
+            this.GuessBtn.UseVisualStyleBackColor = true;
+            // 
+            // Guess
+            // 
+            this.Guess.Location = new System.Drawing.Point(12, 113);
+            this.Guess.Multiline = true;
+            this.Guess.Name = "Guess";
+            this.Guess.Size = new System.Drawing.Size(52, 34);
+            this.Guess.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Guess);
+            this.Controls.Add(this.GuessBtn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.questionbar);
             this.Controls.Add(this.option3);
@@ -111,6 +132,8 @@
         private System.Windows.Forms.TextBox option3;
         private System.Windows.Forms.TextBox questionbar;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button GuessBtn;
+        private System.Windows.Forms.TextBox Guess;
     }
 }
 
