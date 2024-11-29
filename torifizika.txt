@@ -18,3 +18,33 @@ Melyik történelmi személy írta meg a „Kommunista kiáltványt”?| Friedri
 Ki volt Nagy Sándor tanítója?| Szókratész| Platón| Arisztotelész| Diogenész|C
 Melyik nép hajtotta végre a híres „tengeri népek” invázióit az ókori Mediterráneumban?|Föníciaiak | Hetiták| Tengeri népek| Görögök|C
 Melyik birodalom uralkodott az ókori Egyiptomban II. Ramszesz idején?| Újbirodalom| Középbirodalom| Óbirodalom| Perzsa Birodalom|A
+Ki alapította Rómát a legenda szerint?| Julius Caesar| Augustus| Romulus és Remus| Hannibál|C
+Mikor érte el a Hold felszínét az Apollo 11?| 1965| 1969| 1972| 1967|B
+Melyik városban található a Taj Mahal?| Delhi| Agra| Jaipur| Mumbai|B
+Melyik évben kezdődött a második világháború?| 1937| 1938| 1939| 1940|C
+Ki volt az Egyesült Államok első elnöke?| Thomas Jefferson| Abraham Lincoln| George Washington| John Adams|C
+Mi az SI alapegysége az időnek?| Perc| Óra| Másodperc| Nap|C
+Milyen sebességgel terjed a fény vákuumban?| 300 km/s| 300 000 km/s| 150 000 km/s| 3 000 000 km/s|B
+Melyik részecske található az atommagban?| Elektron| Proton| Neutrínó| Foton|B
+Mi az energia mértékegysége az SI-rendszerben?| Watt| Joule| Newton| Pascal|B
+Ki fogalmazta meg a gravitációs törvényt?| Albert Einstein| Galileo Galilei| Isaac Newton| James Clerk Maxwell|C
+Mi az elektromos áramerősség mértékegysége?| Volt| Ohm| Amper| Joule|C
+Mi a hőmérséklet mértékegysége az SI-rendszerben?| Celsius| Fahrenheit| Kelvin| Rankine|C
+Miért felelős a Lorentz-erő?| Gravitációs kölcsönhatás| Elektromágneses kölcsönhatás| Nukleáris kölcsönhatás| Mechanikai kölcsönhatás|B
+Melyik felfedező írta le először az elektromágneses hullámokat?| Michael Faraday| Heinrich Hertz| James Clerk Maxwell| Nikola Tesla|C
+Mi történik egy testtel, ha a rá ható erők kiegyenlítik egymást?| Egyenletesen gyorsul| Egy helyben marad| Egyenletesen mozog| Változó gyorsulású mozgást végez|C
+Mi az impulzus mértékegysége az SI-rendszerben?| Joule| Newton| Newton-szekundum| Watt|C
+Mi a hang terjedési sebessége a levegőben?| 150 m/s| 340 m/s| 500 m/s| 1000 m/s|B
+Mi jellemzi a longitudinális hullámokat?| A rezgések iránya merőleges a hullám terjedési irányára| A rezgések iránya párhuzamos a hullám terjedési irányával| Csak folyadékban terjednek| Nem terjednek vákuumban|B
+Mi a szilárd testek fajlagos ellenállásának jele?| ρ (ró)| ε (epszilon)| σ (szigma)| τ (tau)|A
+Mi a foton?| Egy neutron részecske| Egy elektromágneses sugárzás energiacsomagja| Egy hanghullám része| Egy gravitációs hullám részecskéje|B
+Mi a termodinamika második főtétele?| Az energia nem vész el, csak átalakul| Az entrópia mindig csökken| Az entrópia zárt rendszerben mindig nő| A munka mindig egyenlő a hőmennyiséggel|C
+Mi a periódusidő mértékegysége?| Hertz| Másodperc| Newton| Joule|B
+Milyen skálán mérjük a csillagok fényességét?| Kelvin-skála| Magnitúdó-skála| Decibel-skála| Watt-skála|B
+Ki fedezte fel az elektront?| Ernest Rutherford| Niels Bohr| J. J. Thomson| James Chadwick|C
+Mi az Ohm törvénye?| V = I * R| F = m * a| E = mc²| pV = nRT|A
+Melyik fizikai mennyiség változik, ha egy test gyorsul?| Tömeg| Súly| Sebesség| Hőmérséklet|C
+Mi az a jelenség, amikor a fény irányt változtat két különböző közeg határán?| Törés| Interferencia| Diffrakció| Polarizáció|A
+Mi az ideális gáz egyenlete?| F = m * a| E = mc²| pV = nRT| V = I * R|C
+Mi a feszültség mértékegysége?| Volt| Ohm| Watt| Amper|A
+Mi az az energia, amelyet egy helyhez kötött test magassági helyzetéből fakadóan tárol?| Mozgási energia| Potenciális energia| Hőenergia| Elektromos energia|B
