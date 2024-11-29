@@ -14,7 +14,7 @@ namespace Questionnare
         public int highest_score;
         public int CurrentScore = 0;
         public int difficulty;
-        public int Time = 10;
+        public int Time = 15;
         public bool timer_run = false;
         private Thread countdownThread;
         public class Question
