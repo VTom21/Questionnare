@@ -142,6 +142,8 @@ namespace Questionnare
          string directory = Application.StartupPath;
          string fullFilePath = Path.Combine(directory, filePath);
 
+            Console.WriteLine($"f path: {fullFilePath}"); 
+
 
             if (File.Exists(fullFilePath))
             {

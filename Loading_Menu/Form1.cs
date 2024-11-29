@@ -22,11 +22,15 @@ namespace Loading_Menu
 
         private void Start_Click(object sender, EventArgs e)
         {
-            string targetExePath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\bin\Debug\Questionnare.exe";
+
+            string path = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\bin\Debug\Questionnare.exe";
+
+
+            Console.WriteLine(path);
 
             try
             {
-                Process.Start(targetExePath);
+                Process.Start(path);
 
                 Application.Exit(); 
             }

@@ -83,8 +83,5 @@
     <Content Include="bin\Debug\highscore.txt" />
     <Content Include="bin\Debug\torifizika.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\Debug\forras\" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
