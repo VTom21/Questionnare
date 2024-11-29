@@ -29,6 +29,7 @@
             this.HighScore = new System.Windows.Forms.Label();
             this.highscore_label = new System.Windows.Forms.Label();
             this.CurrentText = new System.Windows.Forms.Label();
+            this.diff = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // option1
@@ -173,12 +174,22 @@
             this.CurrentText.Size = new System.Drawing.Size(0, 13);
             this.CurrentText.TabIndex = 14;
             // 
+            // diff
+            // 
+            this.diff.FormattingEnabled = true;
+            this.diff.Location = new System.Drawing.Point(12, 356);
+            this.diff.Name = "diff";
+            this.diff.Size = new System.Drawing.Size(121, 21);
+            this.diff.TabIndex = 15;
+            this.diff.Text = "Select Difficulty!";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.diff);
             this.Controls.Add(this.CurrentText);
             this.Controls.Add(this.highscore_label);
             this.Controls.Add(this.HighScore);
@@ -212,5 +223,6 @@
         private System.Windows.Forms.Label HighScore;
         private System.Windows.Forms.Label highscore_label;
         private System.Windows.Forms.Label CurrentText;
+        private System.Windows.Forms.ComboBox diff;
     }
 }

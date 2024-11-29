@@ -80,8 +80,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="NewFolder1\hard.txt" />
     <Content Include="NewFolder1\highscore.txt" />
-    <Content Include="NewFolder1\torifizika.txt" />
+    <Content Include="NewFolder1\easy.txt" />
+    <Content Include="NewFolder1\normal.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Debug\" />

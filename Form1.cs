@@ -12,6 +12,7 @@ namespace Questionnare
         public string[] line_parts;
         public int highest_score;
         public int CurrentScore = 0;
+        public int difficulty;
         public class Question
         {
             public string Questions { get; set; }
@@ -39,7 +40,6 @@ namespace Questionnare
         public Form1()
         {
             InitializeComponent();
-            Load_File_Content();
             button1.Click += Button1_Click;
             GuessBtn.Click += GuessBtn_Click;
             Guess.KeyPress += Guess_KeyPress;
@@ -78,6 +78,10 @@ namespace Questionnare
         }
         private void Form1_Load1(object sender, EventArgs e)
         {
+            diff.Items.Add("Easy");
+            diff.Items.Add("Normal");
+            diff.Items.Add("Hard");
+            diff.SelectedIndex = 0;
             highscore_load();
             CurrentText.Text = $"Current Score: {CurrentScore}";
         }
@@ -129,48 +133,76 @@ namespace Questionnare
             }
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void Load_Query(string filePath)
         {
-            Random_Query();
-        }
+            questions.Clear(); 
 
-        private void Load_File_Content()
-        {
-
-         string filePath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\torifizika.txt";
-
-
-
-            if (File.Exists(filePath))
-            {
                 using (StreamReader r = new StreamReader(filePath))
                 {
                     while (!r.EndOfStream)
                     {
                         string line = r.ReadLine();
-                        string[] line_parts = line.Split('|');
+                        string[] line_parts = line.Split('|').Select(p => p.Trim()).ToArray();
 
                         if (line_parts.Length == 6)
                         {
                             Question question = new Question(
-                                line_parts[0],
-                                line_parts[1],
-                                line_parts[2],
-                                line_parts[3],
-                                line_parts[4],
-                                line_parts[5]
+                                line_parts[0], 
+                                line_parts[1], 
+                                line_parts[2], 
+                                line_parts[3], 
+                                line_parts[4], 
+                                line_parts[5]  
                             );
                             questions.Add(question);
                         }
+                        else
+                        {
+                            MessageBox.Show("Invalid question format!");
+                            return; 
+                        }
                     }
+                }
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            if (diff.SelectedItem != null)
+            {
+                string selectedDifficulty = diff.SelectedItem.ToString().Trim();  
+                string filePath = "";
+
+
+                if (selectedDifficulty == "Easy")
+                {
+                    filePath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\easy.txt";
+                }
+                else if (selectedDifficulty == "Normal")
+                {
+                    filePath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\normal.txt";
+                }
+                else if (selectedDifficulty == "Hard")
+                {
+                    filePath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\hard.txt";
+                }
+
+                if (File.Exists(filePath))
+                {
+                    Load_Query(filePath);  
+                }
+                else
+                {
+                    MessageBox.Show($"File not found at: {filePath}"); 
                 }
             }
             else
             {
-                MessageBox.Show("File not found at: " + filePath);
+                MessageBox.Show("Select a difficulty!");  
             }
 
+            Random_Query();
         }
+
 
 
 
@@ -183,11 +215,16 @@ namespace Questionnare
 
                 var random_query = questions[indexR];
 
-                questionbar.Text = $"{random_query.Questions}";
-                option1.Text = $"{random_query.Option1}";
-                option2.Text = $"{random_query.Option2}";
-                option3.Text = $"{random_query.Option3}";
-                option4.Text = $"{random_query.Option4}";
+
+                questionbar.Text = random_query.Questions;
+                option1.Text = random_query.Option1;
+                option2.Text = random_query.Option2;
+                option3.Text = random_query.Option3;
+                option4.Text = random_query.Option4;
+            }
+            else
+            {
+                MessageBox.Show("No questions available!");
             }
         }
 
@@ -195,5 +232,6 @@ namespace Questionnare
         {
 
         }
+
     }
 }
