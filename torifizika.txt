@@ -1,361 +1,50 @@
-Tematika
-
-Egyetemes történelem, irodalom és fizika 
-
-Név
-Ultra szar kérdések
-
-Töri
-
-1. Mikor ért véget az első világháború?
-A. 1914
-B. 1918
-C. 1923
-D. 1905
-Helyes válasz: B. 1918
-
-2. Ki találta fel a nyomtatott könyvet mozgatható betűkkel?
-A. Isaac Newton
-B. Johannes Gutenberg
-C. Leonardo da Vinci
-D. Martin Luther
-Helyes válasz: B. Johannes Gutenberg
-
-3. Melyik országot érte Pearl Harbor támadása a második világháború alatt?
-A. Kanada
-B. Nagy-Britannia
-C. Egyesült Államok
-D. Japán
-Helyes válasz: C. Egyesült Államok
-
-4. Melyik birodalom építette a híres Machu Picchu-t?
-A. Azteka
-B. Maja
-C. Inka
-D. Római
-Helyes válasz: C. Inka
-
-5. Melyik csata jelentette Napóleon végső vereségét?
-A. Trafalgari csata
-B. Borogyinói csata
-C. Leipzigi csata
-D. Waterlooi csata
-Helyes válasz: D. Waterlooi csata
-
-6. Mikor fedezte fel Amerika partjait Kolumbusz Kristóf?
-A. 1492
-B. 1500
-C. 1498
-D. 1486
-Helyes válasz: A. 1492
-
-7. Melyik város volt az Oszmán Birodalom fővárosa a 15. századtól?
-A. Ankara
-B. Isztambul (Konstantinápoly)
-C. Athén
-D. Damaszkusz
-Helyes válasz: B. Isztambul (Konstantinápoly)
-
-8. Melyik ország kezdte meg a reformációt?
-A. Franciaország
-B. Németország
-C. Olaszország
-D. Spanyolország
-Helyes válasz: B. Németország
-
-9. Mikor volt a francia forradalom kezdete?
-A. 1789
-B. 1776
-C. 1804
-D. 1765
-Helyes válasz: A. 1789
-
-10. Ki volt a mongol birodalom alapítója?
-A. Kubiláj kán
-B. Dzsingisz kán
-C. Timur Lenk
-D. Attila
-Helyes válasz: B. Dzsingisz kán
-
-11. Melyik híres szobrot készítette Michelangelo?
-A. Dávid
-B. Milói Vénusz
-C. Szamothrakéi Niké
-D. Pietà
-Helyes válasz: A. Dávid
-
-12. Mikor omlott össze a Nyugatrómai Birodalom?
-A. Kr. u. 395
-B. Kr. u. 476
-C. Kr. u. 410
-D. Kr. u. 509
-Helyes válasz: B. Kr. u. 476
-
-13. Melyik ország vezette az ipari forradalmat a 18. században?
-A. Franciaország
-B. Németország
-C. Nagy-Britannia
-D. Egyesült Államok
-Helyes válasz: C. Nagy-Britannia
-
-14. Melyik esemény vezette be a hidegháború időszakát?
-A. Marshall-terv bejelentése
-B. Németország kettéosztása
-C. A Berlini fal építése
-D. A második világháború vége
-Helyes válasz: D. A második világháború vége
-
-15. Melyik ország lett az első a világon, amely űrhajóst küldött az űrbe?
-A. Egyesült Államok
-B. Szovjetunió
-C. Kína
-D. Franciaország
-Helyes válasz: B. Szovjetunió
-
-16. Mikor kezdődött a hidegháború?
-A. 1947
-B. 1939
-C. 1953
-D. 1962
-Helyes válasz: A. 1947
-
-17. Melyik történelmi személy írta meg a „Kommunista kiáltványt”?
-A. Friedrich Engels
-B. Karl Marx
-C. Lenin
-D. Joseph Stalin
-Helyes válasz: B. Karl Marx
-
-18. Ki volt Nagy Sándor tanítója?
-A. Szókratész
-B. Platón
-C. Arisztotelész
-D. Diogenész
-Helyes válasz: C. Arisztotelész
-
-19. Melyik nép hajtotta végre a híres „tengeri népek” invázióit az ókori Mediterráneumban?
-A. Föníciaiak
-B. Hetiták
-C. Tengeri népek
-D. Görögök
-Helyes válasz: C. Tengeri népek
-
-20. Melyik birodalom uralkodott az ókori Egyiptomban II. Ramszesz idején?
-A. Újbirodalom
-B. Középbirodalom
-C. Óbirodalom
-D. Perzsa Birodalom
-Helyes válasz: A. Újbirodalom
-
-21. Ki alapította Rómát a legenda szerint?
-A. Julius Caesar
-B. Augustus
-C. Romulus és Remus
-D. Hannibál
-Helyes válasz: C. Romulus és Remus
-
-22. Mikor érte el a Hold felszínét az Apollo 11?
-A. 1965
-B. 1969
-C. 1972
-D. 1967
-Helyes válasz: B. 1969
-
-23. Melyik városban található a Taj Mahal?
-A. Delhi
-B. Agra
-C. Jaipur
-D. Mumbai
-Helyes válasz: B. Agra
-
-24. Melyik évben kezdődött a második világháború?
-A. 1937
-B. 1938
-C. 1939
-D. 1940
-Helyes válasz: C. 1939
-
-25. Ki volt az Egyesült Államok első elnöke?
-A. Thomas Jefferson
-B. Abraham Lincoln
-C. George Washington
-D. John Adams
-Helyes válasz: C. George Washington
-
-Fizika
-
-1. Mi az SI alapegysége az időnek?
-A. Perc
-B. Óra
-C. Másodperc
-D. Nap
-Helyes válasz: C. Másodperc
-
-2. Milyen sebességgel terjed a fény vákuumban?
-A. 300 km/s
-B. 300 000 km/s
-C. 150 000 km/s
-D. 3 000 000 km/s
-Helyes válasz: B. 300 000 km/s
-
-3. Melyik részecske található az atommagban?
-A. Elektron
-B. Proton
-C. Neutrínó
-D. Foton
-Helyes válasz: B. Proton
-
-4. Mi az energia mértékegysége az SI-rendszerben?
-A. Watt
-B. Joule
-C. Newton
-D. Pascal
-Helyes válasz: B. Joule
-
-5. Ki fogalmazta meg a gravitációs törvényt?
-A. Albert Einstein
-B. Galileo Galilei
-C. Isaac Newton
-D. James Clerk Maxwell
-Helyes válasz: C. Isaac Newton
-
-6. Mi az elektromos áramerősség mértékegysége?
-A. Volt
-B. Ohm
-C. Amper
-D. Joule
-Helyes válasz: C. Amper
-
-7. Mi a hőmérséklet mértékegysége az SI-rendszerben?
-A. Celsius
-B. Fahrenheit
-C. Kelvin
-D. Rankine
-Helyes válasz: C. Kelvin
-
-8. Miért felelős a Lorentz-erő?
-A. Gravitációs kölcsönhatás
-B. Elektromágneses kölcsönhatás
-C. Nukleáris kölcsönhatás
-D. Mechanikai kölcsönhatás
-Helyes válasz: B. Elektromágneses kölcsönhatás
-
-9. Melyik felfedező írta le először az elektromágneses hullámokat?
-A. Michael Faraday
-B. Heinrich Hertz
-C. James Clerk Maxwell
-D. Nikola Tesla
-Helyes válasz: C. James Clerk Maxwell
-
-10. Mi történik egy testtel, ha a rá ható erők kiegyenlítik egymást?
-A. Egyenletesen gyorsul
-B. Egy helyben marad
-C. Egyenletesen mozog
-D. Változó gyorsulású mozgást végez
-Helyes válasz: C. Egyenletesen mozog
-
-11. Mi az impulzus mértékegysége az SI-rendszerben?
-A. Joule
-B. Newton
-C. Newton-szekundum
-D. Watt
-Helyes válasz: C. Newton-szekundum
-
-12. Mi a hang terjedési sebessége a levegőben?
-A. 150 m/s
-B. 340 m/s
-C. 500 m/s
-D. 1000 m/s
-Helyes válasz: B. 340 m/s
-
-13. Mi jellemzi a longitudinális hullámokat?
-A. A rezgések iránya merőleges a hullám terjedési irányára
-B. A rezgések iránya párhuzamos a hullám terjedési irányával
-C. Csak folyadékban terjednek
-D. Nem terjednek vákuumban
-Helyes válasz: B. A rezgések iránya párhuzamos a hullám terjedési irányával
-
-14. Mi a szilárd testek fajlagos ellenállásának jele?
-A. ρ (ró)
-B. ε (epszilon)
-C. σ (szigma)
-D. τ (tau)
-Helyes válasz: A. ρ (ró)
-
-15. Mi a foton?
-A. Egy neutron részecske
-B. Egy elektromágneses sugárzás energiacsomagja
-C. Egy hanghullám része
-D. Egy gravitációs hullám részecskéje
-Helyes válasz: B. Egy elektromágneses sugárzás energiacsomagja
-
-16. Mi a termodinamika második főtétele?
-A. Az energia nem vész el, csak átalakul
-B. Az entrópia mindig csökken
-C. Az entrópia zárt rendszerben mindig nő
-D. A munka mindig egyenlő a hőmennyiséggel
-Helyes válasz: C. Az entrópia zárt rendszerben mindig nő
-
-17. Mi a periódusidő mértékegysége?
-A. Hertz
-B. Másodperc
-C. Newton
-D. Joule
-Helyes válasz: B. Másodperc
-
-18. Milyen skálán mérjük a csillagok fényességét?
-A. Kelvin-skála
-B. Magnitúdó-skála
-C. Decibel-skála
-D. Watt-skála
-Helyes válasz: B. Magnitúdó-skála
-
-19. Ki fedezte fel az elektront?
-A. Ernest Rutherford
-B. Niels Bohr
-C. J. J. Thomson
-D. James Chadwick
-Helyes válasz: C. J. J. Thomson
-
-20. Mi az Ohm törvénye?
-A. V = I * R
-B. F = m * a
-C. E = mc²
-D. pV = nRT
-Helyes válasz: A. V = I * R
-
-21. Melyik fizikai mennyiség változik, ha egy test gyorsul?
-A. Tömeg
-B. Súly
-C. Sebesség
-D. Hőmérséklet
-Helyes válasz: C. Sebesség
-
-22. Mi az a jelenség, amikor a fény irányt változtat két különböző közeg határán?
-A. Törés
-B. Interferencia
-C. Diffrakció
-D. Polarizáció
-Helyes válasz: A. Törés
-
-23. Mi az ideális gáz egyenlete?
-A. F = m * a
-B. E = mc²
-C. pV = nRT
-D. V = I * R
-Helyes válasz: C. pV = nRT
-
-24. Mi a feszültség mértékegysége?
-A. Volt
-B. Ohm
-C. Watt
-D. Amper
-Helyes válasz: A. Volt
-
-25. Mi az az energia, amelyet egy helyhez kötött test magassági helyzetéből fakadóan tárol?
-A. Mozgási energia
-B. Potenciális energia
-C. Hőenergia
-D. Elektromos energia
-Helyes válasz: B. Potenciális energia
+Mikor ért véget az első világháború?| A. 1914| B. 1918| C. 1923| D. 1905|B
+Ki találta fel a nyomtatott könyvet mozgatható betűkkel?| A. Isaac Newton| B. Johannes Gutenberg| C. Leonardo da Vinci| D. Martin Luther|B
+Melyik országot érte Pearl Harbor támadása a második világháború alatt?| A. Kanada| B. Nagy-Britannia| C. Egyesült Államok| D. Japán|C
+Melyik birodalom építette a híres Machu Picchu-t?| A. Azteka| B. Maja| C. Inka| D. Római|C
+Melyik csata jelentette Napóleon végső vereségét?| A. Trafalgari csata| B. Borogyinói csata| C. Leipzigi csata| D. Waterlooi csata|D
+Mikor fedezte fel Amerika partjait Kolumbusz Kristóf?| A. 1492| B. 1500| C. 1498| D. 1486|A
+Melyik város volt az Oszmán Birodalom fővárosa a 15. századtól?| A. Ankara| B. Isztambul (Konstantinápoly)| C. Athén| D. Damaszkusz|B
+Melyik ország kezdte meg a reformációt?| A. Franciaország| B. Németország| C. Olaszország| D. Spanyolország|B
+Mikor volt a francia forradalom kezdete?| A. 1789| B. 1776| C. 1804| D. 1765|A
+Ki volt a mongol birodalom alapítója?| A. Kubiláj kán| B. Dzsingisz kán| C. Timur Lenk| D. Attila|B
+Melyik híres szobrot készítette Michelangelo?| A. Dávid| B. Milói Vénusz| C. Szamothrakéi Niké| D. Pietà|A
+Mikor omlott össze a Nyugatrómai Birodalom?| A. Kr. u. 395| B. Kr. u. 476| C. Kr. u. 410| D. Kr. u. 509|B
+Melyik ország vezette az ipari forradalmat a 18. században?| A. Franciaország| B. Németország| C. Nagy-Britannia| D. Egyesült Államok|C
+Melyik esemény vezette be a hidegháború időszakát?| A. Marshall-terv bejelentése| B. Németország kettéosztása| C. A Berlini fal építése| D. A második világháború vége|D
+Melyik ország lett az első a világon, amely űrhajóst küldött az űrbe?| A. Egyesült Államok| B. Szovjetunió| C. Kína| D. Franciaország|B
+Mikor kezdődött a hidegháború?| A. 1947| B. 1939| C. 1953| D. 1962|A
+Melyik történelmi személy írta meg a „Kommunista kiáltványt”?| A. Friedrich Engels| B. Karl Marx| C. Lenin| D. Joseph Stalin|B
+Ki volt Nagy Sándor tanítója?| A. Szókratész| B. Platón| C. Arisztotelész| D. Diogenész|C
+Melyik nép hajtotta végre a híres „tengeri népek” invázióit az ókori Mediterráneumban?| A. Föníciaiak| B. Hetiták| C. Tengeri népek| D. Görögök|C
+Melyik birodalom uralkodott az ókori Egyiptomban II. Ramszesz idején?| A. Újbirodalom| B. Középbirodalom| C. Óbirodalom| D. Perzsa Birodalom|A
+Mikor érte el a Hold felszínét az Apollo 11?| A. 1965| B. 1969| C. 1972| D. 1967|B
+Melyik városban található a Taj Mahal?| A. Delhi| B. Agra| C. Jaipur| D. Mumbai|B
+Melyik évben kezdődött a második világháború?| A. 1937| B. 1938| C. 1939| D. 1940|C
+Ki volt az Egyesült Államok első elnöke?| A. Thomas Jefferson| B. Abraham Lincoln| C. George Washington| D. John Adams|C
+Mi az SI alapegysége az időnek?| A. Perc| B. Óra| C. Másodperc| D. Nap|C
+Milyen sebességgel terjed a fény vákuumban?| A. 300 km/s| B. 300 000 km/s| C. 150 000 km/s| D. 3 000 000 km/s|B
+Melyik részecske található az atommagban?| A. Elektron| B. Proton| C. Neutrínó| D. Foton|B
+Mi az energia mértékegysége az SI-rendszerben?| A. Watt| B. Joule| C. Newton| D. Pascal|B
+Ki fogalmazta meg a gravitációs törvényt?| A. Albert Einstein| B. Galileo Galilei| C. Isaac Newton| D. James Clerk Maxwell|C
+Mi az elektromos áramerősség mértékegysége?| A. Volt| B. Ohm| C. Amper| D. Joule|C
+Mi a hőmérséklet mértékegysége az SI-rendszerben?| A. Celsius| B. Fahrenheit| C. Kelvin| D. Rankine|C
+Miért felelős a Lorentz-erő?| A. Gravitációs kölcsönhatás| B. Elektromágneses kölcsönhatás| C. Nukleáris kölcsönhatás| D. Mechanikai kölcsönhatás|B
+Melyik felfedező írta le először az elektromágneses hullámokat?| A. Michael Faraday| B. Heinrich Hertz| C. James Clerk Maxwell| D. Nikola Tesla|C
+Mi történik egy testtel, ha a rá ható erők kiegyenlítik egymást?| A. Egyenletesen gyorsul| B. Egy helyben marad| C. Egyenletesen mozog| D. Változó gyorsulású mozgást végez|C
+Mi az impulzus mértékegysége az SI-rendszerben?| A. Joule| B. Newton| C. Newton-szekundum| D. Watt|C
+Mi a hang terjedési sebessége a levegőben?| A. 150 m/s| B. 340 m/s| C. 500 m/s| D. 1000 m/s|B
+Mi jellemzi a longitudinális hullámokat?| A. A rezgések iránya merőleges a hullám terjedési irányára| B. A rezgések iránya párhuzamos a hullám terjedési irányával| C. Csak folyadékban terjednek| D. Nem terjednek vákuumban|B
+Mi a szilárd testek fajlagos ellenállásának jele?| A. ρ (ró)| B. ε (epszilon)| C. σ (szigma)| D. τ (tau)|A
+Mi a foton?| A. Egy neutron részecske| B. Egy elektromágneses sugárzás energiacsomagja| C. Egy hanghullám része| D. Egy gravitációs hullám részecskéje|B
+Mi a termodinamika második főtétele?| A. Az energia nem vész el, csak átalakul| B. Az entrópia mindig csökken| C. Az entrópia zárt rendszerben mindig nő| D. A munka mindig egyenlő a hőmennyiséggel|C
+Mi a periódusidő mértékegysége?| A. Hertz| B. Másodperc| C. Newton| D. Joule|B
+Milyen skálán mérjük a csillagok fényességét?| A. Kelvin-skála| B. Magnitúdó-skála| C. Decibel-skála| D. Watt-skála|B
+Ki fedezte fel az elektront?| A. Ernest Rutherford| B. Niels Bohr| C. J. J. Thomson| D. James Chadwick|C
+Mi az Ohm törvénye?| A. V = I * R| B. F = m * a| C. E = mc²| D. pV = nRT|A
+Melyik fizikai mennyiség változik, ha egy test gyorsul?| A. Tömeg| B. Súly| C. Sebesség| D. Hőmérséklet|C
+Mi az a jelenség, amikor a fény irányt változtat két különböző közeg határán?| A. Törés| B. Interferencia| C. Diffrakció| D. Polarizáció|A
+Mi az ideális gáz egyenlete?| A. F = m * a| B. E = mc²| C. pV = nRT| D. V = I * R|C
+Mi a feszültség mértékegysége?| A. Volt| B. Ohm| C. Watt| D. Amper|A
+Mi az az energia, amelyet egy helyhez kötött test magassági helyzetéből fakadóan tárol?| A. Mozgási energia| B. Potenciális energia| C. Hőenergia| D. Elektromos energia|B
 
