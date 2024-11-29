@@ -80,8 +80,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Debug\highscore.txt" />
-    <Content Include="bin\Debug\torifizika.txt" />
+    <Content Include="NewFolder1\highscore.txt" />
+    <Content Include="NewFolder1\torifizika.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

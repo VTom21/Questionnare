@@ -57,10 +57,8 @@ namespace Questionnare
 
         private void highscore_load()
         {
-            string File_HighScore = @"highscore.txt";
+            string File_HighScore = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\highscore.txt";
 
-            string directory = Application.StartupPath;
-            string fullFilePath = Path.Combine(directory, File_HighScore);
 
             if (File.Exists(File_HighScore))
             {
@@ -109,14 +107,13 @@ namespace Questionnare
             {
                 MessageBox.Show("Incorrect!");
                 Guess.Text = "";
+                CurrentScore = 0;
             }
 
 
             if (CurrentScore > highest_score)
             {
-                string File_HighScore = @"highscore.txt";
-                string directory = Application.StartupPath;
-                string fullFilePath = Path.Combine(directory, File_HighScore);
+                string File_HighScore = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\highscore.txt";
 
                 highest_score = CurrentScore;
                 if (File.Exists(File_HighScore))
@@ -140,16 +137,13 @@ namespace Questionnare
         private void Load_File_Content()
         {
 
-         string filePath = @"torifizika.txt";
-         string directory = Application.StartupPath;
-         string fullFilePath = Path.Combine(directory, filePath);
-
-            Console.WriteLine($"f path: {fullFilePath}"); 
+         string filePath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\torifizika.txt";
 
 
-            if (File.Exists(fullFilePath))
+
+            if (File.Exists(filePath))
             {
-                using (StreamReader r = new StreamReader(fullFilePath))
+                using (StreamReader r = new StreamReader(filePath))
                 {
                     while (!r.EndOfStream)
                     {
@@ -173,7 +167,7 @@ namespace Questionnare
             }
             else
             {
-                MessageBox.Show("File not found at: " + fullFilePath);
+                MessageBox.Show("File not found at: " + filePath);
             }
 
         }

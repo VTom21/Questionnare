@@ -27,12 +27,13 @@ namespace Loading_Menu
 
         private void RunExecutable()
         {
-            string path = @"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\bin\Debug\Questionnare.exe";
+            string path = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\bin\Debug\Questionnare.exe";
 
             try
             {
                 if (File.Exists(path))
                 {
+                    Application.Exit();
                     Process.Start(path);
                 }
                 else
