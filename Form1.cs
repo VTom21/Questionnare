@@ -115,6 +115,8 @@ namespace Questionnare
             if (CurrentScore > highest_score)
             {
                 string File_HighScore = @"highscore.txt";
+                string directory = Application.StartupPath;
+                string fullFilePath = Path.Combine(directory, File_HighScore);
 
                 highest_score = CurrentScore;
                 if (File.Exists(File_HighScore))

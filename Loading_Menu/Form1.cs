@@ -22,22 +22,30 @@ namespace Loading_Menu
 
         private void Start_Click(object sender, EventArgs e)
         {
+            RunExecutable();
+        }
 
-            string path = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\bin\Debug\Questionnare.exe";
-
-
-            Console.WriteLine(path);
+        private void RunExecutable()
+        {
+            string path = @"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\bin\Debug\Questionnare.exe";
 
             try
             {
-                Process.Start(path);
+                if (File.Exists(path))
+                {
+                    Process.Start(path);
+                }
+                else
+                {
 
-                Application.Exit(); 
+                    MessageBox.Show("Executable not found at path: " + path);
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error launching the executable: " + ex.Message);
             }
         }
+
     }
 }
