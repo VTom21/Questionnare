@@ -4,6 +4,7 @@ using System.Linq;
 using System;
 using System.Collections.Generic;
 using System.Drawing.Text;
+using System.Threading;
 
 namespace Questionnare
 {
@@ -13,6 +14,9 @@ namespace Questionnare
         public int highest_score;
         public int CurrentScore = 0;
         public int difficulty;
+        public int Time = 10;
+        public bool timer_run = false;
+        private Thread countdownThread;
         public class Question
         {
             public string Questions { get; set; }
@@ -78,6 +82,7 @@ namespace Questionnare
         }
         private void Form1_Load1(object sender, EventArgs e)
         {
+
             diff.Items.Add("Easy");
             diff.Items.Add("Normal");
             diff.Items.Add("Hard");
@@ -112,6 +117,7 @@ namespace Questionnare
                 MessageBox.Show("Incorrect!");
                 Guess.Text = "";
                 CurrentScore = 0;
+                Timer_Reset();
             }
 
 
@@ -167,6 +173,20 @@ namespace Questionnare
 
         private void Button1_Click(object sender, EventArgs e)
         {
+
+            if (!timer_run) 
+            {
+                timer_run = true;
+                countdownThread = new Thread(Countdown); 
+                countdownThread.Start(); 
+            }
+            else
+            {
+                timer_run = false;
+                countdownThread?.Abort(); 
+                Timer_Reset();  
+            }
+
             if (diff.SelectedItem != null)
             {
                 string selectedDifficulty = diff.SelectedItem.ToString().Trim();  
@@ -204,6 +224,46 @@ namespace Questionnare
         }
 
 
+        public void Countdown()
+        {
+            int remainingTime = Time;
+
+            while (remainingTime >= 0 && timer_run)
+            {
+                if (this.IsHandleCreated)
+                {
+                    this.Invoke(new Action(() =>
+                    {
+                        countdown_label.Text = TimeSpan.FromSeconds(remainingTime).ToString(@"mm\:ss");
+                    }));
+                }
+
+                remainingTime--;
+
+                Thread.Sleep(1000);
+            }
+
+            if (remainingTime < 0 && timer_run)
+            {
+                if (this.IsHandleCreated)
+                {
+                    this.Invoke(new Action(() =>
+                    {
+                        MessageBox.Show("Time's up!");
+                        CurrentScore = 0;
+                        CurrentText.Text = $"Current Score: {CurrentScore}";
+                        Timer_Reset();   
+                    }));
+                }
+            }
+        }
+
+        public void Timer_Reset()
+        {
+            countdown_label.Text = TimeSpan.FromSeconds(Time).ToString(@"mm\:ss");
+
+            timer_run = false;  
+        }
 
 
         private void Random_Query()
@@ -232,6 +292,5 @@ namespace Questionnare
         {
 
         }
-
     }
 }

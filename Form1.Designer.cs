@@ -30,6 +30,7 @@
             this.highscore_label = new System.Windows.Forms.Label();
             this.CurrentText = new System.Windows.Forms.Label();
             this.diff = new System.Windows.Forms.ComboBox();
+            this.countdown_label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // option1
@@ -189,12 +190,24 @@
             this.diff.TabIndex = 15;
             this.diff.Text = "Select Difficulty!";
             // 
+            // countdown_label
+            // 
+            this.countdown_label.AutoSize = true;
+            this.countdown_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.countdown_label.ForeColor = System.Drawing.Color.GhostWhite;
+            this.countdown_label.Location = new System.Drawing.Point(748, 9);
+            this.countdown_label.Name = "countdown_label";
+            this.countdown_label.Size = new System.Drawing.Size(20, 24);
+            this.countdown_label.TabIndex = 16;
+            this.countdown_label.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.countdown_label);
             this.Controls.Add(this.diff);
             this.Controls.Add(this.CurrentText);
             this.Controls.Add(this.highscore_label);
@@ -230,5 +243,6 @@
         private System.Windows.Forms.Label highscore_label;
         private System.Windows.Forms.Label CurrentText;
         private System.Windows.Forms.ComboBox diff;
+        private System.Windows.Forms.Label countdown_label;
     }
 }
