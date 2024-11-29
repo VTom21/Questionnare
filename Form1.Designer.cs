@@ -105,6 +105,7 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(112)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1.ForeColor = System.Drawing.Color.GhostWhite;
             this.button1.Location = new System.Drawing.Point(686, 49);
             this.button1.Name = "button1";
@@ -121,6 +122,7 @@
             this.GuessBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.GuessBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(112)))));
             this.GuessBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GuessBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GuessBtn.ForeColor = System.Drawing.Color.GhostWhite;
             this.GuessBtn.Location = new System.Drawing.Point(102, 113);
             this.GuessBtn.Name = "GuessBtn";
@@ -176,10 +178,14 @@
             // 
             // diff
             // 
+            this.diff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+            this.diff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.diff.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.diff.ForeColor = System.Drawing.Color.GhostWhite;
             this.diff.FormattingEnabled = true;
             this.diff.Location = new System.Drawing.Point(12, 356);
             this.diff.Name = "diff";
-            this.diff.Size = new System.Drawing.Size(121, 21);
+            this.diff.Size = new System.Drawing.Size(121, 24);
             this.diff.TabIndex = 15;
             this.diff.Text = "Select Difficulty!";
             // 
