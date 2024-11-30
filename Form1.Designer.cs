@@ -32,6 +32,8 @@
             this.diff = new System.Windows.Forms.ComboBox();
             this.countdown_label = new System.Windows.Forms.Label();
             this.lbrank = new System.Windows.Forms.Label();
+            this.Pbranking = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Pbranking)).BeginInit();
             this.SuspendLayout();
             // 
             // option1
@@ -205,12 +207,20 @@
             // lbrank
             // 
             this.lbrank.BackColor = System.Drawing.Color.IndianRed;
-            this.lbrank.Location = new System.Drawing.Point(568, 408);
+            this.lbrank.Location = new System.Drawing.Point(534, 356);
             this.lbrank.Name = "lbrank";
             this.lbrank.Size = new System.Drawing.Size(121, 33);
             this.lbrank.TabIndex = 17;
             this.lbrank.Text = "Your rank: ";
             this.lbrank.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Pbranking
+            // 
+            this.Pbranking.Location = new System.Drawing.Point(686, 337);
+            this.Pbranking.Name = "Pbranking";
+            this.Pbranking.Size = new System.Drawing.Size(75, 58);
+            this.Pbranking.TabIndex = 18;
+            this.Pbranking.TabStop = false;
             // 
             // Form1
             // 
@@ -218,6 +228,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Pbranking);
             this.Controls.Add(this.lbrank);
             this.Controls.Add(this.countdown_label);
             this.Controls.Add(this.diff);
@@ -235,6 +246,7 @@
             this.Controls.Add(this.option1);
             this.Name = "Form1";
             this.Text = "Quiz Application";
+            ((System.ComponentModel.ISupportInitialize)(this.Pbranking)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -257,5 +269,6 @@
         private System.Windows.Forms.ComboBox diff;
         private System.Windows.Forms.Label countdown_label;
         private System.Windows.Forms.Label lbrank;
+        private System.Windows.Forms.PictureBox Pbranking;
     }
 }

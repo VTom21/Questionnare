@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing.Text;
 using System.Threading;
+using System.Drawing;
 
 namespace Questionnare
 {
@@ -194,6 +195,7 @@ namespace Questionnare
             if (CurrentScore >= 1 && CurrentScore < 5)
             {
                 rank = "Silver";
+                Pbranking.Image = Image.FromFile("C:\\Users\\Kelemen Gábor\\source\\repos\\Questionnare\\NewFolder1\\silver.png");
             }
             else if (CurrentScore >= 5 && CurrentScore < 10)
             {
