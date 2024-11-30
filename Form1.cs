@@ -105,28 +105,6 @@ namespace Questionnare
                 }
             }
 
-            string rank = "Bronz";
-            lbrank.Text = "Your rank: " + rank;
-
-            if (CurrentScore >= 1 && CurrentScore < 5)
-            {
-                rank = "Silver";
-            }
-            else if (CurrentScore >= 5 && CurrentScore < 10)
-            {
-                rank = "Gold";
-            }
-            else if (CurrentScore >= 10 && CurrentScore < 15)
-            {
-                rank = "Diamond";
-            }
-            else if (CurrentScore >= 15)
-            {
-                rank = "Champion";
-            }
-
-            lbrank.Text = "Your rank: " + rank;
-
             if (currentQuery.Correct_answer == Guess.Text.ToUpper())
             {
                 CurrentScore++;
@@ -209,25 +187,49 @@ namespace Questionnare
                 Timer_Reset();  
             }
 
+
+            string rank = "Bronz";
+            lbrank.Text = "Your rank: " + rank;
+
+            if (CurrentScore >= 1 && CurrentScore < 5)
+            {
+                rank = "Silver";
+            }
+            else if (CurrentScore >= 5 && CurrentScore < 10)
+            {
+                rank = "Gold";
+            }
+            else if (CurrentScore >= 10 && CurrentScore < 15)
+            {
+                rank = "Diamond";
+            }
+            else if (CurrentScore >= 15)
+            {
+                rank = "Champion";
+            }
+
+            lbrank.Text = "Your rank: " + rank;
+
             if (diff.SelectedItem != null)
             {
                 string selectedDifficulty = diff.SelectedItem.ToString().Trim();  
                 string filePath = "";
 
-
-                if (selectedDifficulty == "Easy")
+                switch (selectedDifficulty)
                 {
-                    filePath = @"C:\Users\Kelemen Gábor\source\repos\Questionnare\NewFolder1\easy.txt";
+                    case "Easy":
+                        filePath = @"C:\Users\Kelemen Gábor\source\repos\Questionnare\NewFolder1\easy.txt";
+                        break;
+                    case "Normal":
+                        filePath = @"C:\Users\Kelemen Gábor\source\repos\Questionnare\NewFolder1\normal.txt";
+                        break;
+                    case "Hard":
+                        filePath = @"C:\Users\Kelemen Gábor\source\repos\Questionnare\NewFolder1\hard.txt";
+                        break;
+                    default:
+                        MessageBox.Show("Select a difficulty!");
+                        return; 
                 }
-                else if (selectedDifficulty == "Normal")
-                {
-                    filePath = @"C:\Users\Kelemen Gábor\source\repos\Questionnare\NewFolder1\normal.txt";
-                }
-                else if (selectedDifficulty == "Hard")
-                {
-                    filePath = @"C:\Users\Kelemen Gábor\source\repos\Questionnare\NewFolder1\hard.txt";
-                }
-
                 if (File.Exists(filePath))
                 {
                     Load_Query(filePath);  
@@ -237,10 +239,7 @@ namespace Questionnare
                     MessageBox.Show($"File not found at: {filePath}"); 
                 }
             }
-            else
-            {
-                MessageBox.Show("Select a difficulty!");  
-            }
+           
 
             Random_Query();
         }
