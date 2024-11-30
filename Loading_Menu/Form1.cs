@@ -18,6 +18,23 @@ namespace Loading_Menu
         {
             InitializeComponent();
             Start.Click += Start_Click;
+            btnranking.Click += Btnranking_Click;
+            Quit.Click += Quit_Click;
+        }
+
+        private void Quit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Btnranking_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("The ranks: \n" +
+                "0 Bronz \n" +
+                "1-4 Silver \n" +
+                "5-9 Gold \n" +
+                "10-14 Diamond \n" +
+                "15 or higher Champion");
         }
 
         private void Start_Click(object sender, EventArgs e)

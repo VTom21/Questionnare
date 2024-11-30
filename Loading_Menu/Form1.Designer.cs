@@ -31,6 +31,7 @@ namespace Loading_Menu
         {
             this.Start = new System.Windows.Forms.Button();
             this.Quit = new System.Windows.Forms.Button();
+            this.btnranking = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Start
@@ -42,7 +43,7 @@ namespace Loading_Menu
             this.Start.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(112)))));
             this.Start.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Start.ForeColor = System.Drawing.Color.GhostWhite;
-            this.Start.Location = new System.Drawing.Point(238, 158);
+            this.Start.Location = new System.Drawing.Point(238, 104);
             this.Start.Name = "Start";
             this.Start.Size = new System.Drawing.Size(289, 47);
             this.Start.TabIndex = 7;
@@ -58,12 +59,28 @@ namespace Loading_Menu
             this.Quit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(112)))));
             this.Quit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Quit.ForeColor = System.Drawing.Color.GhostWhite;
-            this.Quit.Location = new System.Drawing.Point(238, 245);
+            this.Quit.Location = new System.Drawing.Point(238, 253);
             this.Quit.Name = "Quit";
             this.Quit.Size = new System.Drawing.Size(289, 46);
             this.Quit.TabIndex = 7;
             this.Quit.Text = "Quit";
             this.Quit.UseVisualStyleBackColor = false;
+            // 
+            // btnranking
+            // 
+            this.btnranking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+            this.btnranking.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+            this.btnranking.FlatAppearance.BorderSize = 2;
+            this.btnranking.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnranking.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(112)))));
+            this.btnranking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnranking.ForeColor = System.Drawing.Color.GhostWhite;
+            this.btnranking.Location = new System.Drawing.Point(238, 179);
+            this.btnranking.Name = "btnranking";
+            this.btnranking.Size = new System.Drawing.Size(289, 47);
+            this.btnranking.TabIndex = 7;
+            this.btnranking.Text = "Ranking";
+            this.btnranking.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -72,6 +89,7 @@ namespace Loading_Menu
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Quit);
+            this.Controls.Add(this.btnranking);
             this.Controls.Add(this.Start);
             this.Name = "Form1";
             this.Text = "Menu";
@@ -83,6 +101,7 @@ namespace Loading_Menu
 
         private System.Windows.Forms.Button Start;
         private System.Windows.Forms.Button Quit;
+        private System.Windows.Forms.Button btnranking;
     }
 }
 
