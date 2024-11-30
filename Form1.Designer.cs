@@ -94,7 +94,7 @@
             this.questionbar.Location = new System.Drawing.Point(12, 49);
             this.questionbar.Multiline = true;
             this.questionbar.Name = "questionbar";
-            this.questionbar.Size = new System.Drawing.Size(640, 34);
+            this.questionbar.Size = new System.Drawing.Size(640, 58);
             this.questionbar.TabIndex = 5;
             this.questionbar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -110,7 +110,7 @@
             this.button1.ForeColor = System.Drawing.Color.GhostWhite;
             this.button1.Location = new System.Drawing.Point(686, 49);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 34);
+            this.button1.Size = new System.Drawing.Size(75, 58);
             this.button1.TabIndex = 6;
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = false;
