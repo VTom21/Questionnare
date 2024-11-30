@@ -31,6 +31,7 @@
             this.CurrentText = new System.Windows.Forms.Label();
             this.diff = new System.Windows.Forms.ComboBox();
             this.countdown_label = new System.Windows.Forms.Label();
+            this.lbrank = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // option1
@@ -201,12 +202,23 @@
             this.countdown_label.TabIndex = 16;
             this.countdown_label.Text = "0";
             // 
+            // lbrank
+            // 
+            this.lbrank.BackColor = System.Drawing.Color.IndianRed;
+            this.lbrank.Location = new System.Drawing.Point(568, 408);
+            this.lbrank.Name = "lbrank";
+            this.lbrank.Size = new System.Drawing.Size(121, 33);
+            this.lbrank.TabIndex = 17;
+            this.lbrank.Text = "Your rank: ";
+            this.lbrank.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbrank);
             this.Controls.Add(this.countdown_label);
             this.Controls.Add(this.diff);
             this.Controls.Add(this.CurrentText);
@@ -244,5 +256,6 @@
         private System.Windows.Forms.Label CurrentText;
         private System.Windows.Forms.ComboBox diff;
         private System.Windows.Forms.Label countdown_label;
+        private System.Windows.Forms.Label lbrank;
     }
 }

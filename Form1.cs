@@ -61,7 +61,7 @@ namespace Questionnare
 
         private void highscore_load()
         {
-            string File_HighScore = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\highscore.txt";
+            string File_HighScore = @"C:\Users\Kelemen Gábor\source\repos\Questionnare\NewFolder1\highscore.txt";
 
 
             if (File.Exists(File_HighScore))
@@ -70,7 +70,7 @@ namespace Questionnare
                 {
                     string line = r.ReadLine();
                     string scorePart = line.Split(':')[1].Trim();
-                    highest_score = Convert.ToInt32(scorePart);  
+                    highest_score = Convert.ToInt32(scorePart);
                     highscore_label.Text = $"High Score: {highest_score}";
                 }
             }
@@ -105,6 +105,28 @@ namespace Questionnare
                 }
             }
 
+            string rank = "Bronz";
+            lbrank.Text = "Your rank: " + rank;
+
+            if (CurrentScore >= 1 && CurrentScore < 5)
+            {
+                rank = "Silver";
+            }
+            else if (CurrentScore >= 5 && CurrentScore < 10)
+            {
+                rank = "Gold";
+            }
+            else if (CurrentScore >= 10 && CurrentScore < 15)
+            {
+                rank = "Diamond";
+            }
+            else if (CurrentScore >= 15)
+            {
+                rank = "Champion";
+            }
+
+            lbrank.Text = "Your rank: " + rank;
+
             if (currentQuery.Correct_answer == Guess.Text.ToUpper())
             {
                 CurrentScore++;
@@ -123,7 +145,7 @@ namespace Questionnare
 
             if (CurrentScore > highest_score)
             {
-                string File_HighScore = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\highscore.txt";
+                string File_HighScore = @"C:\Users\Kelemen Gábor\source\repos\Questionnare\NewFolder1\highscore.txt";
 
                 highest_score = CurrentScore;
                 if (File.Exists(File_HighScore))
@@ -195,15 +217,15 @@ namespace Questionnare
 
                 if (selectedDifficulty == "Easy")
                 {
-                    filePath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\easy.txt";
+                    filePath = @"C:\Users\Kelemen Gábor\source\repos\Questionnare\NewFolder1\easy.txt";
                 }
                 else if (selectedDifficulty == "Normal")
                 {
-                    filePath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\normal.txt";
+                    filePath = @"C:\Users\Kelemen Gábor\source\repos\Questionnare\NewFolder1\normal.txt";
                 }
                 else if (selectedDifficulty == "Hard")
                 {
-                    filePath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\hard.txt";
+                    filePath = @"C:\Users\Kelemen Gábor\source\repos\Questionnare\NewFolder1\hard.txt";
                 }
 
                 if (File.Exists(filePath))
