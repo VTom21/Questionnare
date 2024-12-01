@@ -62,7 +62,7 @@ namespace Questionnare
 
         private void highscore_load()
         {
-            string File_HighScore = @"C:\Users\Kelemen Gábor\source\repos\Questionnare\NewFolder1\highscore.txt";
+            string File_HighScore = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\highscore.txt";
 
 
             if (File.Exists(File_HighScore))
@@ -112,6 +112,7 @@ namespace Questionnare
                 MessageBox.Show("Correct!");
                 CurrentText.Text = $"Current Score: {CurrentScore}";
                 Guess.Text = "";
+                Timer_Reset();
             }
             else
             {
@@ -124,7 +125,7 @@ namespace Questionnare
 
             if (CurrentScore > highest_score)
             {
-                string File_HighScore = @"C:\Users\Kelemen Gábor\source\repos\Questionnare\NewFolder1\highscore.txt";
+                string File_HighScore = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\highscore.txt";
 
                 highest_score = CurrentScore;
                 if (File.Exists(File_HighScore))
@@ -189,25 +190,32 @@ namespace Questionnare
             }
 
 
-            string rank = "Bronz";
+            string rank = "Bronze";
+            Ranking.Image = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\Ranking\Bronze.jpg");
             lbrank.Text = "Your rank: " + rank;
+
+            Ranking.SizeMode = PictureBoxSizeMode.Zoom;
+            Ranking.SizeMode = PictureBoxSizeMode.StretchImage;
 
             if (CurrentScore >= 1 && CurrentScore < 5)
             {
                 rank = "Silver";
-                Pbranking.Image = Image.FromFile("C:\\Users\\Kelemen Gábor\\source\\repos\\Questionnare\\NewFolder1\\silver.png");
+                Ranking.Image = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\Ranking\Silver.jpg");
             }
             else if (CurrentScore >= 5 && CurrentScore < 10)
             {
                 rank = "Gold";
+                Ranking.Image = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\Ranking\Gold.jpg");
             }
             else if (CurrentScore >= 10 && CurrentScore < 15)
             {
                 rank = "Diamond";
+                Ranking.Image = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\Ranking\Diamond.jpg");
             }
             else if (CurrentScore >= 15)
             {
                 rank = "Champion";
+                Ranking.Image = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\Ranking\Champion.jpg");
             }
 
             lbrank.Text = "Your rank: " + rank;
@@ -220,13 +228,13 @@ namespace Questionnare
                 switch (selectedDifficulty)
                 {
                     case "Easy":
-                        filePath = @"C:\Users\Kelemen Gábor\source\repos\Questionnare\NewFolder1\easy.txt";
+                        filePath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\easy.txt";
                         break;
                     case "Normal":
-                        filePath = @"C:\Users\Kelemen Gábor\source\repos\Questionnare\NewFolder1\normal.txt";
+                        filePath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\normal.txt";
                         break;
                     case "Hard":
-                        filePath = @"C:\Users\Kelemen Gábor\source\repos\Questionnare\NewFolder1\hard.txt";
+                        filePath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\hard.txt";
                         break;
                     default:
                         MessageBox.Show("Select a difficulty!");

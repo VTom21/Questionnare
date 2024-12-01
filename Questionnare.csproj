@@ -84,6 +84,11 @@
     <Content Include="NewFolder1\highscore.txt" />
     <Content Include="NewFolder1\easy.txt" />
     <Content Include="NewFolder1\normal.txt" />
+    <Content Include="Ranking\Bronze.jpg" />
+    <Content Include="Ranking\Champion.jpg" />
+    <Content Include="Ranking\Diamond.jpg" />
+    <Content Include="Ranking\Gold.jpg" />
+    <Content Include="Ranking\Silver.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Debug\" />

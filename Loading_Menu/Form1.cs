@@ -30,7 +30,7 @@ namespace Loading_Menu
         private void Btnranking_Click(object sender, EventArgs e)
         {
             MessageBox.Show("The ranks: \n" +
-                "0 Bronz \n" +
+                "0 Bronze \n" +
                 "1-4 Silver \n" +
                 "5-9 Gold \n" +
                 "10-14 Diamond \n" +
