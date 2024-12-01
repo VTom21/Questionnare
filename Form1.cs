@@ -111,14 +111,13 @@ namespace Questionnare
                 CurrentScore++;
                 MessageBox.Show("Correct!");
                 CurrentText.Text = $"Current Score: {CurrentScore}";
-                Guess.Text = "";
                 Timer_Reset();
             }
             else
             {
                 MessageBox.Show("Incorrect!");
-                Guess.Text = "";
                 CurrentScore = 0;
+                CurrentText.Text = $"Current Score: {CurrentScore}";
                 Timer_Reset();
             }
 
@@ -175,6 +174,12 @@ namespace Questionnare
 
         private void Button1_Click(object sender, EventArgs e)
         {
+
+            if (string.IsNullOrEmpty(Guess.Text))
+            {
+                CurrentScore = 0;
+                CurrentText.Text = $"Current Score: {CurrentScore}";
+            }
 
             if (!timer_run) 
             {

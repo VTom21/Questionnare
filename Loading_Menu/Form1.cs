@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.IO;
+using System.Globalization;
+using System.Threading;
 
 namespace Loading_Menu
 {
@@ -20,11 +22,62 @@ namespace Loading_Menu
             Start.Click += Start_Click;
             btnranking.Click += Btnranking_Click;
             Quit.Click += Quit_Click;
+            this.Load += Form1_Load1;
+            Language.SelectedIndexChanged += Select_Language;
+        }
+
+        private void Form1_Load1(object sender, EventArgs e)
+        {
+            string culture = Properties.Settings.Default.Language ?? "en-US";
+            ChangeLanguage(culture);
+            ApplyLocalization();
+
+            Language.Items.Add("English");
+            Language.Items.Add("French");
+            Language.SelectedItem = (culture == "fr-FR") ? "French" : "English";
         }
 
         private void Quit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+        private void ChangeLanguage(string cultureCode)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultureCode);
+        }
+
+        private void ApplyLocalization()
+        {
+            Start.Text = Resources.ResourceManager.GetString("Start");
+            btnranking.Text = Resources.ResourceManager.GetString("btnranking");
+            Quit.Text = Resources.ResourceManager.GetString("Quit");
+        }
+
+
+        private void Select_Language(object sender, EventArgs e)
+        {
+            string selectedLanguage = Language.SelectedItem.ToString();
+
+
+            switch (selectedLanguage)
+            {
+                case "English":
+                    ChangeLanguage("en-US");
+                    Properties.Settings.Default.Language = "en-US";
+                    break;
+
+                case "French":
+                    ChangeLanguage("fr-FR");
+                    Properties.Settings.Default.Language = "fr-FR";
+                    break;
+
+                default:
+                    break;
+            }
+
+            Properties.Settings.Default.Save();
+
+            ApplyLocalization();
         }
 
         private void Btnranking_Click(object sender, EventArgs e)

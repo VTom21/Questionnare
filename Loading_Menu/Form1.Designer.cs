@@ -32,6 +32,7 @@ namespace Loading_Menu
             this.Start = new System.Windows.Forms.Button();
             this.Quit = new System.Windows.Forms.Button();
             this.btnranking = new System.Windows.Forms.Button();
+            this.Language = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // Start
@@ -82,18 +83,41 @@ namespace Loading_Menu
             this.btnranking.Text = "Ranking";
             this.btnranking.UseVisualStyleBackColor = false;
             // 
+            // Language
+            // 
+            this.Language.FormattingEnabled = true;
+            this.Language.Location = new System.Drawing.Point(657, 392);
+            this.Language.Name = "Language";
+            this.Language.Size = new System.Drawing.Size(121, 21);
+            this.Language.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Language);
             this.Controls.Add(this.Quit);
             this.Controls.Add(this.btnranking);
             this.Controls.Add(this.Start);
             this.Name = "Form1";
             this.Text = "Menu";
             this.ResumeLayout(false);
+
+            // 
+            // Language
+            // 
+
+            this.Language.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+            this.Language.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Language.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Language.ForeColor = System.Drawing.Color.GhostWhite;
+            this.Language.FormattingEnabled = true;
+            this.Language.Name = "diff";
+            this.Language.Size = new System.Drawing.Size(121, 24);
+            this.Language.TabIndex = 15;
+            this.Language.Text = "Select Difficulty!";
 
         }
 
@@ -102,6 +126,7 @@ namespace Loading_Menu
         private System.Windows.Forms.Button Start;
         private System.Windows.Forms.Button Quit;
         private System.Windows.Forms.Button btnranking;
+        private System.Windows.Forms.ComboBox Language;
     }
 }
 
