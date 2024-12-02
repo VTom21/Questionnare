@@ -85,11 +85,16 @@ namespace Loading_Menu
             // 
             // Language
             // 
+            this.Language.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+            this.Language.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Language.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Language.ForeColor = System.Drawing.Color.GhostWhite;
             this.Language.FormattingEnabled = true;
             this.Language.Location = new System.Drawing.Point(657, 392);
             this.Language.Name = "Language";
-            this.Language.Size = new System.Drawing.Size(121, 21);
-            this.Language.TabIndex = 8;
+            this.Language.Size = new System.Drawing.Size(121, 23);
+            this.Language.TabIndex = 15;
+            this.Language.Text = "Select Language!";
             // 
             // Form1
             // 
@@ -104,20 +109,6 @@ namespace Loading_Menu
             this.Name = "Form1";
             this.Text = "Menu";
             this.ResumeLayout(false);
-
-            // 
-            // Language
-            // 
-
-            this.Language.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
-            this.Language.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Language.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Language.ForeColor = System.Drawing.Color.GhostWhite;
-            this.Language.FormattingEnabled = true;
-            this.Language.Name = "diff";
-            this.Language.Size = new System.Drawing.Size(121, 24);
-            this.Language.TabIndex = 15;
-            this.Language.Text = "Select Difficulty!";
 
         }
 

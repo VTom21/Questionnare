@@ -117,6 +117,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Current" xml:space="preserve">
+    <value>Current Score</value>
+  </data>
+  <data name="diff" xml:space="preserve">
+    <value>Select Difficulty!</value>
+  </data>
+  <data name="Easy" xml:space="preserve">
+    <value>Easy</value>
+  </data>
+  <data name="Guess" xml:space="preserve">
+    <value>Guess</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>Hard</value>
+  </data>
+  <data name="High" xml:space="preserve">
+    <value>High Score</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Your Rank</value>
+  </data>
   <data name="Start" xml:space="preserve">
     <value>Start</value>
   </data>

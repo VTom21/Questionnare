@@ -33,6 +33,7 @@
             this.countdown_label = new System.Windows.Forms.Label();
             this.lbrank = new System.Windows.Forms.Label();
             this.Ranking = new System.Windows.Forms.PictureBox();
+            this.Language = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.Ranking)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,7 +110,7 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(112)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1.ForeColor = System.Drawing.Color.GhostWhite;
             this.button1.Location = new System.Drawing.Point(686, 49);
             this.button1.Name = "button1";
@@ -126,7 +127,7 @@
             this.GuessBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.GuessBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(112)))));
             this.GuessBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.GuessBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.GuessBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GuessBtn.ForeColor = System.Drawing.Color.GhostWhite;
             this.GuessBtn.Location = new System.Drawing.Point(102, 113);
             this.GuessBtn.Name = "GuessBtn";
@@ -222,12 +223,26 @@
             this.Ranking.TabIndex = 18;
             this.Ranking.TabStop = false;
             // 
+            // Language
+            // 
+            this.Language.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+            this.Language.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Language.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Language.ForeColor = System.Drawing.Color.GhostWhite;
+            this.Language.FormattingEnabled = true;
+            this.Language.Location = new System.Drawing.Point(139, 357);
+            this.Language.Name = "Language";
+            this.Language.Size = new System.Drawing.Size(121, 23);
+            this.Language.TabIndex = 19;
+            this.Language.Text = "Select Language!";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Language);
             this.Controls.Add(this.Ranking);
             this.Controls.Add(this.lbrank);
             this.Controls.Add(this.countdown_label);
@@ -270,5 +285,6 @@
         private System.Windows.Forms.Label countdown_label;
         private System.Windows.Forms.Label lbrank;
         private System.Windows.Forms.PictureBox Ranking;
+        private System.Windows.Forms.ComboBox Language;
     }
 }

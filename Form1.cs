@@ -6,9 +6,14 @@ using System.Collections.Generic;
 using System.Drawing.Text;
 using System.Threading;
 using System.Drawing;
+using System.Threading.Tasks;
+using System.Diagnostics;
+using System.Globalization;
 
 namespace Questionnare
 {
+
+
     public partial class Form1 : Form
     {
         public string[] line_parts;
@@ -18,6 +23,9 @@ namespace Questionnare
         public int Time = 15;
         public bool timer_run = false;
         private Thread countdownThread;
+        bool GuessClicked = false;
+
+        public string rank = "Bronze";
         public class Question
         {
             public string Questions { get; set; }
@@ -39,6 +47,32 @@ namespace Questionnare
 
         }
 
+        private void Select_Language(object sender, EventArgs e)
+        {
+            string selectedLanguage = Language.SelectedItem.ToString();
+
+
+            switch (selectedLanguage)
+            {
+                case "English":
+                    ChangeLanguage("en-US");
+                    Properties.Settings.Default.Language = "en-US";
+                    break;
+
+                case "French":
+                    ChangeLanguage("fr-FR");
+                    Properties.Settings.Default.Language = "fr-FR";
+                    break;
+
+                default:
+                    break;
+            }
+
+            Properties.Settings.Default.Save();
+
+            ApplyLocalization();
+        }
+
         private List<Question> questions = new List<Question>();
 
 
@@ -49,6 +83,7 @@ namespace Questionnare
             GuessBtn.Click += GuessBtn_Click;
             Guess.KeyPress += Guess_KeyPress;
             this.Load += Form1_Load1;
+            Language.SelectedIndexChanged += Select_Language;
         }
 
         private void Guess_KeyPress(object sender, KeyPressEventArgs e)
@@ -64,7 +99,6 @@ namespace Questionnare
         {
             string File_HighScore = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\highscore.txt";
 
-
             if (File.Exists(File_HighScore))
             {
                 using (StreamReader r = new StreamReader(File_HighScore))
@@ -72,28 +106,60 @@ namespace Questionnare
                     string line = r.ReadLine();
                     string scorePart = line.Split(':')[1].Trim();
                     highest_score = Convert.ToInt32(scorePart);
-                    highscore_label.Text = $"High Score: {highest_score}";
+                    highscore_label.Text = $"{Resources.ResourceManager.GetString("High")}: {highest_score}";
                 }
             }
             else
             {
                 highest_score = 0;
-                highscore_label.Text = $"High Score: {highest_score}";
+                highscore_label.Text = $"{Resources.ResourceManager.GetString("High")}: {highest_score}";
             }
         }
         private void Form1_Load1(object sender, EventArgs e)
         {
+            string culture = Properties.Settings.Default.Language ?? "en-US";
+            ChangeLanguage(culture);
+            ApplyLocalization();
 
-            diff.Items.Add("Easy");
-            diff.Items.Add("Normal");
-            diff.Items.Add("Hard");
-            diff.SelectedIndex = 0;
+            Language.Items.Add("English");
+            Language.Items.Add("French");
+            Language.SelectedItem = (culture == "fr-FR") ? "French" : "English";
+
+
             highscore_load();
-            CurrentText.Text = $"Current Score: {CurrentScore}";
+            CurrentText.Text = $"{Resources.ResourceManager.GetString("Current")}: {CurrentScore}";
+
+        }
+        private void ChangeLanguage(string language)
+        {
+            CultureInfo culture = new CultureInfo(language);
+            Thread.CurrentThread.CurrentUICulture = culture;
+            Thread.CurrentThread.CurrentCulture = culture;
+
+            ApplyLocalization();
+        }
+
+        private void ApplyLocalization()
+        {
+            diff.Items.Clear();
+            button1.Text = Resources.ResourceManager.GetString("Start");
+            GuessBtn.Text = Resources.ResourceManager.GetString("Guess");
+            highscore_label.Text = $"{Resources.ResourceManager.GetString("High")}:{highest_score}";
+            CurrentText.Text = $"{Resources.ResourceManager.GetString("Current")}:{CurrentScore}";
+            lbrank.Text = $"{Resources.ResourceManager.GetString("Rank")}: {rank}";
+            diff.Text = Resources.ResourceManager.GetString("diff");
+
+            diff.Items.Add(Resources.ResourceManager.GetString("diff"));
+            diff.Items.Add(Resources.ResourceManager.GetString("Easy"));
+            diff.Items.Add(Resources.ResourceManager.GetString("Normal"));
+            diff.Items.Add(Resources.ResourceManager.GetString("Hard"));
+
+            diff.SelectedIndex = 0;
         }
 
         private void GuessBtn_Click(object sender, EventArgs e)
         {
+            GuessClicked = true;
             highscore_load();
 
             Question currentQuery = null;
@@ -110,14 +176,14 @@ namespace Questionnare
             {
                 CurrentScore++;
                 MessageBox.Show("Correct!");
-                CurrentText.Text = $"Current Score: {CurrentScore}";
+                CurrentText.Text = $"{Resources.ResourceManager.GetString("Current")}: {CurrentScore}";
                 Timer_Reset();
             }
             else
             {
                 MessageBox.Show("Incorrect!");
                 CurrentScore = 0;
-                CurrentText.Text = $"Current Score: {CurrentScore}";
+                CurrentText.Text = $"{Resources.ResourceManager.GetString("Current")}: {CurrentScore}";
                 Timer_Reset();
             }
 
@@ -131,11 +197,11 @@ namespace Questionnare
                 {
                     using (StreamWriter w = new StreamWriter(File_HighScore))
                     {
-                        w.WriteLine($"High Score: {highest_score}");
+                        w.WriteLine($"{Resources.ResourceManager.GetString("High")}: {highest_score}");
                     }
                 }
 
-                highscore_label.Text = $"High Score: {highest_score}";
+                highscore_label.Text = $"{Resources.ResourceManager.GetString("High")}: {highest_score}";
                 MessageBox.Show("New High Score!");
             }
         }
@@ -175,27 +241,29 @@ namespace Questionnare
         private void Button1_Click(object sender, EventArgs e)
         {
 
-            if (string.IsNullOrEmpty(Guess.Text))
+            if (GuessClicked == false)
             {
                 CurrentScore = 0;
-                CurrentText.Text = $"Current Score: {CurrentScore}";
             }
 
-            if (!timer_run) 
+            if (!timer_run)
             {
                 timer_run = true;
-                countdownThread = new Thread(Countdown); 
-                countdownThread.Start(); 
+                countdownThread = new Thread(Countdown);
+                countdownThread.Start();
             }
             else
             {
                 timer_run = false;
-                countdownThread?.Abort(); 
-                Timer_Reset();  
+                countdownThread?.Abort();
+                Timer_Reset();
+
+                timer_run = true;
+                countdownThread = new Thread(Countdown);
+                countdownThread.Start();
             }
 
 
-            string rank = "Bronze";
             Ranking.Image = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\Ranking\Bronze.jpg");
             lbrank.Text = "Your rank: " + rank;
 
@@ -230,20 +298,27 @@ namespace Questionnare
                 string selectedDifficulty = diff.SelectedItem.ToString().Trim();  
                 string filePath = "";
 
+                string easy = Resources.ResourceManager.GetString("Easy");
+                string normal = Resources.ResourceManager.GetString("Normal");
+                string hard = Resources.ResourceManager.GetString("Hard");
+
                 switch (selectedDifficulty)
                 {
-                    case "Easy":
+                    case var difficulty when difficulty == easy:
                         filePath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\easy.txt";
                         break;
-                    case "Normal":
+                    case var difficulty when difficulty == normal:
                         filePath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\normal.txt";
                         break;
-                    case "Hard":
+                    case var difficulty when difficulty == hard:
                         filePath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\hard.txt";
                         break;
                     default:
-                        MessageBox.Show("Select a difficulty!");
-                        return; 
+                        timer_run = false;
+                        MessageBox.Show("Select Difficulty!");
+                        Application.Exit();
+                        Application.Restart();
+                        return;
                 }
                 if (File.Exists(filePath))
                 {
@@ -254,9 +329,9 @@ namespace Questionnare
                     MessageBox.Show($"File not found at: {filePath}"); 
                 }
             }
-           
 
             Random_Query();
+            GuessClicked = false;
         }
 
 
@@ -322,11 +397,6 @@ namespace Questionnare
             {
                 MessageBox.Show("No questions available!");
             }
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
