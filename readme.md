@@ -1,5 +1,11 @@
 # 📝 **Questionnaire Game - C# Windows Forms Application**
 
+<div align="center">
+
+![Build Status](https://img.shields.io/badge/Build-Passing-ghostwhite) ![Version](https://img.shields.io/badge/Version-1.0-indianred) ![License](https://img.shields.io/badge/License-MIT-ghostwhite) ![Last Commit](https://img.shields.io/badge/Last_Commit-1_day_ago-indianred) ![npm](https://img.shields.io/badge/npm-v1.1-ghostwhite)
+
+</div>
+
 ## 📖 **Overview**
 
 The **Questionnaire Game** is an interactive quiz app built using **C#** and **Windows Forms**. It allows users to answer multiple-choice questions within a specified time limit, track their current and high scores, and use various utilities such as **50/50**, **Skip**, and more. The game provides an engaging experience with different game modes and customizable features.
@@ -13,10 +19,15 @@ The **Questionnaire Game** is an interactive quiz app built using **C#** and **W
   - **Current Score**: Tracks your score during the session.
   - **High Score**: Keeps track of your best score across sessions.
 - **Game Utilities**:
+
   - **50/50**: Removes two incorrect answers.
   - **Skip Question**: Skip the current question and move to the next.
   - **Plus Time**: Adds more time to the clock.
   - **Audience Help**: Gets help from the audience.
+
+- **Language Options**:
+  - **English**
+  - **French**
 
 ---
 
