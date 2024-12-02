@@ -82,22 +82,18 @@ namespace Loading_Menu
 
         private void Btnranking_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("The ranks: \n" +
-                "0 Bronze \n" +
-                "1-4 Silver \n" +
-                "5-9 Gold \n" +
-                "10-14 Diamond \n" +
-                "15 or higher Champion");
+            RunExecutable(@"C:\Users\Tomi\OneDrive\Asztali gép\Rankings\bin\Debug\Rankings.exe");
         }
+
 
         private void Start_Click(object sender, EventArgs e)
         {
-            RunExecutable();
+            RunExecutable(@"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\bin\Debug\Questionnare.exe");
         }
 
-        private void RunExecutable()
+        private void RunExecutable(string redirect_path)
         {
-            string path = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\bin\Debug\Questionnare.exe";
+            string path = redirect_path;
 
             try
             {
@@ -117,6 +113,5 @@ namespace Loading_Menu
                 MessageBox.Show("Error launching the executable: " + ex.Message);
             }
         }
-
     }
 }
