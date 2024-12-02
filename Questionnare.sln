@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Questionnare", "Questionnar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loading_Menu", "Loading_Menu\Loading_Menu.csproj", "{68BD2787-1E5C-487B-AF72-208AC6720A30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rankings", "..\Rankings\Rankings.csproj", "{A13F255B-B241-40BB-8AA3-F8A450503806}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{68BD2787-1E5C-487B-AF72-208AC6720A30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68BD2787-1E5C-487B-AF72-208AC6720A30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68BD2787-1E5C-487B-AF72-208AC6720A30}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A13F255B-B241-40BB-8AA3-F8A450503806}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A13F255B-B241-40BB-8AA3-F8A450503806}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A13F255B-B241-40BB-8AA3-F8A450503806}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A13F255B-B241-40BB-8AA3-F8A450503806}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
