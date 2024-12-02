@@ -35,6 +35,9 @@
             this.Ranking = new System.Windows.Forms.PictureBox();
             this.Language = new System.Windows.Forms.ComboBox();
             this.HalveBtn = new System.Windows.Forms.Button();
+            this.Skip = new System.Windows.Forms.Button();
+            this.Audience = new System.Windows.Forms.Button();
+            this.PlusTime = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Ranking)).BeginInit();
             this.SuspendLayout();
             // 
@@ -254,6 +257,57 @@
             this.HalveBtn.Text = "50/50";
             this.HalveBtn.UseVisualStyleBackColor = false;
             // 
+            // Skip
+            // 
+            this.Skip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+            this.Skip.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+            this.Skip.FlatAppearance.BorderSize = 2;
+            this.Skip.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Skip.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(112)))));
+            this.Skip.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Skip.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Skip.ForeColor = System.Drawing.Color.GhostWhite;
+            this.Skip.Location = new System.Drawing.Point(375, 353);
+            this.Skip.Name = "Skip";
+            this.Skip.Size = new System.Drawing.Size(75, 31);
+            this.Skip.TabIndex = 6;
+            this.Skip.Text = "Skip";
+            this.Skip.UseVisualStyleBackColor = false;
+            // 
+            // Audience
+            // 
+            this.Audience.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+            this.Audience.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+            this.Audience.FlatAppearance.BorderSize = 2;
+            this.Audience.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Audience.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(112)))));
+            this.Audience.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Audience.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Audience.ForeColor = System.Drawing.Color.GhostWhite;
+            this.Audience.Location = new System.Drawing.Point(294, 390);
+            this.Audience.Name = "Audience";
+            this.Audience.Size = new System.Drawing.Size(75, 31);
+            this.Audience.TabIndex = 6;
+            this.Audience.Text = "Audience";
+            this.Audience.UseVisualStyleBackColor = false;
+            // 
+            // PlusTime
+            // 
+            this.PlusTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+            this.PlusTime.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+            this.PlusTime.FlatAppearance.BorderSize = 2;
+            this.PlusTime.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.PlusTime.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(112)))));
+            this.PlusTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PlusTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PlusTime.ForeColor = System.Drawing.Color.GhostWhite;
+            this.PlusTime.Location = new System.Drawing.Point(375, 390);
+            this.PlusTime.Name = "PlusTime";
+            this.PlusTime.Size = new System.Drawing.Size(75, 31);
+            this.PlusTime.TabIndex = 6;
+            this.PlusTime.Text = "Time";
+            this.PlusTime.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -271,6 +325,9 @@
             this.Controls.Add(this.label_highscore);
             this.Controls.Add(this.Guess);
             this.Controls.Add(this.GuessBtn);
+            this.Controls.Add(this.PlusTime);
+            this.Controls.Add(this.Audience);
+            this.Controls.Add(this.Skip);
             this.Controls.Add(this.HalveBtn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.questionbar);
@@ -306,5 +363,8 @@
         private System.Windows.Forms.PictureBox Ranking;
         private System.Windows.Forms.ComboBox Language;
         private System.Windows.Forms.Button HalveBtn;
+        private System.Windows.Forms.Button Skip;
+        private System.Windows.Forms.Button Audience;
+        private System.Windows.Forms.Button PlusTime;
     }
 }

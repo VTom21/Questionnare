@@ -90,6 +90,52 @@ namespace Questionnare
             this.Load += Form1_Load1;
             Language.SelectedIndexChanged += Select_Language;
             HalveBtn.Click += HalveBtn_Click;
+            Skip.Click += Skip_Click;
+            Audience.Click += Audience_Click;
+            PlusTime.Click += PlusTime_Click;
+        }
+
+        private void PlusTime_Click(object sender, EventArgs e)
+        {
+            Time += 10;
+            int remainingTime = Time;
+            timer_run = false;
+            countdownThread?.Abort();
+            Timer_Reset();
+
+            timer_run = true;
+            countdownThread = new Thread(Countdown);
+            countdownThread.Start();
+
+            PlusTime.Visible = false;
+        }
+
+        private void Audience_Click(object sender, EventArgs e)
+        {
+            int Percentage = 100;
+
+            Random rnd = new Random();
+
+            int[] percentages = new int[4];
+
+
+            for (int i = 0; i < percentages.Length; i++)
+            {
+                percentages[i] = rnd.Next(0,Percentage);
+            }
+
+            MessageBox.Show($"Option1: {percentages[0]}%\n" +
+                $"Option2: {percentages[1]}%\n" +
+                $"Option3: {percentages[2]}%\n" +
+                $"Option4: {percentages[3]}%\n");
+
+            Audience.Visible = false;
+        }
+
+        private void Skip_Click(object sender, EventArgs e)
+        {
+            Random_Query();
+            Skip.Visible = false;
         }
 
         private void HalveBtn_Click(object sender, EventArgs e)
@@ -430,6 +476,8 @@ namespace Questionnare
                 option4.Text = random_query.Option4;
 
                 correct_answer = random_query.Full_Correct_answer;
+
+
 
             }
             else
