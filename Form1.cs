@@ -25,6 +25,8 @@ namespace Questionnare
         private Thread countdownThread;
         bool GuessClicked = false;
 
+        public string correct_answer;
+
         public string rank = "Bronze";
         public class Question
         {
@@ -35,7 +37,9 @@ namespace Questionnare
             public string Option4 { get; set; }
             public string Correct_answer { get; set; }
 
-            public Question(string _questions, string _option1, string _option2, string _option3, string _option4, string _correct_answer)
+            public string Full_Correct_answer { get; set; }
+
+            public Question(string _questions, string _option1, string _option2, string _option3, string _option4, string _correct_answer, string _full_correct_answer)
             {
                 Questions = _questions.Trim();
                 Option1 = _option1.Trim();
@@ -43,6 +47,7 @@ namespace Questionnare
                 Option3 = _option3.Trim();
                 Option4 = _option4.Trim();
                 Correct_answer = _correct_answer.Trim();
+                Full_Correct_answer = _full_correct_answer.Trim();
             }
 
         }
@@ -84,6 +89,36 @@ namespace Questionnare
             Guess.KeyPress += Guess_KeyPress;
             this.Load += Form1_Load1;
             Language.SelectedIndexChanged += Select_Language;
+            HalveBtn.Click += HalveBtn_Click;
+        }
+
+        private void HalveBtn_Click(object sender, EventArgs e)
+        {
+            Random random_option = new Random();
+
+            TextBox[] options = new TextBox[4] { option1, option2, option3, option4 };
+
+            List<int> cleared_options = new List<int>();
+
+            int count = 0;
+
+            while(count < 2)
+            {
+                int option_rnd = random_option.Next(0, options.Length);
+
+                if (options[option_rnd].Text != correct_answer && !cleared_options.Contains(option_rnd))
+                {
+                    cleared_options.Add(option_rnd);
+                    count++;
+                }
+            }
+
+            foreach (var item in cleared_options)
+            {
+                options[item].Text = "";
+            }
+
+            HalveBtn.Visible = false;
         }
 
         private void Guess_KeyPress(object sender, KeyPressEventArgs e)
@@ -172,7 +207,7 @@ namespace Questionnare
                 }
             }
 
-            if (currentQuery.Correct_answer == Guess.Text.ToUpper())
+            if (!string.IsNullOrEmpty(currentQuery.Correct_answer.Trim()) && !string.IsNullOrEmpty(Guess.Text))
             {
                 CurrentScore++;
                 MessageBox.Show("Correct!");
@@ -217,7 +252,7 @@ namespace Questionnare
                         string line = r.ReadLine();
                         string[] line_parts = line.Split('|').Select(p => p.Trim()).ToArray();
 
-                        if (line_parts.Length == 6)
+                        if (line_parts.Length == 7)
                         {
                             Question question = new Question(
                                 line_parts[0], 
@@ -225,7 +260,8 @@ namespace Questionnare
                                 line_parts[2], 
                                 line_parts[3], 
                                 line_parts[4], 
-                                line_parts[5]  
+                                line_parts[5],
+                                line_parts[6]
                             );
                             questions.Add(question);
                         }
@@ -392,6 +428,9 @@ namespace Questionnare
                 option2.Text = random_query.Option2;
                 option3.Text = random_query.Option3;
                 option4.Text = random_query.Option4;
+
+                correct_answer = random_query.Full_Correct_answer;
+
             }
             else
             {

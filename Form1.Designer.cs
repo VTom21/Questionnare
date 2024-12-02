@@ -34,6 +34,7 @@
             this.lbrank = new System.Windows.Forms.Label();
             this.Ranking = new System.Windows.Forms.PictureBox();
             this.Language = new System.Windows.Forms.ComboBox();
+            this.HalveBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Ranking)).BeginInit();
             this.SuspendLayout();
             // 
@@ -236,6 +237,23 @@
             this.Language.TabIndex = 19;
             this.Language.Text = "Select Language!";
             // 
+            // HalveBtn
+            // 
+            this.HalveBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+            this.HalveBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+            this.HalveBtn.FlatAppearance.BorderSize = 2;
+            this.HalveBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.HalveBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(112)))));
+            this.HalveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HalveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.HalveBtn.ForeColor = System.Drawing.Color.GhostWhite;
+            this.HalveBtn.Location = new System.Drawing.Point(294, 353);
+            this.HalveBtn.Name = "HalveBtn";
+            this.HalveBtn.Size = new System.Drawing.Size(75, 31);
+            this.HalveBtn.TabIndex = 6;
+            this.HalveBtn.Text = "50/50";
+            this.HalveBtn.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -253,6 +271,7 @@
             this.Controls.Add(this.label_highscore);
             this.Controls.Add(this.Guess);
             this.Controls.Add(this.GuessBtn);
+            this.Controls.Add(this.HalveBtn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.questionbar);
             this.Controls.Add(this.option3);
@@ -286,5 +305,6 @@
         private System.Windows.Forms.Label lbrank;
         private System.Windows.Forms.PictureBox Ranking;
         private System.Windows.Forms.ComboBox Language;
+        private System.Windows.Forms.Button HalveBtn;
     }
 }
