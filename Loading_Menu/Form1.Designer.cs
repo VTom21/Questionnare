@@ -33,6 +33,7 @@ namespace Loading_Menu
             this.Quit = new System.Windows.Forms.Button();
             this.Language = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.ranking = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Start
@@ -60,7 +61,7 @@ namespace Loading_Menu
             this.Quit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(112)))));
             this.Quit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Quit.ForeColor = System.Drawing.Color.GhostWhite;
-            this.Quit.Location = new System.Drawing.Point(238, 253);
+            this.Quit.Location = new System.Drawing.Point(238, 286);
             this.Quit.Name = "Quit";
             this.Quit.Size = new System.Drawing.Size(289, 46);
             this.Quit.TabIndex = 7;
@@ -91,6 +92,22 @@ namespace Loading_Menu
             this.label1.TabIndex = 16;
             this.label1.Text = "Questionnare";
             // 
+            // ranking
+            // 
+            this.ranking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+            this.ranking.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+            this.ranking.FlatAppearance.BorderSize = 2;
+            this.ranking.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ranking.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(112)))));
+            this.ranking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ranking.ForeColor = System.Drawing.Color.GhostWhite;
+            this.ranking.Location = new System.Drawing.Point(238, 233);
+            this.ranking.Name = "ranking";
+            this.ranking.Size = new System.Drawing.Size(289, 47);
+            this.ranking.TabIndex = 7;
+            this.ranking.Text = "Ranking";
+            this.ranking.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -100,6 +117,7 @@ namespace Loading_Menu
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Language);
             this.Controls.Add(this.Quit);
+            this.Controls.Add(this.ranking);
             this.Controls.Add(this.Start);
             this.Name = "Form1";
             this.Text = "Menu";
@@ -114,6 +132,7 @@ namespace Loading_Menu
         private System.Windows.Forms.Button Quit;
         private System.Windows.Forms.ComboBox Language;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button ranking;
     }
 }
 
