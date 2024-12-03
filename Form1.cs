@@ -9,6 +9,7 @@ using System.Drawing;
 using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Globalization;
+using MySql.Data.MySqlClient;
 
 namespace Questionnare
 {
