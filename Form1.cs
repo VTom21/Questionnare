@@ -24,7 +24,7 @@ namespace Questionnare
         public int Time = 15;
         public bool timer_run = false;
         private Thread countdownThread;
-        bool GuessClicked = false;
+        bool GuessClicked = false; 
 
         public string correct_answer;
 
