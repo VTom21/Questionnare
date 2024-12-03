@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Questionnare", "Questionnar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loading_Menu", "Loading_Menu\Loading_Menu.csproj", "{68BD2787-1E5C-487B-AF72-208AC6720A30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rankings", "..\Rankings\Rankings.csproj", "{98AD8065-13DE-4299-BF58-CCBB01ED8E74}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ranking", "..\Ranking\Ranking.csproj", "{87DE6EFE-2CA2-4B39-ACD6-F13847506A2C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{68BD2787-1E5C-487B-AF72-208AC6720A30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68BD2787-1E5C-487B-AF72-208AC6720A30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68BD2787-1E5C-487B-AF72-208AC6720A30}.Release|Any CPU.Build.0 = Release|Any CPU
-		{98AD8065-13DE-4299-BF58-CCBB01ED8E74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{98AD8065-13DE-4299-BF58-CCBB01ED8E74}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{98AD8065-13DE-4299-BF58-CCBB01ED8E74}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{98AD8065-13DE-4299-BF58-CCBB01ED8E74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87DE6EFE-2CA2-4B39-ACD6-F13847506A2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87DE6EFE-2CA2-4B39-ACD6-F13847506A2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87DE6EFE-2CA2-4B39-ACD6-F13847506A2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87DE6EFE-2CA2-4B39-ACD6-F13847506A2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
