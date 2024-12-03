@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loading_Menu", "Loading_Men
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ranking", "..\Ranking\Ranking.csproj", "{10CC05F9-A753-4932-825F-227E4D15D261}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp8", "..\WindowsFormsApp8\WindowsFormsApp8.csproj", "{E82336AE-80E9-4929-86F2-ECD25FDACECE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{10CC05F9-A753-4932-825F-227E4D15D261}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10CC05F9-A753-4932-825F-227E4D15D261}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10CC05F9-A753-4932-825F-227E4D15D261}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E82336AE-80E9-4929-86F2-ECD25FDACECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E82336AE-80E9-4929-86F2-ECD25FDACECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E82336AE-80E9-4929-86F2-ECD25FDACECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E82336AE-80E9-4929-86F2-ECD25FDACECE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
