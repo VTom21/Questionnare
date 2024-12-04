@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Button button1;
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
@@ -43,12 +44,29 @@
             label8 = new Label();
             label9 = new Label();
             label10 = new Label();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(242, 85, 96);
+            button1.FlatAppearance.BorderColor = Color.FromArgb(242, 85, 96);
+            button1.FlatAppearance.BorderSize = 2;
+            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(204, 0, 0);
+            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 102, 112);
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.ForeColor = Color.GhostWhite;
+            button1.Location = new Point(713, 380);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 58);
+            button1.TabIndex = 19;
+            button1.Text = "Home";
+            button1.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -186,6 +204,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(65, 67, 69);
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(label5);
             Controls.Add(label10);
             Controls.Add(label9);
@@ -201,6 +220,8 @@
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
+            MaximumSize = new Size(816, 489);
+            MinimumSize = new Size(816, 489);
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -229,5 +250,6 @@
         private Label label8;
         private Label label9;
         private Label label10;
+        private Button button1;
     }
 }

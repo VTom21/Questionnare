@@ -335,6 +335,8 @@
             this.Controls.Add(this.option4);
             this.Controls.Add(this.option2);
             this.Controls.Add(this.option1);
+            this.MaximumSize = new System.Drawing.Size(816, 489);
+            this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "Form1";
             this.Text = "Quiz Application";
             ((System.ComponentModel.ISupportInitialize)(this.Ranking)).EndInit();

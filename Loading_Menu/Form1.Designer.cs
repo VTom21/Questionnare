@@ -102,6 +102,7 @@ namespace Loading_Menu
             this.btnranking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnranking.ForeColor = System.Drawing.Color.GhostWhite;
             this.btnranking.Location = new System.Drawing.Point(238, 233);
+            this.btnranking.MaximumSize = new System.Drawing.Size(816, 489);
             this.btnranking.Name = "btnranking";
             this.btnranking.Size = new System.Drawing.Size(289, 47);
             this.btnranking.TabIndex = 7;
@@ -119,6 +120,8 @@ namespace Loading_Menu
             this.Controls.Add(this.Quit);
             this.Controls.Add(this.btnranking);
             this.Controls.Add(this.Start);
+            this.MaximumSize = new System.Drawing.Size(816, 489);
+            this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "Form1";
             this.Text = "Menu";
             this.ResumeLayout(false);

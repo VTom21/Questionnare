@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 namespace WinFormsApp1
 {
     public partial class Form1 : Form
@@ -5,6 +7,7 @@ namespace WinFormsApp1
         public Form1()
         {
             InitializeComponent();
+            button1.Click += Button1_Click;
 
             PictureBox[] pictureboxes = new PictureBox[5] { pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5 };
 
@@ -21,9 +24,37 @@ namespace WinFormsApp1
                 pictureboxes[i].SizeMode = PictureBoxSizeMode.Zoom;
                 pictureboxes[i].SizeMode = PictureBoxSizeMode.StretchImage;
 
-                pictureboxes[i].Image = Image.FromFile($@"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\Ranking\{rankings[i]}.jpg");
+                pictureboxes[i].Image = Image.FromFile($@"C:\Users\Ny20Kelemeng\Source\Repos\Questionnare\Ranking\{rankings[i]}.jpg");
                 labels[i].Text = rankings[i];
                 labels2[i].Text = texts[i];  
+            }
+        }
+
+        private void Button1_Click(object? sender, EventArgs e)
+        {
+            RunExecutable(@"C:\Users\Ny20Kelemeng\Source\Repos\Questionnare\Loading_Menu\Form1.cs");
+        }
+
+        private void RunExecutable(string redirect_path)
+        {
+            string path = redirect_path;
+
+            try
+            {
+                if (File.Exists(path))
+                {
+                    Application.Exit();
+                    Process.Start(path);
+                }
+                else
+                {
+
+                    MessageBox.Show("Executable not found at path: " + path);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error launching the executable: " + ex.Message);
             }
         }
     }
