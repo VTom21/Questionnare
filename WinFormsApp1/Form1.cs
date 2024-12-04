@@ -21,10 +21,9 @@ namespace WinFormsApp1
 
             for (int i = 0; i < pictureboxes.Length; i++)
             {
-                pictureboxes[i].SizeMode = PictureBoxSizeMode.Zoom;
                 pictureboxes[i].SizeMode = PictureBoxSizeMode.StretchImage;
 
-                pictureboxes[i].Image = Image.FromFile($@"C:\Users\Ny20Kelemeng\Source\Repos\Questionnare\Ranking\{rankings[i]}.jpg");
+                pictureboxes[i].Image = Image.FromFile($@"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\Ranking\{rankings[i]}.jpg");
                 labels[i].Text = rankings[i];
                 labels2[i].Text = texts[i];  
             }
@@ -32,8 +31,9 @@ namespace WinFormsApp1
 
         private void Button1_Click(object? sender, EventArgs e)
         {
-            RunExecutable(@"C:\Users\Ny20Kelemeng\Source\Repos\Questionnare\Loading_Menu\Form1.cs");
+            RunExecutable($@"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\Loading_Menu\bin\Debug\Loading_Menu.exe");
         }
+
 
         private void RunExecutable(string redirect_path)
         {

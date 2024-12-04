@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Button button1;
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
@@ -51,22 +50,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(242, 85, 96);
-            button1.FlatAppearance.BorderColor = Color.FromArgb(242, 85, 96);
-            button1.FlatAppearance.BorderSize = 2;
-            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(204, 0, 0);
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 102, 112);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = Color.GhostWhite;
-            button1.Location = new Point(713, 380);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 58);
-            button1.TabIndex = 19;
-            button1.Text = "Home";
-            button1.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -197,6 +180,23 @@
             label10.Size = new Size(38, 15);
             label10.TabIndex = 1;
             label10.Text = "label1";
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(242, 85, 96);
+            button1.FlatAppearance.BorderColor = Color.FromArgb(242, 85, 96);
+            button1.FlatAppearance.BorderSize = 2;
+            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(204, 0, 0);
+            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 102, 112);
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            button1.ForeColor = Color.GhostWhite;
+            button1.Location = new Point(713, 380);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 58);
+            button1.TabIndex = 6;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
