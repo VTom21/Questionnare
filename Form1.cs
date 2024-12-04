@@ -178,11 +178,13 @@ namespace Questionnare
 
         private void highscore_load()
         {
-            string File_HighScore = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\highscore.txt";
+            string subPath = @"NewFolder1\highscore.txt";
+            string fullPath = System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), subPath);
+            //string File_HighScore = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\highscore.txt";
 
-            if (File.Exists(File_HighScore))
+            if (File.Exists(fullPath))
             {
-                using (StreamReader r = new StreamReader(File_HighScore))
+                using (StreamReader r = new StreamReader(fullPath))
                 {
                     string line = r.ReadLine();
                     string scorePart = line.Split(':')[1].Trim();
