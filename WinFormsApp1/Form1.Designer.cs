@@ -52,48 +52,48 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(23, 28);
+            pictureBox1.Location = new Point(23, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 50);
-            pictureBox1.TabIndex = 0;
+            pictureBox1.Size = new Size(89, 72);
+            pictureBox1.TabIndex = 18;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(23, 84);
+            pictureBox2.Location = new Point(23, 105);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(100, 50);
-            pictureBox2.TabIndex = 0;
+            pictureBox2.Size = new Size(89, 72);
+            pictureBox2.TabIndex = 18;
             pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
-            pictureBox3.Location = new Point(23, 140);
+            pictureBox3.Location = new Point(23, 187);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(100, 50);
-            pictureBox3.TabIndex = 0;
+            pictureBox3.Size = new Size(89, 72);
+            pictureBox3.TabIndex = 18;
             pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
-            pictureBox4.Location = new Point(23, 196);
+            pictureBox4.Location = new Point(23, 274);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(100, 50);
-            pictureBox4.TabIndex = 0;
+            pictureBox4.Size = new Size(89, 72);
+            pictureBox4.TabIndex = 18;
             pictureBox4.TabStop = false;
             // 
             // pictureBox5
             // 
-            pictureBox5.Location = new Point(23, 252);
+            pictureBox5.Location = new Point(23, 357);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(100, 50);
-            pictureBox5.TabIndex = 0;
+            pictureBox5.Size = new Size(89, 72);
+            pictureBox5.TabIndex = 18;
             pictureBox5.TabStop = false;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(152, 28);
+            label1.Location = new Point(149, 39);
             label1.Name = "label1";
             label1.Size = new Size(38, 15);
             label1.TabIndex = 1;
@@ -102,7 +102,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(152, 84);
+            label2.Location = new Point(149, 131);
             label2.Name = "label2";
             label2.Size = new Size(38, 15);
             label2.TabIndex = 1;
@@ -111,7 +111,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(152, 140);
+            label3.Location = new Point(149, 217);
             label3.Name = "label3";
             label3.Size = new Size(38, 15);
             label3.TabIndex = 1;
@@ -120,7 +120,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(152, 196);
+            label4.Location = new Point(149, 307);
             label4.Name = "label4";
             label4.Size = new Size(38, 15);
             label4.TabIndex = 1;
@@ -129,7 +129,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(152, 252);
+            label5.Location = new Point(149, 393);
             label5.Name = "label5";
             label5.Size = new Size(38, 15);
             label5.TabIndex = 1;
@@ -138,7 +138,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(244, 28);
+            label6.Location = new Point(258, 39);
             label6.Name = "label6";
             label6.Size = new Size(38, 15);
             label6.TabIndex = 1;
@@ -147,7 +147,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(244, 84);
+            label7.Location = new Point(258, 131);
             label7.Name = "label7";
             label7.Size = new Size(38, 15);
             label7.TabIndex = 1;
@@ -156,7 +156,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(244, 140);
+            label8.Location = new Point(258, 217);
             label8.Name = "label8";
             label8.Size = new Size(38, 15);
             label8.TabIndex = 1;
@@ -165,7 +165,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(244, 196);
+            label9.Location = new Point(258, 307);
             label9.Name = "label9";
             label9.Size = new Size(38, 15);
             label9.TabIndex = 1;
@@ -174,7 +174,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(244, 252);
+            label10.Location = new Point(258, 393);
             label10.Name = "label10";
             label10.Size = new Size(38, 15);
             label10.TabIndex = 1;
