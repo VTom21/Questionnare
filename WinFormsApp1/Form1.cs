@@ -1,3 +1,4 @@
+using Microsoft.VisualBasic.ApplicationServices;
 using System.Diagnostics;
 
 namespace WinFormsApp1
@@ -17,6 +18,7 @@ namespace WinFormsApp1
 
             Label[] labels2 = new Label[5] { label6, label7, label8, label9, label10 };
 
+        
             string[] texts = new string[5] {"0 - 1","1 - 5","5 - 10","10 - 15","above 15"};
 
             for (int i = 0; i < pictureboxes.Length; i++)

@@ -178,9 +178,10 @@ namespace Questionnare
 
         private void highscore_load()
         {
-            string subPath = @"NewFolder1\highscore.txt";
-            string fullPath = System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), subPath);
-            //string File_HighScore = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\highscore.txt";
+
+           string fullPath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\highscore.txt";
+
+            Console.WriteLine(fullPath);
 
             if (File.Exists(fullPath))
             {
@@ -273,12 +274,14 @@ namespace Questionnare
 
             if (CurrentScore > highest_score)
             {
-                string File_HighScore = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\highscore.txt";
+                string fullPath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\highscore.txt";
+
+                Console.WriteLine(fullPath);
 
                 highest_score = CurrentScore;
-                if (File.Exists(File_HighScore))
+                if (File.Exists(fullPath))
                 {
-                    using (StreamWriter w = new StreamWriter(File_HighScore))
+                    using (StreamWriter w = new StreamWriter(fullPath))
                     {
                         w.WriteLine($"{Resources.ResourceManager.GetString("High")}: {highest_score}");
                     }
@@ -348,7 +351,7 @@ namespace Questionnare
             }
 
 
-            Ranking.Image = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\Ranking\Bronze.jpg");
+            Ranking.Image = Image.FromFile(@"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Bronze.jpg");
             lbrank.Text = "Your rank: " + rank;
 
             Ranking.SizeMode = PictureBoxSizeMode.Zoom;
@@ -357,22 +360,22 @@ namespace Questionnare
             if (CurrentScore >= 1 && CurrentScore < 5)
             {
                 rank = "Silver";
-                Ranking.Image = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\Ranking\Silver.jpg");
+                Ranking.Image = Image.FromFile(@"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Silver.jpg");
             }
             else if (CurrentScore >= 5 && CurrentScore < 10)
             {
                 rank = "Gold";
-                Ranking.Image = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\Ranking\Gold.jpg");
+                Ranking.Image = Image.FromFile(@"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Gold.jpg");
             }
             else if (CurrentScore >= 10 && CurrentScore < 15)
             {
                 rank = "Diamond";
-                Ranking.Image = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\Ranking\Diamond.jpg");
+                Ranking.Image = Image.FromFile(@"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Diamond.jpg");
             }
             else if (CurrentScore >= 15)
             {
                 rank = "Champion";
-                Ranking.Image = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\Ranking\Champion.jpg");
+                Ranking.Image = Image.FromFile(@"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Champion.jpg");
             }
 
             lbrank.Text = "Your rank: " + rank;
@@ -389,13 +392,13 @@ namespace Questionnare
                 switch (selectedDifficulty)
                 {
                     case var difficulty when difficulty == easy:
-                        filePath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\easy.txt";
+                        filePath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\NewFolder1\easy.txt";
                         break;
                     case var difficulty when difficulty == normal:
-                        filePath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\normal.txt";
+                        filePath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\NewFolder1\normal.txt";
                         break;
                     case var difficulty when difficulty == hard:
-                        filePath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\hard.txt";
+                        filePath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\NewFolder1\hard.txt";
                         break;
                     default:
                         timer_run = false;
