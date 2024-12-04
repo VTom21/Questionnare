@@ -195,7 +195,7 @@
             button1.Name = "button1";
             button1.Size = new Size(75, 58);
             button1.TabIndex = 6;
-            button1.Text = "button1";
+            button1.Text = "Home";
             button1.UseVisualStyleBackColor = false;
             // 
             // Form1
