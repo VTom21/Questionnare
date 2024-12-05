@@ -16,6 +16,12 @@ namespace Loading_Menu
 {
     public partial class Form1 : Form
     {
+
+        //Paths
+
+        public string RankingsPath = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe";
+        public string QuestionnairePath = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\bin\Debug\Questionnare.exe";
+
         public Form1()
         {
             InitializeComponent();
@@ -82,13 +88,13 @@ namespace Loading_Menu
 
         private void Btnranking_Click(object sender, EventArgs e)
         {
-            RunExecutable(@"C:\Users\Tomi\OneDrive\Asztali gép\Rankings\bin\Debug\Rankings.exe");
+            RunExecutable(RankingsPath);
         }
 
 
         private void Start_Click(object sender, EventArgs e)
         {
-            RunExecutable(@"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\bin\Debug\Questionnare.exe");
+            RunExecutable(QuestionnairePath);
         }
 
         private void RunExecutable(string redirect_path)
