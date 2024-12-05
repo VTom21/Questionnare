@@ -16,12 +16,14 @@ namespace Questionnare
 
     public partial class Form1 : Form
     {
-        public string highscorePath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\highscore.txt";
-        public string rankingBronzePath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Bronze.jpg";
-        public string rankingSilverPath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Silver.jpg";
-        public string rankingGoldPath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Gold.jpg";
-        public string rankingDiamondPath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Diamond.jpg";
-        public string rankingChampionPath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Champion.jpg";
+        //Paths
+
+        public string highscorePath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\NewFolder1\highscore.txt";
+        public Image rankingBronzePath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Bronze.jpg");
+        public Image rankingSilverPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Silver.jpg");
+        public Image rankingGoldPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Gold.jpg");
+        public Image rankingDiamondPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Diamond.jpg");
+        public Image rankingChampionPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Champion.jpg");
         public string easyQuestionsPath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\NewFolder1\easy.txt";
         public string normalQuestionsPath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\NewFolder1\normal.txt";
         public string hardQuestionsPath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\NewFolder1\hard.txt";
@@ -189,7 +191,7 @@ namespace Questionnare
         private void highscore_load()
         {
 
-           string fullPath = highscore;
+           string fullPath = highscorePath;
 
             Console.WriteLine(fullPath);
 
@@ -284,7 +286,7 @@ namespace Questionnare
 
             if (CurrentScore > highest_score)
             {
-                string fullPath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\highscore.txt";
+                string fullPath = highscorePath;
 
                 Console.WriteLine(fullPath);
 
@@ -361,7 +363,7 @@ namespace Questionnare
             }
 
 
-            Ranking.Image = Image.FromFile(@"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Bronze.jpg");
+            Ranking.Image = rankingBronzePath;
             lbrank.Text = "Your rank: " + rank;
 
             Ranking.SizeMode = PictureBoxSizeMode.Zoom;
@@ -370,22 +372,22 @@ namespace Questionnare
             if (CurrentScore >= 1 && CurrentScore < 5)
             {
                 rank = "Silver";
-                Ranking.Image = Image.FromFile(@"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Silver.jpg");
+                Ranking.Image = rankingSilverPath;
             }
             else if (CurrentScore >= 5 && CurrentScore < 10)
             {
                 rank = "Gold";
-                Ranking.Image = Image.FromFile(@"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Gold.jpg");
+                Ranking.Image = rankingGoldPath;
             }
             else if (CurrentScore >= 10 && CurrentScore < 15)
             {
                 rank = "Diamond";
-                Ranking.Image = Image.FromFile(@"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Diamond.jpg");
+                Ranking.Image = rankingDiamondPath;
             }
             else if (CurrentScore >= 15)
             {
                 rank = "Champion";
-                Ranking.Image = Image.FromFile(@"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Champion.jpg");
+                Ranking.Image = rankingChampionPath;
             }
 
             lbrank.Text = "Your rank: " + rank;
@@ -402,13 +404,13 @@ namespace Questionnare
                 switch (selectedDifficulty)
                 {
                     case var difficulty when difficulty == easy:
-                        filePath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\NewFolder1\easy.txt";
+                        filePath = easyQuestionsPath;
                         break;
                     case var difficulty when difficulty == normal:
-                        filePath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\NewFolder1\normal.txt";
+                        filePath = normalQuestionsPath;
                         break;
                     case var difficulty when difficulty == hard:
-                        filePath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\NewFolder1\hard.txt";
+                        filePath = hardQuestionsPath;
                         break;
                     default:
                         timer_run = false;
