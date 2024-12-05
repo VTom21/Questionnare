@@ -16,8 +16,16 @@ namespace Questionnare
 
     public partial class Form1 : Form
     {
-        public string highscore = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\highscore.txt";
-        public string bronze = "";
+        public string highscorePath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\highscore.txt";
+        public string rankingBronzePath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Bronze.jpg";
+        public string rankingSilverPath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Silver.jpg";
+        public string rankingGoldPath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Gold.jpg";
+        public string rankingDiamondPath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Diamond.jpg";
+        public string rankingChampionPath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Champion.jpg";
+        public string easyQuestionsPath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\NewFolder1\easy.txt";
+        public string normalQuestionsPath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\NewFolder1\normal.txt";
+        public string hardQuestionsPath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\NewFolder1\hard.txt";
+
         public string[] line_parts;
         public int highest_score;
         public int CurrentScore = 0;
