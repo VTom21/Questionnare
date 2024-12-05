@@ -17,7 +17,7 @@ namespace Questionnare
     public partial class Form1 : Form
     {
         public string highscore = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\highscore.txt";
-        public string bronz = "";
+        public string bronze = "";
         public string[] line_parts;
         public int highest_score;
         public int CurrentScore = 0;
