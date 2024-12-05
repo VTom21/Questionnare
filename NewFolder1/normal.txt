@@ -31,3 +31,33 @@ What happens to an object when the forces acting on it balance out?|A. It rests|
 What is the unit of momentum in the SI system?|A. Newton|B. Joule|C. Newton-second|D. Watt|C|C. Newton-second  
 What is the speed of sound in air?|A. 150 m/s|B. 340 m/s|C. 500 m/s|D. 1000 m/s|B|B. 340 m/s  
 What characterizes longitudinal waves?|A. The oscillations are perpendicular to the direction of wave propagation|B. The oscillations are parallel to the direction of wave propagation|C. The wave propagation does not change|D. The wave has no direction|B|B. The oscillations are parallel to the direction of wave propagation  
+Who was the last Tsar of Russia?|A. Alexander II|B. Nicholas II|C. Ivan IV|D. Peter the Great|B|B. Nicholas II
+When did the Magna Carta get signed?|A. 1210|B. 1215|C. 1220|D. 1250|B|B. 1215
+Which treaty ended World War I?|A. Treaty of Paris|B. Treaty of Versailles|C. Treaty of Vienna|D. Treaty of Ghent|B|B. Treaty of Versailles
+Who unified Germany in 1871?|A. Otto von Bismarck|B. Wilhelm I|C. Frederick the Great|D. Napoleon III|A|A. Otto von Bismarck
+Which battle is considered Napoleon's greatest victory?|A. Austerlitz|B. Leipzig|C. Waterloo|D. Borodino|A|A. Austerlitz
+Which city was destroyed by a volcanic eruption in 79 AD?|A. Herculaneum|B. Pompeii|C. Carthage|D. Athens|B|B. Pompeii
+Who was the leader of the Protestant Reformation?|A. John Calvin|B. Martin Luther|C. Henry VIII|D. Ulrich Zwingli|B|B. Martin Luther
+When did the Spanish Armada attempt to invade England?|A. 1575|B. 1588|C. 1600|D. 1620|B|B. 1588
+Which empire was ruled by Cyrus the Great?|A. Roman|B. Persian|C. Babylonian|D. Greek|B|B. Persian
+What was the main purpose of the Berlin Conference (1884–85)?|A. To end World War I|B. To partition Africa among European powers|C. To establish NATO|D. To create the League of Nations|B|B. To partition Africa among European powers
+When did the Meiji Restoration begin in Japan?|A. 1853|B. 1868|C. 1880|D. 1895|B|B. 1868
+Who was the first Holy Roman Emperor?|A. Charlemagne|B. Otto I|C. Charles V|D. Frederick Barbarossa|A|A. Charlemagne
+Which war was fought between the British and the Dutch in South Africa?|A. Boer War|B. Zulu War|C. Crimean War|D. Seven Years' War|A|A. Boer War
+What was the capital of the Byzantine Empire?|A. Rome|B. Alexandria|C. Constantinople|D. Antioch|C|C. Constantinople
+Who was the first ruler of the Mongol Empire?|A. Kublai Khan|B. Genghis Khan|C. Tamerlane|D. Batu Khan|B|B. Genghis Khan
+Which U.S. President led the country during the Great Depression and World War II?|A. Woodrow Wilson|B. Franklin D. Roosevelt|C. Herbert Hoover|D. Harry Truman|B|B. Franklin D. Roosevelt
+When did India gain independence from Britain?|A. 1945|B. 1947|C. 1950|D. 1960|B|B. 1947
+Who was the first woman to win a Nobel Prize?|A. Marie Curie|B. Ada Lovelace|C. Rosalind Franklin|D. Florence Nightingale|A|A. Marie Curie
+Which medieval trade network connected Europe, Asia, and Africa?|A. The Silk Road|B. The Amber Route|C. The Incense Route|D. The Spice Route|A|A. The Silk Road
+Who was the first European explorer to reach India by sea?|A. Ferdinand Magellan|B. Vasco da Gama|C. Christopher Columbus|D. Marco Polo|B|B. Vasco da Gama
+What event marked the beginning of the Russian Revolution in 1917?|A. October Revolution|B. Bloody Sunday|C. February Revolution|D. Treaty of Brest-Litovsk|C|C. February Revolution
+Which ancient Greek city-state was known for its military focus?|A. Athens|B. Sparta|C. Corinth|D. Delphi|B|B. Sparta
+Who wrote The Prince, a political treatise?|A. Thomas More|B. Niccolò Machiavelli|C. John Locke|D. Jean-Jacques Rousseau|B|B. Niccolò Machiavelli
+What year did the Korean War begin?|A. 1945|B. 1948|C. 1950|D. 1953|C|C. 1950
+Which empire was known for its advanced road systems?|A. Roman Empire|B. Aztec Empire|C. Ottoman Empire|D. Egyptian Empire|A|A. Roman Empire
+Who was the first President of the Confederate States during the American Civil War?|A. Andrew Johnson|B. Jefferson Davis|C. Robert E. Lee|D. Stonewall Jackson|B|B. Jefferson Davis
+Which kingdom built the famous Angkor Wat temple?|A. Khmer Empire|B. Gupta Empire|C. Chola Dynasty|D. Srivijaya Empire|A|A. Khmer Empire
+When did the Thirty Years' War begin?|A. 1608|B. 1618|C. 1628|D. 1648|B|B. 1618
+Who was the first African-American woman to win the Nobel Prize for Literature?|A. Zora Neale Hurston|B. Alice Walker|C. Toni Morrison|D. Maya Angelou|C|C. Toni Morrison
+Which treaty ended the Napoleonic Wars?|A. Treaty of Paris|B. Treaty of Vienna|C. Congress of Vienna|D. Treaty of Amiens|C|C. Congress of Vienna
