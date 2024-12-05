@@ -16,6 +16,8 @@ namespace Questionnare
 
     public partial class Form1 : Form
     {
+        public string highscore = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\highscore.txt";
+        public string bronz = "";
         public string[] line_parts;
         public int highest_score;
         public int CurrentScore = 0;
@@ -179,7 +181,7 @@ namespace Questionnare
         private void highscore_load()
         {
 
-           string fullPath = @"C:\Users\Tomi\OneDrive\Asztali gép\Questionnare\NewFolder1\highscore.txt";
+           string fullPath = highscore;
 
             Console.WriteLine(fullPath);
 

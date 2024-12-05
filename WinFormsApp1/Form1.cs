@@ -25,7 +25,7 @@ namespace WinFormsApp1
             {
                 pictureboxes[i].SizeMode = PictureBoxSizeMode.StretchImage;
 
-                pictureboxes[i].Image = Image.FromFile($@"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\Ranking\{rankings[i]}.jpg");
+                pictureboxes[i].Image = Image.FromFile($@"C:\Users\Ny20Kelemeng\Source\Repos\Questionnare\Ranking\{rankings[i]}.jpg");
                 labels[i].Text = rankings[i];
                 labels2[i].Text = texts[i];  
             }
@@ -33,7 +33,7 @@ namespace WinFormsApp1
 
         private void Button1_Click(object? sender, EventArgs e)
         {
-            RunExecutable($@"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\Loading_Menu\bin\Debug\Loading_Menu.exe");
+            RunExecutable($@"C:\Users\Ny20Kelemeng\Source\Repos\Questionnare\Loading_Menu\bin\Debug\Loading_Menu.exe");
         }
 
 
