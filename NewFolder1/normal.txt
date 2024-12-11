@@ -61,3 +61,39 @@ Which kingdom built the famous Angkor Wat temple?|A. Khmer Empire|B. Gupta Empir
 When did the Thirty Years' War begin?|A. 1608|B. 1618|C. 1628|D. 1648|B|B. 1618
 Who was the first African-American woman to win the Nobel Prize for Literature?|A. Zora Neale Hurston|B. Alice Walker|C. Toni Morrison|D. Maya Angelou|C|C. Toni Morrison
 Which treaty ended the Napoleonic Wars?|A. Treaty of Paris|B. Treaty of Vienna|C. Congress of Vienna|D. Treaty of Amiens|C|C. Congress of Vienna
+Who was the first President of South Africa elected after apartheid?|A. Nelson Mandela|B. Desmond Tutu|C. Thabo Mbeki|D. Jacob Zuma|A|A. Nelson Mandela
+Which year marked the beginning of the Renaissance?|A. 1300|B. 1400|C. 1500|D. 1600|B|B. 1400
+Who wrote the Divine Comedy?|A. Geoffrey Chaucer|B. Dante Alighieri|C. William Shakespeare|D. John Milton|B|B. Dante Alighieri
+When did the Battle of Hastings occur?|A. 1000|B. 1066|C. 1200|D. 1300|B|B. 1066
+Which empire ruled over Persia before Alexander the Great's conquest?|A. Ottoman Empire|B. Roman Empire|C. Achaemenid Empire|D. Byzantine Empire|C|C. Achaemenid Empire
+Who invented the World Wide Web?|A. Bill Gates|B. Steve Jobs|C. Tim Berners-Lee|D. Alan Turing|C|C. Tim Berners-Lee
+What year was the Magna Carta signed?|A. 1205|B. 1215|C. 1235|D. 1300|B|B. 1215
+Which treaty ended the Thirty Years’ War?|A. Treaty of Versailles|B. Peace of Westphalia|C. Treaty of Utrecht|D. Treaty of Ghent|B|B. Peace of Westphalia
+When was the first manned mission to orbit the moon?|A. 1965|B. 1968|C. 1970|D. 1975|B|B. 1968
+Who was the first Chancellor of a unified Germany in 1871?|A. Friedrich Ebert|B. Otto von Bismarck|C. Adolf Hitler|D. Wilhelm II|B|B. Otto von Bismarck
+Which explorer discovered the sea route to India around Africa?|A. Christopher Columbus|B. Vasco da Gama|C. Ferdinand Magellan|D. Henry Hudson|B|B. Vasco da Gama
+What was the main reason for the start of the Crimean War?|A. Religion|B. Territorial disputes|C. Trade routes|D. Revolutions|B|B. Territorial disputes
+Who led the Soviet Union during the Cuban Missile Crisis?|A. Nikita Khrushchev|B. Joseph Stalin|C. Leonid Brezhnev|D. Mikhail Gorbachev|A|A. Nikita Khrushchev
+Which Egyptian pharaoh built the Great Pyramid of Giza?|A. Tutankhamun|B. Ramses II|C. Khufu|D. Akhenaten|C|C. Khufu
+When did the American Civil Rights Act become law?|A. 1955|B. 1964|C. 1970|D. 1980|B|B. 1964
+Who was the first emperor of China?|A. Qin Shi Huang|B. Wu Zetian|C. Liu Bang|D. Sun Yat-sen|A|A. Qin Shi Huang
+Which year did the Great Chicago Fire occur?|A. 1865|B. 1871|C. 1885|D. 1890|B|B. 1871
+Who was the leader of the Bolshevik Revolution in 1917?|A. Joseph Stalin|B. Vladimir Lenin|C. Leon Trotsky|D. Mikhail Gorbachev|B|B. Vladimir Lenin
+Which battle is considered the turning point of the American Civil War?|A. Battle of Gettysburg|B. Battle of Antietam|C. Battle of Fort Sumter|D. Battle of Appomattox Court House|A|A. Battle of Gettysburg
+When was the Eiffel Tower completed?|A. 1885|B. 1887|C. 1889|D. 1895|C|C. 1889
+Who wrote The Prince, a famous political treatise?|A. Thomas Hobbes|B. Niccolò Machiavelli|C. John Locke|D. Jean-Jacques Rousseau|B|B. Niccolò Machiavelli
+When did the Hundred Years’ War begin?|A. 1300|B. 1337|C. 1400|D. 1450|B|B. 1337
+Who was the longest-reigning British monarch before Queen Elizabeth II?|A. Queen Victoria|B. King George III|C. Henry VIII|D. Edward VII|A|A. Queen Victoria
+Which year marked the fall of Constantinople to the Ottoman Empire?|A. 1450|B. 1453|C. 1475|D. 1492|B|B. 1453
+Which year did the first moon landing occur?|A. 1965|B. 1969|C. 1971|D. 1975|B|B. 1969
+Who built the Hanging Gardens of Babylon?|A. Nebuchadnezzar II|B. Hammurabi|C. Cyrus the Great|D. Xerxes|A|A. Nebuchadnezzar II
+When was the Rosetta Stone discovered?|A. 1790|B. 1799|C. 1805|D. 1815|B|B. 1799
+Who discovered gravity after observing a falling apple?|A. Albert Einstein|B. Galileo Galilei|C. Isaac Newton|D. Johannes Kepler|C|C. Isaac Newton
+What year marked the start of World War II?|A. 1937|B. 1939|C. 1941|D. 1945|B|B. 1939
+Who is considered the “Father of Modern Medicine”?|A. Hippocrates|B. Galen|C. Paracelsus|D. Ambroise Paré|A|A. Hippocrates
+Which treaty marked the end of the Napoleonic Wars?|A. Treaty of Vienna|B. Treaty of Paris|C. Treaty of Ghent|D. Treaty of Westphalia|B|B. Treaty of Paris
+When did the first manned space station, Salyut 1, launch?|A. 1968|B. 1971|C. 1975|D. 1980|B|B. 1971
+Who led the conquest of the Aztec Empire?|A. Francisco Pizarro|B. Hernán Cortés|C. Ferdinand Magellan|D. Pedro Álvares Cabral|B|B. Hernán Cortés
+Which year was the first printing press invented?|A. 1440|B. 1450|C. 1460|D. 1470|B|B. 1450
+Who was the Greek goddess of wisdom and warfare?|A. Hera|B. Athena|C. Aphrodite|D. Artemis|B|B. Athena
+When was the first atomic bomb dropped on Hiroshima?|A. 1943|B. 1945|C. 1947|D. 1950|B|B. 1945
