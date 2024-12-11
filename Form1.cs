@@ -9,9 +9,31 @@ using System.Drawing;
 using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Globalization;
+using System.Media;
 
 namespace Questionnare
 {
+    public class MediaPlayerExample
+    {
+        public SoundPlayer soundPlayer;
+        public void PlayMedia(string filePath)
+        {
+            try
+            {
+                soundPlayer = new SoundPlayer(filePath);
+
+                soundPlayer.Play();
+ 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error playing media: " + ex.Message);
+                soundPlayer?.Stop();
+                Application.Exit();
+            }
+        }
+
+    }
 
 
     public partial class Form1 : Form
@@ -27,6 +49,8 @@ namespace Questionnare
         public string easyQuestionsPath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\NewFolder1\easy.txt";
         public string normalQuestionsPath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\NewFolder1\normal.txt";
         public string hardQuestionsPath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\NewFolder1\hard.txt";
+
+        public string music_path = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\Songs\undertale_dogsong (online-audio-converter.com).wav";
 
         public string[] line_parts;
         public int highest_score;
@@ -93,6 +117,7 @@ namespace Questionnare
         private List<Question> questions = new List<Question>();
 
 
+
         public Form1()
         {
             InitializeComponent();
@@ -105,6 +130,8 @@ namespace Questionnare
             Skip.Click += Skip_Click;
             Audience.Click += Audience_Click;
             PlusTime.Click += PlusTime_Click;
+            MediaPlayerExample media = new MediaPlayerExample();
+            media.PlayMedia(music_path);
         }
 
         private void PlusTime_Click(object sender, EventArgs e)
@@ -213,6 +240,7 @@ namespace Questionnare
         }
         private void Form1_Load1(object sender, EventArgs e)
         {
+
             string culture = Properties.Settings.Default.Language ?? "en-US";
             ChangeLanguage(culture);
             ApplyLocalization();
@@ -502,5 +530,6 @@ namespace Questionnare
                 MessageBox.Show("No questions available!");
             }
         }
+
     }
 }
