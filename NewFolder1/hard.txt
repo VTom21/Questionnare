@@ -88,4 +88,25 @@ What was the primary purpose of the Domesday Book?|A. Census for taxation|B. Lan
 Which ancient civilization used quipus for record-keeping?|A. Maya|B. Aztec|C. Inca|D. Olmec|C|C. Inca  
 What year marked the creation of the European Union?|A. 1989|B. 1991|C. 1993|D. 1999|C|C. 1993  
 Who was the last emperor of the Western Roman Empire?|A. Romulus Augustulus|B. Constantine XI|C. Theodosius I|D. Justinian I|A|A. Romulus Augustulus  
+What year marked the fall of the Umayyad Caliphate to the Abbasids?|A. 711|B. 750|C. 800|D. 861|B|B. 750  
+Which famous treaty divided the Carolingian Empire among Charlemagne’s grandsons?|A. Treaty of Verdun|B. Treaty of Westphalia|C. Treaty of Paris|D. Treaty of Aix-la-Chapelle|A|A. Treaty of Verdun  
+Who was the Byzantine Emperor during the Nika riots of 532 CE?|A. Justinian I|B. Heraclius|C. Leo III|D. Basil II|A|A. Justinian I  
+Which battle halted the Muslim expansion into Western Europe in 732 CE?|A. Battle of Tours|B. Battle of Manzikert|C. Battle of Poitiers|D. Battle of Agincourt|A|A. Battle of Tours  
+Which language was the primary administrative and scholarly language of the Abbasid Caliphate?|A. Arabic|B. Persian|C. Greek|D. Aramaic|A|A. Arabic  
+Who was the emperor of Japan during the Meiji Restoration?|A. Emperor Meiji|B. Emperor Taisho|C. Emperor Showa|D. Emperor Komei|A|A. Emperor Meiji  
+Which scientist is credited with the discovery of electromagnetic induction in 1831?|A. Michael Faraday|B. André-Marie Ampère|C. James Clerk Maxwell|D. William Thomson|A|A. Michael Faraday  
+Who was the leader of the Bolshevik faction during the October Revolution of 1917?|A. Vladimir Lenin|B. Leon Trotsky|C. Joseph Stalin|D. Nikolai Bukharin|A|A. Vladimir Lenin  
+What was the first written legal code in history?|A. Code of Hammurabi|B. Twelve Tables|C. Magna Carta|D. Ur-Nammu Code|D|D. Ur-Nammu Code  
+Which battle marked the end of the Second Punic War?|A. Battle of Cannae|B. Battle of Zama|C. Battle of Trebia|D. Battle of Lake Trasimene|B|B. Battle of Zama  
+What dynasty ruled China during the time of Marco Polo's travels?|A. Yuan Dynasty|B. Ming Dynasty|C. Tang Dynasty|D. Song Dynasty|A|A. Yuan Dynasty  
+Who discovered the planet Uranus in 1781?|A. Galileo Galilei|B. William Herschel|C. Johannes Kepler|D. Tycho Brahe|B|B. William Herschel  
+Which medieval scholar is known for the "Summa Theologica," a foundational text in Christian theology?|A. Thomas Aquinas|B. Augustine of Hippo|C. Peter Abelard|D. Anselm of Canterbury|A|A. Thomas Aquinas  
+When did the First Industrial Revolution begin?|A. 1700|B. 1760|C. 1800|D. 1850|B|B. 1760  
+Who was the last Tsar of Russia before the Russian Revolution?|A. Nicholas I|B. Alexander II|C. Nicholas II|D. Alexander III|C|C. Nicholas II  
+Which famous battle is associated with the decisive defeat of the Ottoman fleet in 1571?|A. Battle of Lepanto|B. Battle of Vienna|C. Battle of Mohács|D. Battle of Nicopolis|A|A. Battle of Lepanto  
+What was the primary export of the Mali Empire during its height?|A. Spices|B. Gold|C. Silk|D. Ivory|B|B. Gold  
+Which Indian ruler is associated with the spread of Buddhism through edicts and missions?|A. Chandragupta Maurya|B. Ashoka|C. Akbar|D. Harsha|B|B. Ashoka  
+Who was the Roman Emperor during the Great Fire of Rome in 64 CE?|A. Nero|B. Caligula|C. Claudius|D. Tiberius|A|A. Nero  
+What was the purpose of the Hanseatic League in the medieval period?|A. Military Alliance|B. Religious Union|C. Trade Network|D. Cultural Association|C|C. Trade Network  
+
 
