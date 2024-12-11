@@ -96,3 +96,23 @@ Who was the architect of the German unification?|A. Otto von Bismarck|B. Adolf H
 When did the Soviet Union invade Afghanistan?|A. 1975|B. 1979|C. 1983|D. 1988|B|B. 1979  
 Who was the first Prime Minister of India?|A. Jawaharlal Nehru|B. Mahatma Gandhi|C. Indira Gandhi|D. Rajendra Prasad|A|A. Jawaharlal Nehru  
 Which empire built the Colosseum?|A. Greek|B. Roman|C. Byzantine|D. Ottoman|B|B. Roman  
+What is the largest planet in the solar system?|A. Earth|B. Mars|C. Jupiter|D. Venus|C|C. Jupiter
+Which ocean is the largest in the world?|A. Atlantic|B. Indian|C. Pacific|D. Arctic|C|C. Pacific
+What is the capital of France?|A. Madrid|B. Paris|C. Rome|D. Berlin|B|B. Paris
+What color are bananas when ripe?|A. Red|B. Green|C. Yellow|D. Purple|C|C. Yellow
+How many continents are there on Earth?|A. 5|B. 6|C. 7|D. 8|C|C. 7
+What is the freezing point of water in Celsius?|A. 0°C|B. 10°C|C. 32°C|D. 100°C|A|A. 0°C
+Which shape has three sides?|A. Square|B. Triangle|C. Circle|D. Rectangle|B|B. Triangle
+How many legs does a spider have?|A. 6|B. 8|C. 10|D. 12|B|B. 8
+What is the smallest prime number?|A. 0|B. 1|C. 2|D. 3|C|C. 2
+What is the capital of the United States?|A. New York|B. Los Angeles|C. Washington, D.C.|D. Chicago|C|C. Washington, D.C.
+Which animal is known as "man's best friend"?|A. Cat|B. Dog|C. Rabbit|D. Fish|B|B. Dog
+What is the primary color of the sky on a clear day?|A. Green|B. Blue|C. Red|D. Yellow|B|B. Blue
+How many hours are there in a day?|A. 10|B. 12|C. 24|D. 36|C|C. 24
+What is the name of the toy cowboy in Toy Story?|A. Buzz|B. Woody|C. Jessie|D. Rex|B|B. Woody
+What is the shape of a stop sign?|A. Circle|B. Octagon|C. Triangle|D. Square|B|B. Octagon
+What do bees produce?|A. Milk|B. Honey|C. Sugar|D. Salt|B|B. Honey
+Which holiday is celebrated on December 25th?|A. Easter|B. Halloween|C. Christmas|D. Thanksgiving|C|C. Christmas
+How many months are there in a year?|A. 10|B. 11|C. 12|D. 13|C|C. 12
+What is the fastest land animal?|A. Cheetah|B. Lion|C. Horse|D. Gazelle|A|A. Cheetah
+What is the name of Earth's natural satellite?|A. Sun|B. Mars|C. Moon|D. Star|C|C. Moon
