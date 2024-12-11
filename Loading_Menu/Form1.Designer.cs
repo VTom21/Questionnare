@@ -34,7 +34,6 @@ namespace Loading_Menu
             this.Language = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnranking = new System.Windows.Forms.Button();
-            this.leaderboard = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Start
@@ -46,7 +45,7 @@ namespace Loading_Menu
             this.Start.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(112)))));
             this.Start.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Start.ForeColor = System.Drawing.Color.GhostWhite;
-            this.Start.Location = new System.Drawing.Point(238, 127);
+            this.Start.Location = new System.Drawing.Point(238, 140);
             this.Start.Name = "Start";
             this.Start.Size = new System.Drawing.Size(289, 47);
             this.Start.TabIndex = 7;
@@ -62,7 +61,7 @@ namespace Loading_Menu
             this.Quit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(112)))));
             this.Quit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Quit.ForeColor = System.Drawing.Color.GhostWhite;
-            this.Quit.Location = new System.Drawing.Point(238, 286);
+            this.Quit.Location = new System.Drawing.Point(238, 278);
             this.Quit.Name = "Quit";
             this.Quit.Size = new System.Drawing.Size(289, 46);
             this.Quit.TabIndex = 7;
@@ -102,30 +101,13 @@ namespace Loading_Menu
             this.btnranking.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(112)))));
             this.btnranking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnranking.ForeColor = System.Drawing.Color.GhostWhite;
-            this.btnranking.Location = new System.Drawing.Point(238, 180);
+            this.btnranking.Location = new System.Drawing.Point(238, 205);
             this.btnranking.MaximumSize = new System.Drawing.Size(816, 489);
             this.btnranking.Name = "btnranking";
             this.btnranking.Size = new System.Drawing.Size(289, 47);
             this.btnranking.TabIndex = 7;
             this.btnranking.Text = "Ranking";
             this.btnranking.UseVisualStyleBackColor = false;
-            // 
-            // leaderboard
-            // 
-            this.leaderboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
-            this.leaderboard.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
-            this.leaderboard.FlatAppearance.BorderSize = 2;
-            this.leaderboard.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.leaderboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(112)))));
-            this.leaderboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.leaderboard.ForeColor = System.Drawing.Color.GhostWhite;
-            this.leaderboard.Location = new System.Drawing.Point(238, 233);
-            this.leaderboard.MaximumSize = new System.Drawing.Size(816, 489);
-            this.leaderboard.Name = "leaderboard";
-            this.leaderboard.Size = new System.Drawing.Size(289, 47);
-            this.leaderboard.TabIndex = 7;
-            this.leaderboard.Text = "leaderboard";
-            this.leaderboard.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -136,7 +118,6 @@ namespace Loading_Menu
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Language);
             this.Controls.Add(this.Quit);
-            this.Controls.Add(this.leaderboard);
             this.Controls.Add(this.btnranking);
             this.Controls.Add(this.Start);
             this.MaximumSize = new System.Drawing.Size(816, 489);
@@ -155,7 +136,6 @@ namespace Loading_Menu
         private System.Windows.Forms.ComboBox Language;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnranking;
-        private System.Windows.Forms.Button leaderboard;
     }
 }
 

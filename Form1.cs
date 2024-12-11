@@ -23,6 +23,7 @@ namespace Questionnare
                 soundPlayer = new SoundPlayer(filePath);
 
                 soundPlayer.Play();
+
  
             }
             catch (Exception ex)
@@ -32,7 +33,6 @@ namespace Questionnare
                 Application.Exit();
             }
         }
-
     }
 
 
@@ -40,17 +40,17 @@ namespace Questionnare
     {
         //Paths
 
-        public string highscorePath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\NewFolder1\highscore.txt";
-        public Image rankingBronzePath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Bronze.jpg");
-        public Image rankingSilverPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Silver.jpg");
-        public Image rankingGoldPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Gold.jpg");
-        public Image rankingDiamondPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Diamond.jpg");
-        public Image rankingChampionPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\Ranking\Champion.jpg");
-        public string easyQuestionsPath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\NewFolder1\easy.txt";
-        public string normalQuestionsPath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\NewFolder1\normal.txt";
-        public string hardQuestionsPath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\NewFolder1\hard.txt";
+        public string highscorePath = @"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\NewFolder1\highscore.txt";
+        public Image rankingBronzePath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\Ranking\Bronze.jpg");
+        public Image rankingSilverPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\Ranking\Gold.jpg");
+        public Image rankingGoldPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\Ranking\Gold.jpg");
+        public Image rankingDiamondPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\Ranking\Diamond.jpg");
+        public Image rankingChampionPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\Ranking\Champion.jpg");
+        public string easyQuestionsPath = @"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\NewFolder1\easy.txt";
+        public string normalQuestionsPath = @"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\NewFolder1\normal.txt";
+        public string hardQuestionsPath = @"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\NewFolder1\hard.txt";
 
-        public string music_path = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\Songs\undertale_dogsong (online-audio-converter.com).wav";
+        public string music_path = @"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\Songs\undertale_dogsong (online-audio-converter.com).wav";
 
         public string[] line_parts;
         public int highest_score;

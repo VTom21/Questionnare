@@ -19,9 +19,8 @@ namespace Loading_Menu
 
         //Paths
 
-        public string RankingsPath = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe";
-        public string QuestionnairePath = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\bin\Debug\Questionnare.exe";
-        public string LeaderboardPath = "";
+        public string RankingsPath = @"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe";
+        public string QuestionnairePath = @"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\bin\Debug\Questionnare.exe";
 
         public Form1()
         {
@@ -31,7 +30,6 @@ namespace Loading_Menu
             Quit.Click += Quit_Click;
             this.Load += Form1_Load1;
             Language.SelectedIndexChanged += Select_Language;
-            leaderboard.Click += Leaderboard_Click;
         }
 
         private void Leaderboard_Click(object sender, EventArgs e)

@@ -58,3 +58,34 @@ What was the primary purpose of the Domesday Book?|A. Census for taxation|B. Lan
 Which ancient civilization used quipus for record-keeping?|A. Maya|B. Aztec|C. Inca|D. Olmec|C|C. Inca
 What year marked the creation of the European Union?|A. 1989|B. 1991|C. 1993|D. 1999|C|C. 1993
 Who was the last emperor of the Western Roman Empire?|A. Romulus Augustulus|B. Constantine XI|C. Theodosius I|D. Justinian I|A|A. Romulus Augustulus
+Who was the founder of the Achaemenid Empire?|A. Xerxes I|B. Cyrus the Great|C. Darius I|D. Cambyses II|B|B. Cyrus the Great  
+When did the Battle of Hastings take place?|A. 1050|B. 1066|C. 1075|D. 1080|B|B. 1066  
+Which treaty ended the Thirty Years' War?|A. Treaty of Augsburg|B. Treaty of Utrecht|C. Peace of Westphalia|D. Treaty of Tordesillas|C|C. Peace of Westphalia  
+Who was the first ruler of the Mughal Empire?|A. Babur|B. Akbar|C. Shah Jahan|D. Humayun|A|A. Babur  
+What year did the first Crusade begin?|A. 1095|B. 1100|C. 1115|D. 1130|A|A. 1095  
+Which war is known as the "War to End All Wars"?|A. World War I|B. World War II|C. Napoleonic Wars|D. Cold War|A|A. World War I  
+Who led the Haitian Revolution?|A. Toussaint Louverture|B. Jean-Jacques Dessalines|C. Henri Christophe|D. Dutty Boukman|A|A. Toussaint Louverture  
+Which Roman Emperor divided the empire into East and West?|A. Diocletian|B. Constantine|C. Augustus|D. Nero|A|A. Diocletian  
+When did the Fall of Constantinople occur?|A. 1415|B. 1431|C. 1453|D. 1492|C|C. 1453  
+Who was the first English monarch from the Tudor dynasty?|A. Henry V|B. Henry VII|C. Henry VIII|D. Elizabeth I|B|B. Henry VII  
+What was the capital of the Aztec Empire?|A. Tenochtitlán|B. Cuzco|C. Teotihuacán|D. Chichén Itzá|A|A. Tenochtitlán  
+Who was the architect of the Italian unification?|A. Giuseppe Garibaldi|B. Count Cavour|C. Victor Emmanuel II|D. Giuseppe Mazzini|B|B. Count Cavour  
+Which Chinese dynasty constructed the majority of the Great Wall?|A. Qin|B. Ming|C. Tang|D. Song|B|B. Ming  
+When did the Battle of Thermopylae occur?|A. 500 BC|B. 480 BC|C. 450 BC|D. 400 BC|B|B. 480 BC  
+Who was the longest-reigning British monarch before Queen Elizabeth II?|A. Queen Victoria|B. King George III|C. Queen Anne|D. King Henry VIII|A|A. Queen Victoria  
+Which empire did Charlemagne rule?|A. Byzantine Empire|B. Carolingian Empire|C. Holy Roman Empire|D. Frankish Empire|D|D. Frankish Empire  
+What was the primary religion of the Ottoman Empire?|A. Christianity|B. Islam|C. Zoroastrianism|D. Judaism|B|B. Islam  
+When did the unification of Italy officially complete?|A. 1848|B. 1861|C. 1871|D. 1880|C|C. 1871  
+Who signed the Edict of Milan, granting religious tolerance in the Roman Empire?|A. Constantine|B. Diocletian|C. Theodosius|D. Nero|A|A. Constantine  
+What year marked the end of the Hundred Years' War?|A. 1429|B. 1453|C. 1475|D. 1499|B|B. 1453  
+Which Pharaoh is associated with the Amarna Period?|A. Ramses II|B. Akhenaten|C. Hatshepsut|D. Tutankhamun|B|B. Akhenaten  
+Who was the first ruler of a unified Germany as the German Empire?|A. Wilhelm I|B. Otto von Bismarck|C. Friedrich III|D. Wilhelm II|A|A. Wilhelm I  
+Which event triggered the start of the Great Depression?|A. World War I|B. Stock Market Crash of 1929|C. Dust Bowl|D. Bank Failures in 1931|B|B. Stock Market Crash of 1929  
+Who was the founder of the Ottoman Empire?|A. Suleiman the Magnificent|B. Osman I|C. Mehmed II|D. Selim I|B|B. Osman I  
+When did the Viking Age begin?|A. 700 AD|B. 793 AD|C. 850 AD|D. 900 AD|B|B. 793 AD  
+Which battle marked the end of the Napoleonic Wars?|A. Battle of Leipzig|B. Battle of Trafalgar|C. Battle of Waterloo|D. Battle of Austerlitz|C|C. Battle of Waterloo  
+What was the primary purpose of the Domesday Book?|A. Census for taxation|B. Land redistribution|C. Religious census|D. Military recruitment|A|A. Census for taxation  
+Which ancient civilization used quipus for record-keeping?|A. Maya|B. Aztec|C. Inca|D. Olmec|C|C. Inca  
+What year marked the creation of the European Union?|A. 1989|B. 1991|C. 1993|D. 1999|C|C. 1993  
+Who was the last emperor of the Western Roman Empire?|A. Romulus Augustulus|B. Constantine XI|C. Theodosius I|D. Justinian I|A|A. Romulus Augustulus  
+
