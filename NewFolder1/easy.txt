@@ -47,6 +47,52 @@ When was the United Nations founded?|A. 1919|B. 1939|C. 1945|D. 1950|C|C. 1945
 What was the first capital of ancient Egypt?|A. Giza|B. Memphis|C. Alexandria|D. Thebes|B|B. Memphis
 Who was the first Emperor of Rome?|A. Julius Caesar|B. Augustus|C. Nero|D. Constantine|B|B. Augustus
 When was the Declaration of Independence signed?|A. 1775|B. 1776|C. 1777|D. 1778|B|B. 1776
-Which war was known as �The Great War� before World War II?|A. Crimean War|B. American Civil War|C. World War I|D. Napoleonic Wars|C|C. World War I
+Which war was known as “The Great War” before World War II?|A. Crimean War|B. American Civil War|C. World War I|D. Napoleonic Wars|C|C. World War I
 Who built the Great Wall of China?|A. Qin Dynasty|B. Han Dynasty|C. Tang Dynasty|D. Ming Dynasty|A|A. Qin Dynasty
 When did the USSR dissolve?|A. 1989|B. 1990|C. 1991|D. 1992|C|C. 1991
+Which was the first city to host the modern Olympic Games?|A. Paris|B. Athens|C. London|D. Rome|B|B. Athens  
+Which country first adopted Christianity as its state religion?|A. Armenia|B. Italy|C. Greece|D. Ethiopia|A|A. Armenia  
+Who wrote *The Iliad* and *The Odyssey*?|A. Socrates|B. Plato|C. Homer|D. Aristotle|C|C. Homer  
+When did the Berlin Conference, which regulated European colonization in Africa, take place?|A. 1845|B. 1884|C. 1900|D. 1914|B|B. 1884  
+Who was the last emperor of the Western Roman Empire?|A. Nero|B. Romulus Augustulus|C. Constantine|D. Julius Caesar|B|B. Romulus Augustulus  
+Which treaty ended World War I?|A. Treaty of Versailles|B. Treaty of Paris|C. Treaty of Ghent|D. Treaty of Tordesillas|A|A. Treaty of Versailles  
+What is the name of the ship Charles Darwin sailed on?|A. HMS Beagle|B. HMS Victory|C. Mayflower|D. USS Constitution|A|A. HMS Beagle  
+Which war inspired the creation of the Geneva Conventions?|A. Crimean War|B. Napoleonic Wars|C. World War I|D. Franco-Prussian War|A|A. Crimean War  
+Who led the Indian independence movement against British rule?|A. Jawaharlal Nehru|B. Mahatma Gandhi|C. Subhash Chandra Bose|D. Bhagat Singh|B|B. Mahatma Gandhi  
+Which scientist developed the theory of general relativity?|A. Isaac Newton|B. Albert Einstein|C. Niels Bohr|D. Galileo Galilei|B|B. Albert Einstein  
+When was the first successful organ transplant performed?|A. 1945|B. 1954|C. 1967|D. 1975|B|B. 1954  
+Which event is considered the start of the Protestant Reformation?|A. Martin Luther posting the 95 Theses|B. Council of Trent|C. Peace of Augsburg|D. Diet of Worms|A|A. Martin Luther posting the 95 Theses  
+What was the primary language of the Roman Empire?|A. Greek|B. Latin|C. Aramaic|D. Hebrew|B|B. Latin  
+Which U.S. President served the longest time in office?|A. George Washington|B. Franklin D. Roosevelt|C. Abraham Lincoln|D. Thomas Jefferson|B|B. Franklin D. Roosevelt  
+Who was the first human in space?|A. Neil Armstrong|B. Buzz Aldrin|C. Yuri Gagarin|D. Alan Shepard|C|C. Yuri Gagarin  
+When did the Great Depression begin?|A. 1925|B. 1929|C. 1932|D. 1935|B|B. 1929  
+Who painted the Sistine Chapel ceiling?|A. Raphael|B. Leonardo da Vinci|C. Michelangelo|D. Donatello|C|C. Michelangelo  
+Which country was the first to legalize same-sex marriage?|A. Netherlands|B. Canada|C. United States|D. Spain|A|A. Netherlands  
+Who wrote *Don Quixote*?|A. Miguel de Cervantes|B. William Shakespeare|C. Dante Alighieri|D. Geoffrey Chaucer|A|A. Miguel de Cervantes  
+What year did the Spanish Armada fail?|A. 1588|B. 1600|C. 1620|D. 1650|A|A. 1588  
+Which continent is known as the “birthplace of humanity”?|A. Asia|B. Europe|C. Africa|D. South America|C|C. Africa  
+Which leader is famous for the quote, "I have a dream"?|A. Malcolm X|B. Martin Luther King Jr.|C. Barack Obama|D. Nelson Mandela|B|B. Martin Luther King Jr.  
+Who was the first woman to win a Nobel Prize?|A. Marie Curie|B. Rosalind Franklin|C. Ada Lovelace|D. Jane Goodall|A|A. Marie Curie  
+When did women gain the right to vote in the United States?|A. 1900|B. 1920|C. 1935|D. 1945|B|B. 1920  
+Which explorer first circumnavigated the globe?|A. Christopher Columbus|B. Ferdinand Magellan|C. Vasco da Gama|D. Amerigo Vespucci|B|B. Ferdinand Magellan  
+When did the Korean War begin?|A. 1949|B. 1950|C. 1952|D. 1955|B|B. 1950  
+Which Greek philosopher tutored Alexander the Great?|A. Socrates|B. Aristotle|C. Plato|D. Herodotus|B|B. Aristotle  
+Who was the first ruler of the Holy Roman Empire?|A. Otto the Great|B. Charlemagne|C. Frederick Barbarossa|D. Napoleon|B|B. Charlemagne  
+Which country was responsible for the Manhattan Project?|A. United Kingdom|B. Soviet Union|C. United States|D. Germany|C|C. United States  
+What year did the fall of the Bastille occur?|A. 1785|B. 1789|C. 1792|D. 1800|B|B. 1789  
+Who invented the telephone?|A. Alexander Graham Bell|B. Thomas Edison|C. Nikola Tesla|D. Guglielmo Marconi|A|A. Alexander Graham Bell  
+What year did the Soviet Union launch Sputnik, the first artificial satellite?|A. 1955|B. 1957|C. 1960|D. 1965|B|B. 1957  
+When was the first World Cup held?|A. 1920|B. 1930|C. 1940|D. 1950|B|B. 1930  
+Who was the last monarch of the Kingdom of Hawaii?|A. Kamehameha I|B. Liliʻuokalani|C. Kalākaua|D. Kamehameha V|B|B. Liliʻuokalani  
+What was the primary purpose of the Silk Road?|A. Military campaigns|B. Trade|C. Religious pilgrimages|D. Exploration|B|B. Trade  
+Which country experienced the Meiji Restoration?|A. China|B. Japan|C. Korea|D. Vietnam|B|B. Japan  
+When did the Boston Tea Party occur?|A. 1760|B. 1773|C. 1781|D. 1790|B|B. 1773  
+Who was the founder of Buddhism?|A. Confucius|B. Siddhartha Gautama|C. Mahavira|D. Laozi|B|B. Siddhartha Gautama  
+Which dynasty built the Terracotta Army?|A. Han|B. Qin|C. Tang|D. Song|B|B. Qin  
+Who invented the first mechanical computer?|A. Charles Babbage|B. Alan Turing|C. John von Neumann|D. Blaise Pascal|A|A. Charles Babbage  
+Which war was fought between the North and the South in the United States?|A. Revolutionary War|B. Civil War|C. War of 1812|D. Mexican-American War|B|B. Civil War  
+What year did Napoleon crown himself emperor?|A. 1800|B. 1804|C. 1810|D. 1815|B|B. 1804  
+Who was the architect of the German unification?|A. Otto von Bismarck|B. Adolf Hitler|C. Kaiser Wilhelm I|D. Friedrich Ebert|A|A. Otto von Bismarck  
+When did the Soviet Union invade Afghanistan?|A. 1975|B. 1979|C. 1983|D. 1988|B|B. 1979  
+Who was the first Prime Minister of India?|A. Jawaharlal Nehru|B. Mahatma Gandhi|C. Indira Gandhi|D. Rajendra Prasad|A|A. Jawaharlal Nehru  
+Which empire built the Colosseum?|A. Greek|B. Roman|C. Byzantine|D. Ottoman|B|B. Roman  
