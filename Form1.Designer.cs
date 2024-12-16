@@ -38,6 +38,7 @@
             this.Skip = new System.Windows.Forms.Button();
             this.Audience = new System.Windows.Forms.Button();
             this.PlusTime = new System.Windows.Forms.Button();
+            this.Music = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Ranking)).BeginInit();
             this.SuspendLayout();
             // 
@@ -308,12 +309,29 @@
             this.PlusTime.Text = "Time";
             this.PlusTime.UseVisualStyleBackColor = false;
             // 
+            // Music
+            // 
+            this.Music.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+            this.Music.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+            this.Music.FlatAppearance.BorderSize = 2;
+            this.Music.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Music.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(112)))));
+            this.Music.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Music.ForeColor = System.Drawing.Color.GhostWhite;
+            this.Music.Location = new System.Drawing.Point(12, 398);
+            this.Music.Name = "Music";
+            this.Music.Size = new System.Drawing.Size(75, 23);
+            this.Music.TabIndex = 20;
+            this.Music.Text = "On";
+            this.Music.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Music);
             this.Controls.Add(this.Language);
             this.Controls.Add(this.Ranking);
             this.Controls.Add(this.lbrank);
@@ -368,5 +386,6 @@
         private System.Windows.Forms.Button Skip;
         private System.Windows.Forms.Button Audience;
         private System.Windows.Forms.Button PlusTime;
+        private System.Windows.Forms.Button Music;
     }
 }

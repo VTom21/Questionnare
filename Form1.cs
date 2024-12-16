@@ -13,44 +13,70 @@ using System.Media;
 
 namespace Questionnare
 {
-    public class MediaPlayerExample
-    {
-        public SoundPlayer soundPlayer;
-        public void PlayMedia(string filePath)
-        {
-            try
-            {
-                soundPlayer = new SoundPlayer(filePath);
-
-                soundPlayer.Play();
-
- 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error playing media: " + ex.Message);
-                soundPlayer?.Stop();
-                Application.Exit();
-            }
-        }
-    }
+   
 
 
     public partial class Form1 : Form
     {
+        public class MediaPlayerExample
+        {
+            private SoundPlayer soundPlayer;
+            private bool isMusicPlaying = true;
+
+            public bool IsMusicPlaying => isMusicPlaying;
+
+            public void ToggleMusic(string filePath)
+            {
+                if (isMusicPlaying)
+                {
+                    StopMusic();
+                }
+                else
+                {
+                    PlayMusic(filePath);
+                }
+            }
+
+            public void PlayMusic(string filePath)
+            {
+                try
+                {
+                    soundPlayer = new SoundPlayer(filePath);
+                    soundPlayer.PlayLooping();
+                    isMusicPlaying = true;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error playing media: " + ex.Message);
+                }
+            }
+
+            private void StopMusic()
+            {
+                soundPlayer?.Stop();
+                isMusicPlaying = false;
+            }
+        }
+
+
+
+        private MediaPlayerExample mediaPlayerExample;
+
         //Paths
 
-        public string highscorePath = @"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\NewFolder1\highscore.txt";
-        public Image rankingBronzePath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\Ranking\Bronze.jpg");
-        public Image rankingSilverPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\Ranking\Gold.jpg");
-        public Image rankingGoldPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\Ranking\Gold.jpg");
-        public Image rankingDiamondPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\Ranking\Diamond.jpg");
-        public Image rankingChampionPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\Ranking\Champion.jpg");
-        public string easyQuestionsPath = @"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\NewFolder1\easy.txt";
-        public string normalQuestionsPath = @"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\NewFolder1\normal.txt";
-        public string hardQuestionsPath = @"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\NewFolder1\hard.txt";
+        public string highscorePath = @"C:\Users\Tomi\OneDrive\Asztali gép\fg\NewFolder1\highscore.txt";
+        public Image rankingBronzePath = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\fg\Ranking\Bronze.jpg");
+        public Image rankingSilverPath = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\fg\Ranking\Silver.jpg");
+        public Image rankingGoldPath = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\fg\Ranking\Gold.jpg");
+        public Image rankingDiamondPath = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\fg\Ranking\Diamond.jpg");
+        public Image rankingChampionPath = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\fg\Ranking\Champion.jpg");
+        public string easyQuestionsPath = @"C:\Users\Tomi\OneDrive\Asztali gép\fg\NewFolder1\easy.txt";
+        public string normalQuestionsPath = @"C:\Users\Tomi\OneDrive\Asztali gép\fg\NewFolder1\normal.txt";
+        public string hardQuestionsPath = @"C:\Users\Tomi\OneDrive\Asztali gép\fg\NewFolder1\hard.txt";
 
-        public string music_path = @"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\Songs\undertale_dogsong (online-audio-converter.com).wav";
+        public string music_path = @"C:\Users\Tomi\OneDrive\Asztali gép\fg\Songs\undertale_dogsong (online-audio-converter.com).wav";
+        public string music_on = @"C:\Users\Tomi\OneDrive\Asztali gép\fg\Icon\sound.ico";
+        public string music_off = @"C:\Users\Tomi\OneDrive\Asztali gép\fg\Icon\mute.ico";
 
         public string[] line_parts;
         public int highest_score;
@@ -59,7 +85,7 @@ namespace Questionnare
         public int Time = 15;
         public bool timer_run = false;
         private Thread countdownThread;
-        bool GuessClicked = false; 
+        bool GuessClicked = false;
 
         public string correct_answer;
 
@@ -121,6 +147,7 @@ namespace Questionnare
         public Form1()
         {
             InitializeComponent();
+            mediaPlayerExample = new MediaPlayerExample();
             button1.Click += Button1_Click;
             GuessBtn.Click += GuessBtn_Click;
             Guess.KeyPress += Guess_KeyPress;
@@ -130,8 +157,34 @@ namespace Questionnare
             Skip.Click += Skip_Click;
             Audience.Click += Audience_Click;
             PlusTime.Click += PlusTime_Click;
+            Music.Click += Music_Click;
             MediaPlayerExample media = new MediaPlayerExample();
-            media.PlayMedia(music_path);
+        }
+
+        private void Music_Click(object sender, EventArgs e)
+        {
+            mediaPlayerExample.ToggleMusic(music_path);
+
+            Bitmap Icon1 = new Bitmap(music_on);
+            Icon1 = new Bitmap(Icon1, new Size(16, 16));
+
+            Bitmap Icon2 = new Bitmap(music_off);
+            Icon2 = new Bitmap(Icon2, new Size(16, 16));
+
+
+            if (mediaPlayerExample.IsMusicPlaying)
+            {
+                Music.Text = "On";
+                Music.Image = Icon1;
+            }
+            else
+            {
+                Music.Text = "Off";
+                Music.Image = Icon2;
+            }
+
+            Music.ImageAlign = ContentAlignment.MiddleRight;
+            Music.TextAlign = ContentAlignment.MiddleCenter;
         }
 
         private void PlusTime_Click(object sender, EventArgs e)
@@ -160,7 +213,7 @@ namespace Questionnare
 
             for (int i = 0; i < percentages.Length; i++)
             {
-                percentages[i] = rnd.Next(0,Percentage);
+                percentages[i] = rnd.Next(0, Percentage);
             }
 
             MessageBox.Show($"Option1: {percentages[0]}%\n" +
@@ -187,7 +240,7 @@ namespace Questionnare
 
             int count = 0;
 
-            while(count < 2)
+            while (count < 2)
             {
                 int option_rnd = random_option.Next(0, options.Length);
 
@@ -218,7 +271,7 @@ namespace Questionnare
         private void highscore_load()
         {
 
-           string fullPath = highscorePath;
+            string fullPath = highscorePath;
 
             Console.WriteLine(fullPath);
 
@@ -240,6 +293,19 @@ namespace Questionnare
         }
         private void Form1_Load1(object sender, EventArgs e)
         {
+
+            mediaPlayerExample.PlayMusic(music_path);
+
+
+            Bitmap soundIcon = new Bitmap(music_on);
+
+            soundIcon = new Bitmap(soundIcon, new Size(16, 16));
+
+            Music.Image = soundIcon;
+
+
+            Music.ImageAlign = ContentAlignment.MiddleRight;
+            Music.TextAlign = ContentAlignment.MiddleCenter;
 
             string culture = Properties.Settings.Default.Language ?? "en-US";
             ChangeLanguage(culture);
@@ -334,35 +400,35 @@ namespace Questionnare
 
         private void Load_Query(string filePath)
         {
-            questions.Clear(); 
+            questions.Clear();
 
-                using (StreamReader r = new StreamReader(filePath))
+            using (StreamReader r = new StreamReader(filePath))
+            {
+                while (!r.EndOfStream)
                 {
-                    while (!r.EndOfStream)
-                    {
-                        string line = r.ReadLine();
-                        string[] line_parts = line.Split('|').Select(p => p.Trim()).ToArray();
+                    string line = r.ReadLine();
+                    string[] line_parts = line.Split('|').Select(p => p.Trim()).ToArray();
 
-                        if (line_parts.Length == 7)
-                        {
-                            Question question = new Question(
-                                line_parts[0], 
-                                line_parts[1], 
-                                line_parts[2], 
-                                line_parts[3], 
-                                line_parts[4], 
-                                line_parts[5],
-                                line_parts[6]
-                            );
-                            questions.Add(question);
-                        }
-                        else
-                        {
-                            MessageBox.Show("Invalid question format!");
-                            return; 
-                        }
+                    if (line_parts.Length == 7)
+                    {
+                        Question question = new Question(
+                            line_parts[0],
+                            line_parts[1],
+                            line_parts[2],
+                            line_parts[3],
+                            line_parts[4],
+                            line_parts[5],
+                            line_parts[6]
+                        );
+                        questions.Add(question);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid question format!");
+                        return;
                     }
                 }
+            }
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -422,7 +488,7 @@ namespace Questionnare
 
             if (diff.SelectedItem != null)
             {
-                string selectedDifficulty = diff.SelectedItem.ToString().Trim();  
+                string selectedDifficulty = diff.SelectedItem.ToString().Trim();
                 string filePath = "";
 
                 string easy = Resources.ResourceManager.GetString("Easy");
@@ -449,11 +515,11 @@ namespace Questionnare
                 }
                 if (File.Exists(filePath))
                 {
-                    Load_Query(filePath);  
+                    Load_Query(filePath);
                 }
                 else
                 {
-                    MessageBox.Show($"File not found at: {filePath}"); 
+                    MessageBox.Show($"File not found at: {filePath}");
                 }
             }
 
@@ -490,7 +556,7 @@ namespace Questionnare
                         MessageBox.Show("Time's up!");
                         CurrentScore = 0;
                         CurrentText.Text = $"Current Score: {CurrentScore}";
-                        Timer_Reset();   
+                        Timer_Reset();
                     }));
                 }
             }
@@ -500,7 +566,7 @@ namespace Questionnare
         {
             countdown_label.Text = TimeSpan.FromSeconds(Time).ToString(@"mm\:ss");
 
-            timer_run = false;  
+            timer_run = false;
         }
 
 

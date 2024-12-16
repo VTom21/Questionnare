@@ -8,9 +8,9 @@ namespace WinFormsApp1
     {
         //Paths
 
-        public string loading_menu_path = @"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\Loading_Menu\bin\Debug\Loading_Menu.exe";
+        public string loading_menu_path = @"C:\Users\Tomi\OneDrive\Asztali gép\fg\Loading_Menu\bin\Debug\Loading_Menu.exe";
 
-        public string ranking_path = @"C:\Users\Ny20VisegrádiT\Desktop\Questionnare\Ranking\";
+        public string ranking_path = @"C:\Users\Tomi\OneDrive\Asztali gép\fg\Ranking\";
         public Form1()
         {
 

@@ -34,6 +34,7 @@ namespace Loading_Menu
             this.Language = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnranking = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Start
@@ -75,7 +76,7 @@ namespace Loading_Menu
             this.Language.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Language.ForeColor = System.Drawing.Color.GhostWhite;
             this.Language.FormattingEnabled = true;
-            this.Language.Location = new System.Drawing.Point(657, 392);
+            this.Language.Location = new System.Drawing.Point(656, 415);
             this.Language.Name = "Language";
             this.Language.Size = new System.Drawing.Size(121, 23);
             this.Language.TabIndex = 15;
@@ -109,12 +110,29 @@ namespace Loading_Menu
             this.btnranking.Text = "Ranking";
             this.btnranking.UseVisualStyleBackColor = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+            this.button1.FlatAppearance.BorderSize = 2;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(112)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.GhostWhite;
+            this.button1.Location = new System.Drawing.Point(12, 415);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "On";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Language);
             this.Controls.Add(this.Quit);
@@ -123,7 +141,7 @@ namespace Loading_Menu
             this.MaximumSize = new System.Drawing.Size(816, 489);
             this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "Form1";
-            this.Text = "Menu";
+            this.Text = "Music: On";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,6 +154,7 @@ namespace Loading_Menu
         private System.Windows.Forms.ComboBox Language;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnranking;
+        private System.Windows.Forms.Button button1;
     }
 }
 
