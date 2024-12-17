@@ -251,7 +251,7 @@
             this.HalveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HalveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.HalveBtn.ForeColor = System.Drawing.Color.GhostWhite;
-            this.HalveBtn.Location = new System.Drawing.Point(294, 353);
+            this.HalveBtn.Location = new System.Drawing.Point(315, 361);
             this.HalveBtn.Name = "HalveBtn";
             this.HalveBtn.Size = new System.Drawing.Size(75, 31);
             this.HalveBtn.TabIndex = 6;
@@ -268,7 +268,7 @@
             this.Skip.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Skip.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Skip.ForeColor = System.Drawing.Color.GhostWhite;
-            this.Skip.Location = new System.Drawing.Point(375, 353);
+            this.Skip.Location = new System.Drawing.Point(396, 361);
             this.Skip.Name = "Skip";
             this.Skip.Size = new System.Drawing.Size(75, 31);
             this.Skip.TabIndex = 6;
@@ -285,7 +285,7 @@
             this.Audience.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Audience.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Audience.ForeColor = System.Drawing.Color.GhostWhite;
-            this.Audience.Location = new System.Drawing.Point(294, 390);
+            this.Audience.Location = new System.Drawing.Point(315, 398);
             this.Audience.Name = "Audience";
             this.Audience.Size = new System.Drawing.Size(75, 31);
             this.Audience.TabIndex = 6;
@@ -302,7 +302,7 @@
             this.PlusTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PlusTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.PlusTime.ForeColor = System.Drawing.Color.GhostWhite;
-            this.PlusTime.Location = new System.Drawing.Point(375, 390);
+            this.PlusTime.Location = new System.Drawing.Point(396, 398);
             this.PlusTime.Name = "PlusTime";
             this.PlusTime.Size = new System.Drawing.Size(75, 31);
             this.PlusTime.TabIndex = 6;

@@ -101,6 +101,7 @@
   <ItemGroup>
     <Content Include="Icon\mute.ico" />
     <Content Include="Icon\sound.ico" />
+    <Content Include="NewFolder1\datas.txt" />
     <Content Include="NewFolder1\hard.txt" />
     <Content Include="NewFolder1\highscore.txt" />
     <Content Include="NewFolder1\easy.txt" />
