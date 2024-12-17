@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Threading;
 using System.Diagnostics;
 using System.Windows.Forms;
-using System.Drawing;  
+using System.Drawing;
 
 namespace Loading_Menu
 {
@@ -13,12 +13,14 @@ namespace Loading_Menu
     {
         //Paths
 
-        public string Song_Path = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\Songs\undertale_dogsong (online-audio-converter.com).wav";
-        public string music_on = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\Icon\sound.ico";
-        public string music_off= @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\Icon\mute.ico";
+        public string Song_Path = @"C:\Users\Tomi\Source\Repos\Questionnare\Songs\undertale_dogsong (online-audio-converter.com).wav";
+        public string music_on = @"C:\Users\Tomi\Source\Repos\Questionnare\Icon\sound.ico";
+        public string music_off = @"C:\Users\Tomi\Source\Repos\Questionnare\Icon\mute.ico";
 
-        public string RankingsPath = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe";
-        public string QuestionnairePath = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\bin\Debug\Questionnare.exe";
+        public string RankingsPath = @"C:\Users\Tomi\Source\Repos\Questionnare\obj\Debug\WinFormsApp1.exe";
+        public string QuestionnairePath = @"C:\Users\Tomi\Source\Repos\Questionnare\obj\Debug\Questionnare.exe";
+
+        public string StatisticsPath = @"C:\Users\Tomi\Source\Repos\Datas\bin\Debug\Datas.exe";
 
 
         public class MediaPlayerExample
@@ -75,9 +77,14 @@ namespace Loading_Menu
             Language.SelectedIndexChanged += Select_Language;
             mediaPlayerExample = new MediaPlayerExample();
             button1.Click += Button1_Click;
+            StatsBtn.Click += StatsBtn_Click;
             this.Load += Form1_Load;
         }
 
+        private void StatsBtn_Click(object sender, EventArgs e)
+        {
+            RunExecutable(StatisticsPath);
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -86,7 +93,7 @@ namespace Loading_Menu
 
             Bitmap soundIcon = new Bitmap(music_on);
 
-            soundIcon = new Bitmap(soundIcon, new Size(16, 16));  
+            soundIcon = new Bitmap(soundIcon, new Size(16, 16));
 
             button1.Image = soundIcon;
 
@@ -100,7 +107,7 @@ namespace Loading_Menu
 
             mediaPlayerExample.ToggleMusic(Song_Path);
 
-            Bitmap Icon1 = new Bitmap(music_on);  
+            Bitmap Icon1 = new Bitmap(music_on);
             Icon1 = new Bitmap(Icon1, new Size(16, 16));
 
             Bitmap Icon2 = new Bitmap(music_off);
@@ -110,16 +117,16 @@ namespace Loading_Menu
             if (mediaPlayerExample.IsMusicPlaying)
             {
                 button1.Text = "On";
-                button1.Image = Icon1; 
+                button1.Image = Icon1;
             }
             else
             {
-                button1.Text = "Off"; 
-                button1.Image = Icon2; 
+                button1.Text = "Off";
+                button1.Image = Icon2;
             }
 
-            button1.ImageAlign = ContentAlignment.MiddleRight;  
-            button1.TextAlign = ContentAlignment.MiddleCenter; 
+            button1.ImageAlign = ContentAlignment.MiddleRight;
+            button1.TextAlign = ContentAlignment.MiddleCenter;
         }
 
 
@@ -196,10 +203,11 @@ namespace Loading_Menu
 
             try
             {
-                if (File.Exists(path))
+                if (File.Exists(path)) 
                 {
-                    Process.Start(path); 
-                    Application.Exit();   
+                    Process.Start(path);
+
+                    Application.Exit();
                 }
                 else
                 {

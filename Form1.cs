@@ -15,18 +15,46 @@ using static Questionnare.Form1;
 namespace Questionnare
 {
 
-   
+
 
 
     public partial class Form1 : Form
     {
-        public int power_ups_count = 0;
+        public MediaPlayerExample media = new MediaPlayerExample();
+        public int power_ups_count;
+        public int games_played_count = 0;
+        public int correct_answers_count;
+        public int incorrect_answers_count;
         public class MediaPlayerExample
         {
             private SoundPlayer soundPlayer;
-            private bool isMusicPlaying = true;
+            private bool isMusicPlaying = false;
 
             public bool IsMusicPlaying => isMusicPlaying;
+
+            public void PlayMusic(string filePath)
+            {
+                try
+                {
+                    soundPlayer = new SoundPlayer(filePath);
+                    soundPlayer.PlayLooping();  
+                    isMusicPlaying = true;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error playing media: " + ex.Message);
+                }
+            }
+
+            public void StopMusic()
+            {
+                if (soundPlayer != null && isMusicPlaying)
+                {
+                    soundPlayer.Stop();  
+                    soundPlayer.Dispose();  
+                    isMusicPlaying = false;
+                }
+            }
 
             public void ToggleMusic(string filePath)
             {
@@ -39,27 +67,8 @@ namespace Questionnare
                     PlayMusic(filePath);
                 }
             }
-
-            public void PlayMusic(string filePath)
-            {
-                try
-                {
-                    soundPlayer = new SoundPlayer(filePath);
-                    soundPlayer.PlayLooping();
-                    isMusicPlaying = true;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error playing media: " + ex.Message);
-                }
-            }
-
-            private void StopMusic()
-            {
-                soundPlayer?.Stop();
-                isMusicPlaying = false;
-            }
         }
+
 
 
 
@@ -67,21 +76,21 @@ namespace Questionnare
 
         //Paths
 
-        public string highscorePath = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\NewFolder1\highscore.txt";
-        public Image rankingBronzePath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Desktop\Quiz\Ranking\Bronze.jpg");
-        public Image rankingSilverPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Desktop\Quiz\Ranking\Silver.jpg");
-        public Image rankingGoldPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Desktop\Quiz\Ranking\Gold.jpg");
-        public Image rankingDiamondPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Desktop\Quiz\Ranking\Diamond.jpg");
-        public Image rankingChampionPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Desktop\Quiz\Ranking\Champion.jpg");
-        public string easyQuestionsPath = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\NewFolder1\easy.txt";
-        public string normalQuestionsPath = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\NewFolder1\normal.txt";
-        public string hardQuestionsPath = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\NewFolder1\hard.txt";
+        public string highscorePath = @"C:\Users\Tomi\Source\Repos\Questionnare\NewFolder1\highscore.txt";
+        public Image rankingBronzePath = Image.FromFile(@"C:\Users\Tomi\Source\Repos\Questionnare\Ranking\Bronze.jpg");
+        public Image rankingSilverPath = Image.FromFile(@"C:\Users\Tomi\Source\Repos\Questionnare\Ranking\Silver.jpg");
+        public Image rankingGoldPath = Image.FromFile(@"C:\Users\Tomi\Source\Repos\Questionnare\Ranking\Gold.jpg");
+        public Image rankingDiamondPath = Image.FromFile(@"C:\Users\Tomi\Source\Repos\Questionnare\Ranking\Diamond.jpg");
+        public Image rankingChampionPath = Image.FromFile(@"C:\Users\Tomi\Source\Repos\Questionnare\Ranking\Champion.jpg");
+        public string easyQuestionsPath = @"C:\Users\Tomi\Source\Repos\Questionnare\NewFolder1\easy.txt";
+        public string normalQuestionsPath = @"C:\Users\Tomi\Source\Repos\Questionnare\NewFolder1\normal.txt";
+        public string hardQuestionsPath = @"C:\Users\Tomi\Source\Repos\Questionnare\NewFolder1\hard.txt";
 
-        public string music_path = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\Songs\undertale_dogsong (online-audio-converter.com).wav";
-        public string music_on = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\Icon\sound.ico";
-        public string music_off = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\Icon\mute.ico";
+        public string music_path = @"C:\Users\Tomi\Source\Repos\Questionnare\Songs\undertale_dogsong (online-audio-converter.com).wav";
+        public string music_on = @"C:\Users\Tomi\Source\Repos\Questionnare\Icon\sound.ico";
+        public string music_off = @"C:\Users\Tomi\Source\Repos\Questionnare\Icon\mute.ico";
 
-        public string stats_txt = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\NewFolder1\datas.txt";
+        public string stats_txt = @"C:\Users\Tomi\Source\Repos\Questionnare\NewFolder1\datas.txt";
 
         public string[] line_parts;
         public int highest_score;
@@ -101,12 +110,17 @@ namespace Questionnare
             public int games_played { get; set; }
             public int power_ups_used { get; set; }
 
-            public Statistics(int _games_played, int _power_ups_used)
+            public int correct_answers { get; set; }
+
+            public int incorrect_answers { get; set; }
+
+            public Statistics(int _games_played, int _power_ups_used, int _correct_answers, int _incorrect_answers)
             {
                 games_played = _games_played;
                 power_ups_used = _power_ups_used;
+                correct_answers = _correct_answers;
+                incorrect_answers = _incorrect_answers;
             }
-
         }
         public class Question
         {
@@ -159,7 +173,7 @@ namespace Questionnare
         }
 
         private List<Question> questions = new List<Question>();
-        private List<Statistics> stats = new List<Statistics>();
+        public List<Statistics> statistics = new List<Statistics>();
 
 
 
@@ -178,8 +192,70 @@ namespace Questionnare
             Audience.Click += Audience_Click;
             PlusTime.Click += PlusTime_Click;
             Music.Click += Music_Click;
-            MediaPlayerExample media = new MediaPlayerExample();
+            this.FormClosing += Form1_FormClosing;
         }
+
+        
+        private void Save_Stats()
+        {
+
+            using (StreamWriter writer = new StreamWriter(stats_txt, false))
+            {
+                writer.WriteLine($"{games_played_count};{power_ups_count};{correct_answers_count};{incorrect_answers_count}");
+            }
+        }
+        private bool isFormClosing = false;
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (isFormClosing)
+            {
+                return; 
+            }
+
+            isFormClosing = true;
+
+            
+            games_played_count += 1;
+            Save_Stats();
+            Stats();
+            media.StopMusic();
+        }
+
+        private void Load_Stats()
+        {
+            if (File.Exists(stats_txt))
+            {
+                Console.WriteLine("Stats file exists. Reading file...");
+                string[] lines = File.ReadAllLines(stats_txt);
+                if (lines.Length > 0)
+                {
+                    string[] parts = lines[0].Split(';');
+                    if (parts.Length == 4)
+                    {
+                        games_played_count = int.Parse(parts[0]);
+                        power_ups_count = int.Parse(parts[1]);
+                        correct_answers_count = int.Parse(parts[2]);
+                        incorrect_answers_count = int.Parse(parts[3]);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid format in the file.");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("File is empty.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Stats file does not exist. Initializing to default values.");
+                games_played_count = 0;
+                power_ups_count = 0;
+            }
+        }
+
 
         private void Stats()
         {
@@ -189,18 +265,31 @@ namespace Questionnare
                 {
                     string line = r.ReadLine();
 
-                    string[] parts = line.Split(';');
+                    if (line != null)
+                    {
+                        string[] parts = line.Split(';');
 
-                    Statistics stats = new Statistics(
-                        int.Parse(parts[0]),
-                        int.Parse(parts[1])
-                                     );
-                    questions.Add(stats);
+                        if (parts.Length == 4)
+                        {
+                            Statistics stats = new Statistics(
+                                int.Parse(parts[0]),
+                                int.Parse(parts[1]),
+                                int.Parse(parts[2]),
+                                int.Parse(parts[3])
+                            );
+                            statistics.Add(stats);
+                        }
+                    }
                 }
+            }
+
+            foreach (var item in statistics)
+            {
+                Console.WriteLine($"{item.games_played},{item.power_ups_used},{item.correct_answers},{item.incorrect_answers}");
             }
         }
 
-        private void Music_Click(object sender, EventArgs e)
+    private void Music_Click(object sender, EventArgs e)
         {
             mediaPlayerExample.ToggleMusic(music_path);
 
@@ -228,22 +317,24 @@ namespace Questionnare
 
         private void PlusTime_Click(object sender, EventArgs e)
         {
+            power_ups_count += 1;
             Time += 10;
             int remainingTime = Time;
             timer_run = false;
             countdownThread?.Abort();
             Timer_Reset();
+            Save_Stats();
 
             timer_run = true;
             countdownThread = new Thread(Countdown);
             countdownThread.Start();
 
             PlusTime.Visible = false;
-            power_ups_count++;
         }
 
         private void Audience_Click(object sender, EventArgs e)
         {
+            power_ups_count += 1;
             int Percentage = 100;
 
             Random rnd = new Random();
@@ -262,18 +353,20 @@ namespace Questionnare
                 $"Option4: {percentages[3]}%\n");
 
             Audience.Visible = false;
-            power_ups_count++;
+            Save_Stats();
         }
 
         private void Skip_Click(object sender, EventArgs e)
         {
+            power_ups_count += 1;
             Random_Query();
             Skip.Visible = false;
-            power_ups_count++;
+            Save_Stats();
         }
 
         private void HalveBtn_Click(object sender, EventArgs e)
         {
+            power_ups_count += 1;
             Random random_option = new Random();
 
             TextBox[] options = new TextBox[4] { option1, option2, option3, option4 };
@@ -299,7 +392,7 @@ namespace Questionnare
             }
 
             HalveBtn.Visible = false;
-            power_ups_count++;
+            Save_Stats();
         }
 
         private void Guess_KeyPress(object sender, KeyPressEventArgs e)
@@ -336,6 +429,7 @@ namespace Questionnare
         }
         private void Form1_Load1(object sender, EventArgs e)
         {
+            Load_Stats();
 
             mediaPlayerExample.PlayMusic(music_path);
 
@@ -407,6 +501,8 @@ namespace Questionnare
 
             if (!string.IsNullOrEmpty(currentQuery.Correct_answer.Trim()) && !string.IsNullOrEmpty(Guess.Text))
             {
+                correct_answers_count += 1;
+                Save_Stats();
                 CurrentScore++;
                 MessageBox.Show("Correct!");
                 CurrentText.Text = $"{Resources.ResourceManager.GetString("Current")}: {CurrentScore}";
@@ -414,6 +510,8 @@ namespace Questionnare
             }
             else
             {
+                incorrect_answers_count += 1;
+                Save_Stats();
                 MessageBox.Show("Incorrect!");
                 CurrentScore = 0;
                 CurrentText.Text = $"{Resources.ResourceManager.GetString("Current")}: {CurrentScore}";
