@@ -62,7 +62,7 @@ namespace Loading_Menu
             this.Quit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(112)))));
             this.Quit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Quit.ForeColor = System.Drawing.Color.GhostWhite;
-            this.Quit.Location = new System.Drawing.Point(238, 278);
+            this.Quit.Location = new System.Drawing.Point(238, 269);
             this.Quit.Name = "Quit";
             this.Quit.Size = new System.Drawing.Size(289, 46);
             this.Quit.TabIndex = 7;

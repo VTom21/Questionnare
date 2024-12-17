@@ -64,19 +64,19 @@ namespace Questionnare
 
         //Paths
 
-        public string highscorePath = @"C:\Users\Tomi\OneDrive\Asztali gép\fg\NewFolder1\highscore.txt";
-        public Image rankingBronzePath = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\fg\Ranking\Bronze.jpg");
-        public Image rankingSilverPath = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\fg\Ranking\Silver.jpg");
-        public Image rankingGoldPath = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\fg\Ranking\Gold.jpg");
-        public Image rankingDiamondPath = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\fg\Ranking\Diamond.jpg");
-        public Image rankingChampionPath = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\fg\Ranking\Champion.jpg");
-        public string easyQuestionsPath = @"C:\Users\Tomi\OneDrive\Asztali gép\fg\NewFolder1\easy.txt";
-        public string normalQuestionsPath = @"C:\Users\Tomi\OneDrive\Asztali gép\fg\NewFolder1\normal.txt";
-        public string hardQuestionsPath = @"C:\Users\Tomi\OneDrive\Asztali gép\fg\NewFolder1\hard.txt";
+        public string highscorePath = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\NewFolder1\highscore.txt";
+        public Image rankingBronzePath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Desktop\Quiz\Ranking\Bronze.jpg");
+        public Image rankingSilverPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Desktop\Quiz\Ranking\Silver.jpg");
+        public Image rankingGoldPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Desktop\Quiz\Ranking\Gold.jpg");
+        public Image rankingDiamondPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Desktop\Quiz\Ranking\Diamond.jpg");
+        public Image rankingChampionPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Desktop\Quiz\Ranking\Champion.jpg");
+        public string easyQuestionsPath = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\NewFolder1\easy.txt";
+        public string normalQuestionsPath = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\NewFolder1\normal.txt";
+        public string hardQuestionsPath = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\NewFolder1\hard.txt";
 
-        public string music_path = @"C:\Users\Tomi\OneDrive\Asztali gép\fg\Songs\undertale_dogsong (online-audio-converter.com).wav";
-        public string music_on = @"C:\Users\Tomi\OneDrive\Asztali gép\fg\Icon\sound.ico";
-        public string music_off = @"C:\Users\Tomi\OneDrive\Asztali gép\fg\Icon\mute.ico";
+        public string music_path = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\Songs\undertale_dogsong (online-audio-converter.com).wav";
+        public string music_on = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\Icon\sound.ico";
+        public string music_off = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\Icon\mute.ico";
 
         public string[] line_parts;
         public int highest_score;
@@ -499,12 +499,15 @@ namespace Questionnare
                 {
                     case var difficulty when difficulty == easy:
                         filePath = easyQuestionsPath;
+                        diff.Enabled = false;
                         break;
                     case var difficulty when difficulty == normal:
                         filePath = normalQuestionsPath;
+                        diff.Enabled = false;
                         break;
                     case var difficulty when difficulty == hard:
                         filePath = hardQuestionsPath;
+                        diff.Enabled = false;
                         break;
                     default:
                         timer_run = false;

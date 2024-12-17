@@ -13,12 +13,12 @@ namespace Loading_Menu
     {
         //Paths
 
-        public string Song_Path = @"C:\Users\Tomi\OneDrive\Asztali gép\fg\Songs\undertale_dogsong (online-audio-converter.com).wav";
-        public string music_on = @"C:\Users\Tomi\OneDrive\Asztali gép\fg\Icon\sound.ico";
-        public string music_off= @"C:\Users\Tomi\OneDrive\Asztali gép\fg\Icon\mute.ico";
+        public string Song_Path = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\Songs\undertale_dogsong (online-audio-converter.com).wav";
+        public string music_on = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\Icon\sound.ico";
+        public string music_off= @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\Icon\mute.ico";
 
-        public string RankingsPath = @"C:\Users\Tomi\OneDrive\Asztali gép\fg\WinFormsApp1\bin\Debug\WindowsFormsApp1.exe";
-        public string QuestionnairePath = @"C:\Users\Tomi\OneDrive\Asztali gép\fg\bin\Debug\Questionnare.exe";
+        public string RankingsPath = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe";
+        public string QuestionnairePath = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\bin\Debug\Questionnare.exe";
 
 
         public class MediaPlayerExample
