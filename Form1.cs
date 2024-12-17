@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Globalization;
 using System.Media;
+using static Questionnare.Form1;
 
 namespace Questionnare
 {
@@ -80,6 +81,8 @@ namespace Questionnare
         public string music_on = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\Icon\sound.ico";
         public string music_off = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\Icon\mute.ico";
 
+        public string stats_txt = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\NewFolder1\datas.txt";
+
         public string[] line_parts;
         public int highest_score;
         public int CurrentScore = 0;
@@ -92,6 +95,19 @@ namespace Questionnare
         public string correct_answer;
 
         public string rank = "Bronze";
+
+        public class Statistics
+        {
+            public int games_played { get; set; }
+            public int power_ups_used { get; set; }
+
+            public Statistics(int _games_played, int _power_ups_used)
+            {
+                games_played = _games_played;
+                power_ups_used = _power_ups_used;
+            }
+
+        }
         public class Question
         {
             public string Questions { get; set; }
@@ -143,6 +159,8 @@ namespace Questionnare
         }
 
         private List<Question> questions = new List<Question>();
+        private List<Statistics> stats = new List<Statistics>();
+
 
 
 
@@ -161,6 +179,25 @@ namespace Questionnare
             PlusTime.Click += PlusTime_Click;
             Music.Click += Music_Click;
             MediaPlayerExample media = new MediaPlayerExample();
+        }
+
+        private void Stats()
+        {
+            if (File.Exists(stats_txt))
+            {
+                using (StreamReader r = new StreamReader(stats_txt))
+                {
+                    string line = r.ReadLine();
+
+                    string[] parts = line.Split(';');
+
+                    Statistics stats = new Statistics(
+                        int.Parse(parts[0]),
+                        int.Parse(parts[1])
+                                     );
+                    questions.Add(stats);
+                }
+            }
         }
 
         private void Music_Click(object sender, EventArgs e)
@@ -202,6 +239,7 @@ namespace Questionnare
             countdownThread.Start();
 
             PlusTime.Visible = false;
+            power_ups_count++;
         }
 
         private void Audience_Click(object sender, EventArgs e)
@@ -224,12 +262,14 @@ namespace Questionnare
                 $"Option4: {percentages[3]}%\n");
 
             Audience.Visible = false;
+            power_ups_count++;
         }
 
         private void Skip_Click(object sender, EventArgs e)
         {
             Random_Query();
             Skip.Visible = false;
+            power_ups_count++;
         }
 
         private void HalveBtn_Click(object sender, EventArgs e)
@@ -259,6 +299,7 @@ namespace Questionnare
             }
 
             HalveBtn.Visible = false;
+            power_ups_count++;
         }
 
         private void Guess_KeyPress(object sender, KeyPressEventArgs e)
