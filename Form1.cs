@@ -25,6 +25,7 @@ namespace Questionnare
         public int games_played_count = 0;
         public int correct_answers_count;
         public int incorrect_answers_count;
+        public int total_questions_count;
         public class MediaPlayerExample
         {
             private SoundPlayer soundPlayer;
@@ -114,12 +115,15 @@ namespace Questionnare
 
             public int incorrect_answers { get; set; }
 
-            public Statistics(int _games_played, int _power_ups_used, int _correct_answers, int _incorrect_answers)
+            public int total_questions { get; set; }
+
+            public Statistics(int _games_played, int _power_ups_used, int _correct_answers, int _incorrect_answers, int _total_questions)
             {
                 games_played = _games_played;
                 power_ups_used = _power_ups_used;
                 correct_answers = _correct_answers;
                 incorrect_answers = _incorrect_answers;
+                total_questions = _total_questions;
             }
         }
         public class Question
@@ -201,7 +205,7 @@ namespace Questionnare
 
             using (StreamWriter writer = new StreamWriter(stats_txt, false))
             {
-                writer.WriteLine($"{games_played_count};{power_ups_count};{correct_answers_count};{incorrect_answers_count}");
+                writer.WriteLine($"{games_played_count};{power_ups_count};{correct_answers_count};{incorrect_answers_count};{total_questions_count}");
             }
         }
         private bool isFormClosing = false;
@@ -222,6 +226,7 @@ namespace Questionnare
             media.StopMusic();
         }
 
+
         private void Load_Stats()
         {
             if (File.Exists(stats_txt))
@@ -231,12 +236,13 @@ namespace Questionnare
                 if (lines.Length > 0)
                 {
                     string[] parts = lines[0].Split(';');
-                    if (parts.Length == 4)
+                    if (parts.Length == 5)
                     {
                         games_played_count = int.Parse(parts[0]);
                         power_ups_count = int.Parse(parts[1]);
                         correct_answers_count = int.Parse(parts[2]);
                         incorrect_answers_count = int.Parse(parts[3]);
+                        total_questions_count = int.Parse(parts[4]);
                     }
                     else
                     {
@@ -275,7 +281,8 @@ namespace Questionnare
                                 int.Parse(parts[0]),
                                 int.Parse(parts[1]),
                                 int.Parse(parts[2]),
-                                int.Parse(parts[3])
+                                int.Parse(parts[3]),
+                                int.Parse(parts[4])
                             );
                             statistics.Add(stats);
                         }
@@ -285,7 +292,7 @@ namespace Questionnare
 
             foreach (var item in statistics)
             {
-                Console.WriteLine($"{item.games_played},{item.power_ups_used},{item.correct_answers},{item.incorrect_answers}");
+                Console.WriteLine($"{item.games_played},{item.power_ups_used},{item.correct_answers},{item.incorrect_answers},{item.total_questions}");
             }
         }
 
@@ -574,6 +581,7 @@ namespace Questionnare
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            total_questions_count += 1;
 
             if (GuessClicked == false)
             {

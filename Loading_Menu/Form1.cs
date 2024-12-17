@@ -14,13 +14,16 @@ namespace Loading_Menu
         //Paths
 
         public string Song_Path = @"C:\Users\Tomi\Source\Repos\Questionnare\Songs\undertale_dogsong (online-audio-converter.com).wav";
+
         public string music_on = @"C:\Users\Tomi\Source\Repos\Questionnare\Icon\sound.ico";
         public string music_off = @"C:\Users\Tomi\Source\Repos\Questionnare\Icon\mute.ico";
+        public string start_icon = @"C:\Users\Tomi\Source\Repos\Questionnare\Icon\start.ico";
 
         public string RankingsPath = @"C:\Users\Tomi\Source\Repos\Questionnare\obj\Debug\WinFormsApp1.exe";
         public string QuestionnairePath = @"C:\Users\Tomi\Source\Repos\Questionnare\obj\Debug\Questionnare.exe";
 
         public string StatisticsPath = @"C:\Users\Tomi\Source\Repos\Datas\bin\Debug\Datas.exe";
+
 
 
         public class MediaPlayerExample
@@ -64,7 +67,6 @@ namespace Loading_Menu
         }
 
 
-
         private MediaPlayerExample mediaPlayerExample;
 
         public Form1()
@@ -88,6 +90,7 @@ namespace Loading_Menu
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
             mediaPlayerExample.PlayMusic(Song_Path);
 
 
