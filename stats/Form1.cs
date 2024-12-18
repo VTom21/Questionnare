@@ -22,6 +22,7 @@ namespace stats
         {
             InitializeComponent();
             Home.Click += Home_Click;
+            Call();
         }
 
         private void Home_Click(object sender, EventArgs e)
@@ -29,27 +30,68 @@ namespace stats
             RunExecutable(@"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\Loading_Menu\bin\Debug\Loading_Menu.exe");
         }
 
-        private void RunExecutable(string redirect_path)
+        private void Call()
         {
-            string path = redirect_path;
+
+            string filePath = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\NewFolder1\datas.txt";
+            Label[] labels = new Label[] { label1, label2, label3, label4, label5 };
+
+            string[] strings = new string[] { "Games Played:", "Power Ups Used:", "Correct Answers:", "Incorrect Answers:", "Total Questions:" };
 
             try
             {
-                if (File.Exists(path))
+                using (StreamReader sr = new StreamReader(filePath))
                 {
-                    Process.Start(path);
+                    string line;
 
-                    Application.Exit();
-                }
-                else
-                {
-                    MessageBox.Show("Executable not found at path: " + path);
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        string[] parameters = line.Split(';');
+
+                        if (parameters.Length == 5)
+                        {
+                            for (int i = 0; i < labels.Length; i++)
+                            {
+
+                                labels[i].Text = $"{strings[i]} {parameters[i]}";
+
+
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid line format.");
+                        }
+                    }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error launching the executable: " + ex.Message);
+                Console.WriteLine("An error occurred: " + ex.Message);
+            }
+
+        }
+            private void RunExecutable(string redirect_path)
+            {
+                string path = redirect_path;
+
+                try
+                {
+                    if (File.Exists(path))
+                    {
+                        Process.Start(path);
+
+                        Application.Exit();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Executable not found at path: " + path);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error launching the executable: " + ex.Message);
+                }
             }
         }
     }
-}
