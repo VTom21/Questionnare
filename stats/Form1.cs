@@ -54,6 +54,15 @@ namespace stats
                             {
 
                                 labels[i].Text = $"{strings[i]} {parameters[i]}";
+                                labels[i].BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+                                labels[i].ForeColor = Color.GhostWhite;
+                                labels[i].Padding = new Padding(5, 5, 10, 5);
+                                labels[i].Width = 150;
+                                labels[i].Height = 25;
+                                labels[i].AutoSize = false;
+
+                                labels[i].TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
 
 
                             }
