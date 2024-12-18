@@ -22,7 +22,7 @@ namespace Loading_Menu
         public string RankingsPath = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe";
         public string QuestionnairePath = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\obj\Debug\Questionnare.exe";
 
-        public string StatisticsPath = @"C:\Users\Ny20VisegrádiT\Desktop\Quiz\stats\bin\Debug\stats.exe";
+        public string StatisticsPath = @"C:\Users\Ny20VisegrádiT\source\repos\Questionnare\stats\bin\Debug\stats.exe";
 
 
 
@@ -164,6 +164,7 @@ namespace Loading_Menu
             Start.Text = Resources.ResourceManager.GetString("Start");
             btnranking.Text = Resources.ResourceManager.GetString("btnranking");
             Quit.Text = Resources.ResourceManager.GetString("Quit");
+            StatsBtn.Text = Resources.ResourceManager.GetString("Statistics");
         }
 
         private void Select_Language(object sender, EventArgs e)
