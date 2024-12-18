@@ -91,7 +91,7 @@ namespace Questionnare
         public string music_on = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\Icon\sound.ico";
         public string music_off = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\Icon\mute.ico";
 
-        public string stats_txt = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\NewFolder1\datas.txt";
+        public string stats_txt = @"C:\Users\Ny20VisegrádiT\Desktop\fxcbd\NewFolder1\datas.txt";
 
         public string[] line_parts;
         public int highest_score;
@@ -478,6 +478,9 @@ namespace Questionnare
             diff.Items.Clear();
             button1.Text = Resources.ResourceManager.GetString("Start");
             GuessBtn.Text = Resources.ResourceManager.GetString("Guess");
+            Skip.Text = Resources.ResourceManager.GetString("Skip");
+            Audience.Text = Resources.ResourceManager.GetString("Audience");
+            PlusTime.Text = Resources.ResourceManager.GetString("PlusTime");
             highscore_label.Text = $"{Resources.ResourceManager.GetString("High")}:{highest_score}";
             CurrentText.Text = $"{Resources.ResourceManager.GetString("Current")}:{CurrentScore}";
             lbrank.Text = $"{Resources.ResourceManager.GetString("Rank")}: {rank}";
@@ -493,42 +496,42 @@ namespace Questionnare
 
         private void GuessBtn_Click(object sender, EventArgs e)
         {
-            GuessClicked = true;
-            highscore_load();
+    GuessClicked = true;
+    highscore_load();
 
-            Question currentQuery = null;
-            foreach (var item in questions)
-            {
-                if (item.Questions == questionbar.Text)
-                {
-                    currentQuery = item;
-                    break;
-                }
-            }
+    Question currentQuery = null;
+    foreach (var item in questions)
+    {
+        if (item.Questions == questionbar.Text)
+        {
+            currentQuery = item;
+            break;
+        }
+    }
 
-            if (currentQuery != null
-                && !string.IsNullOrEmpty(currentQuery.Correct_answer.Trim())
-                && !string.IsNullOrEmpty(Guess.Text)
-                && string.Equals(currentQuery.Correct_answer.Trim(), Guess.Text.Trim(), StringComparison.OrdinalIgnoreCase))
-            {
-                // Correct Answer
-                correct_answers_count += 1;
-                Save_Stats();
-                CurrentScore++;
-                MessageBox.Show("Correct!");
-                CurrentText.Text = $"{Resources.ResourceManager.GetString("Current")}: {CurrentScore}";
-                Timer_Reset();
-            }
-            else
-            {
-                // Incorrect Answer
-                incorrect_answers_count += 1;
-                Save_Stats();
-                MessageBox.Show("Incorrect!");
-                CurrentScore = 0;
-                CurrentText.Text = $"{Resources.ResourceManager.GetString("Current")}: {CurrentScore}";
-                Timer_Reset();
-            }
+    if (currentQuery != null 
+        && !string.IsNullOrEmpty(currentQuery.Correct_answer.Trim()) 
+        && !string.IsNullOrEmpty(Guess.Text) 
+        && string.Equals(currentQuery.Correct_answer.Trim(), Guess.Text.Trim(), StringComparison.OrdinalIgnoreCase))
+    {
+        // Correct Answer
+        correct_answers_count += 1;
+        Save_Stats();
+        CurrentScore++;
+        MessageBox.Show("Correct!");
+        CurrentText.Text = $"{Resources.ResourceManager.GetString("Current")}: {CurrentScore}";
+        Timer_Reset();
+    }
+    else
+    {
+        // Incorrect Answer
+        incorrect_answers_count += 1;
+        Save_Stats();
+        MessageBox.Show("Incorrect!");
+        CurrentScore = 0;
+        CurrentText.Text = $"{Resources.ResourceManager.GetString("Current")}: {CurrentScore}";
+        Timer_Reset();
+    }
 
 
             if (CurrentScore > highest_score)

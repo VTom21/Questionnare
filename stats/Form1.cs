@@ -33,7 +33,7 @@ namespace stats
         private void Call()
         {
 
-            string filePath = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\NewFolder1\datas.txt";
+            string filePath = @"C:\Users\Ny20VisegrádiT\Desktop\fxcbd\NewFolder1\datas.txt";
             Label[] labels = new Label[] { label1, label2, label3, label4, label5 };
 
             string[] strings = new string[] { "Games Played:", "Power Ups Used:", "Correct Answers:", "Incorrect Answers:", "Total Questions:" };

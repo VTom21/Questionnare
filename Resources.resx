@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Audience" xml:space="preserve">
+    <value>Audience</value>
+  </data>
   <data name="Current" xml:space="preserve">
     <value>Current Score</value>
   </data>
@@ -138,13 +141,16 @@
   <data name="Normal" xml:space="preserve">
     <value>Normal</value>
   </data>
+  <data name="PlusTime" xml:space="preserve">
+    <value>Time</value>
+  </data>
   <data name="Rank" xml:space="preserve">
     <value>Your Rank</value>
   </data>
+  <data name="Skip" xml:space="preserve">
+    <value>Skip</value>
+  </data>
   <data name="Start" xml:space="preserve">
     <value>Start</value>
-  </data>
-  <data name="String1" xml:space="preserve">
-    <value />
   </data>
 </root>
