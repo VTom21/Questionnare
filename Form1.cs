@@ -506,8 +506,12 @@ namespace Questionnare
                 }
             }
 
-            if (!string.IsNullOrEmpty(currentQuery.Correct_answer.Trim()) && !string.IsNullOrEmpty(Guess.Text))
+            if (currentQuery != null
+                && !string.IsNullOrEmpty(currentQuery.Correct_answer.Trim())
+                && !string.IsNullOrEmpty(Guess.Text)
+                && string.Equals(currentQuery.Correct_answer.Trim(), Guess.Text.Trim(), StringComparison.OrdinalIgnoreCase))
             {
+                // Correct Answer
                 correct_answers_count += 1;
                 Save_Stats();
                 CurrentScore++;
@@ -517,6 +521,7 @@ namespace Questionnare
             }
             else
             {
+                // Incorrect Answer
                 incorrect_answers_count += 1;
                 Save_Stats();
                 MessageBox.Show("Incorrect!");
