@@ -13,16 +13,16 @@ namespace Loading_Menu
     {
         //Paths
 
-        public string Song_Path = @"C:\Users\Tomi\Source\Repos\Questionnare\Songs\undertale_dogsong (online-audio-converter.com).wav";
+        public string Song_Path = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\Songs\undertale_dogsong (online-audio-converter.com).wav";
 
-        public string music_on = @"C:\Users\Tomi\Source\Repos\Questionnare\Icon\sound.ico";
-        public string music_off = @"C:\Users\Tomi\Source\Repos\Questionnare\Icon\mute.ico";
-        public string start_icon = @"C:\Users\Tomi\Source\Repos\Questionnare\Icon\start.ico";
+        public string music_on = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\Icon\sound.ico";
+        public string music_off = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\Icon\mute.ico";
+        public string start_icon = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\Icon\start.icoo";
 
-        public string RankingsPath = @"C:\Users\Tomi\Source\Repos\Questionnare\obj\Debug\WinFormsApp1.exe";
-        public string QuestionnairePath = @"C:\Users\Tomi\Source\Repos\Questionnare\obj\Debug\Questionnare.exe";
+        public string RankingsPath = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe";
+        public string QuestionnairePath = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\obj\Debug\Questionnare.exe";
 
-        public string StatisticsPath = @"C:\Users\Tomi\Source\Repos\Datas\bin\Debug\Datas.exe";
+        public string StatisticsPath = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\stats\bin\Debug\stats.exe";
 
 
 
