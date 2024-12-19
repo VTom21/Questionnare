@@ -36,6 +36,7 @@ namespace Loading_Menu
             this.btnranking = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.StatsBtn = new System.Windows.Forms.Button();
+            this.Leaderboard = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Start
@@ -144,12 +145,30 @@ namespace Loading_Menu
             this.StatsBtn.Text = "Statistics";
             this.StatsBtn.UseVisualStyleBackColor = false;
             // 
+            // Leaderboard
+            // 
+            this.Leaderboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+            this.Leaderboard.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+            this.Leaderboard.FlatAppearance.BorderSize = 2;
+            this.Leaderboard.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Leaderboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(112)))));
+            this.Leaderboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Leaderboard.ForeColor = System.Drawing.Color.GhostWhite;
+            this.Leaderboard.Location = new System.Drawing.Point(689, 12);
+            this.Leaderboard.MaximumSize = new System.Drawing.Size(816, 489);
+            this.Leaderboard.Name = "Leaderboard";
+            this.Leaderboard.Size = new System.Drawing.Size(99, 43);
+            this.Leaderboard.TabIndex = 18;
+            this.Leaderboard.Text = "Leaderboard";
+            this.Leaderboard.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Leaderboard);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Language);
@@ -175,6 +194,7 @@ namespace Loading_Menu
         private System.Windows.Forms.Button btnranking;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button StatsBtn;
+        private System.Windows.Forms.Button Leaderboard;
     }
 }
 

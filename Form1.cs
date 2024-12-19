@@ -78,21 +78,21 @@ namespace Questionnare
 
         //Paths
 
-        public string highscorePath = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\NewFolder1\highscore.txt";
-        public Image rankingBronzePath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\Ranking\Bronze.jpg");
-        public Image rankingSilverPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\Ranking\Silver.jpg");
-        public Image rankingGoldPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\Ranking\Gold.jpg");
-        public Image rankingDiamondPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\Ranking\Diamond.jpg");
-        public Image rankingChampionPath = Image.FromFile(@"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\Ranking\Champion.jpg");
-        public string easyQuestionsPath = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\NewFolder1\easy.txt";
-        public string normalQuestionsPath = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\NewFolder1\normal.txt";
-        public string hardQuestionsPath = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\NewFolder1\hard.txt";
+        public string highscorePath = @"C:\Users\Tomi\OneDrive\Asztali gép\quiiz game\NewFolder1\highscore.txt";
+        public Image rankingBronzePath = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\quiiz game\Ranking\Bronze.jpg");
+        public Image rankingSilverPath = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\quiiz game\Ranking\Silver.jpg");
+        public Image rankingGoldPath = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\quiiz game\Ranking\Gold.jpg");
+        public Image rankingDiamondPath = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\quiiz game\Ranking\Diamond.jpg");
+        public Image rankingChampionPath = Image.FromFile(@"C:\Users\Tomi\OneDrive\Asztali gép\quiiz game\Ranking\Champion.jpg");
+        public string easyQuestionsPath = @"C:\Users\Tomi\OneDrive\Asztali gép\quiiz game\NewFolder1\easy.txt";
+        public string normalQuestionsPath = @"C:\Users\Tomi\OneDrive\Asztali gép\quiiz game\NewFolder1\normal.txt";
+        public string hardQuestionsPath = @"C:\Users\Tomi\OneDrive\Asztali gép\quiiz game\NewFolder1\hard.txt";
 
-        public string music_path = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\Songs\undertale_dogsong (online-audio-converter.com).wav";
-        public string music_on = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\Icon\sound.ico";
-        public string music_off = @"C:\Users\Ny20VisegrádiT\Source\Repos\Questionnare\Icon\mute.ico";
+        public string music_path = @"C:\Users\Tomi\OneDrive\Asztali gép\quiiz game\Songs\undertale_dogsong (online-audio-converter.com).wav";
+        public string music_on = @"C:\Users\Tomi\OneDrive\Asztali gép\quiiz game\Icon\sound.ico";
+        public string music_off = @"C:\Users\Tomi\OneDrive\Asztali gép\quiiz game\Icon\mute.ico";
 
-        public string stats_txt = @"C:\Users\Ny20VisegrádiT\Desktop\fxcbd\NewFolder1\datas.txt";
+        public string stats_txt = @"C:\Users\Tomi\OneDrive\Asztali gép\quiiz game\NewFolder1\datas.txt";
 
         public string[] line_parts;
         public int highest_score;
@@ -221,7 +221,7 @@ namespace Questionnare
                 {
                     connection.Open(); 
 
-                    string query = "INSERT INTO leaderboard (score) VALUES (@score)";
+                    string query = "INSERT INTO datas (score) VALUES (@score)";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, connection))
                     {
@@ -232,7 +232,7 @@ namespace Questionnare
                         if (rowsAffected > 0)
                         {
 
-                            string selectQuery = "SELECT * FROM leaderboard ORDER BY score DESC";
+                            string selectQuery = "SELECT * FROM datas ORDER BY score DESC";
 
                             using (MySqlCommand selectCmd = new MySqlCommand(selectQuery, connection))
                             {
