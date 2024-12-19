@@ -11,6 +11,7 @@ using System.Diagnostics;
 using System.Globalization;
 using System.Media;
 using static Questionnare.Form1;
+using MySql.Data.MySqlClient;
 
 namespace Questionnare
 {
@@ -212,6 +213,53 @@ namespace Questionnare
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
+            string connection_sql = "server=127.0.0.1;user=root;database=leaderboard;password=;";
+
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(connection_sql))
+                {
+                    connection.Open(); 
+
+                    string query = "INSERT INTO leaderboard (score) VALUES (@score)";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@score", CurrentScore); 
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+
+                            string selectQuery = "SELECT * FROM leaderboard ORDER BY score DESC";
+
+                            using (MySqlCommand selectCmd = new MySqlCommand(selectQuery, connection))
+                            {
+                                using (MySqlDataReader reader = selectCmd.ExecuteReader())
+                                {
+                                    Console.WriteLine("\nLeaderboard (sorted from highest to lowest):");
+
+                                    while (reader.Read())
+                                    {
+                                        int score = reader.GetInt32("score");
+                                        Console.WriteLine("Score: " + score);
+                                    }
+                                }
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("No data was inserted.");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+
             if (isFormClosing)
             {
                 return; 
