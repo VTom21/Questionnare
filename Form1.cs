@@ -238,8 +238,7 @@ namespace Questionnare
                             {
                                 using (MySqlDataReader reader = selectCmd.ExecuteReader())
                                 {
-                                    Console.WriteLine("\nLeaderboard (sorted from highest to lowest):");
-
+                                    
                                     while (reader.Read())
                                     {
                                         int score = reader.GetInt32("score");
